@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme, responsiveFontSizes, useTheme } from '@mui/
 import Header from '../components/header';
 import CssBaseline from '@mui/material/CssBaseline';
 import { PaletteMode } from '@mui/material';
-import { useState, useMemo, createContext, useContext } from 'react';
+import { useState, useMemo, createContext, useContext, useEffect } from 'react';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 

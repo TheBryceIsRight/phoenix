@@ -1,6 +1,6 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Container } from "@mui/material"
+import { Container, IconButton } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/blog/functionize/site_map.svg'
@@ -8,9 +8,42 @@ import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
 import design_system from '../../public/assets/blog/functionize/style_guide.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Landing from "../../public/assets/blog/fze-images/Landing.png"
+import Projects from "../../public/assets/blog/fze-images/Projects.png"
+import ActionSteps from "../../public/assets/blog/fze-images/Action_steps.png"
+import useEmblaCarousel from 'embla-carousel-react'
+import { useCallback, useState } from "react"
+import { ChevronLeft, ChevronRight } from "@mui/icons-material"
+
+const emblaStyle = {
+    overflow: 'hidden'
+}
+
+const emblaContainerStyle = {
+    display: 'flex'
+}
+
+const emblaSliderStyle = {
+    flex: "0 0 100%",
+    minWidth: "0",
+}
 
 
 export default function Functionize() {
+
+    const [emblaRef, emblaApi] = useEmblaCarousel()
+
+    let imageIndex = 0
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+    }, [emblaApi])
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
+
     return <MyContainer>
         <Head>
             <title>Functionize</title>
@@ -52,7 +85,7 @@ export default function Functionize() {
             <br />
             <Typography variant='body1'>When I arrived at Functionize, you could argue the AI was too good - we had a world class backend, with some of the most advanced XPath replacements in the entire industry. Lost in all the money and time spent on the model was a similar level of effort to make the software polished and functional. Without a modern Javascript framework or a dedicated UX designer, the website was slow, inconsistent, hard to parse, and ultimately didn&#39;t demo very well. I was brought in to turn it around.
             </Typography>
-            <br/>
+            <br />
             <Typography variant='body1'>I worked with Elise Carmichael (VP Product) and Andrew Gassanoff (Visual Designer) on this project.
             </Typography>
             <br />
@@ -94,11 +127,50 @@ export default function Functionize() {
                 alt="AllVoices site map"
             />
             <br />
+            <br />
+            <Typography variant='h4'>High Fidelity Designs</Typography>
+            <br />
+            <br />
+            <div style={emblaStyle} ref={emblaRef}>
+                <div style={emblaContainerStyle}>
+                    <Image
+                        src={Landing}
+                        alt="AllVoices site map"
+                        width={1000}
+                        height={1000}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Projects}
+                        alt="Undraw hero"
+                        width={1000}
+                        height={1000}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={ActionSteps}
+                        alt="AllVoices site map"
+                        width={1000}
+                        height={1000}
+                        style={emblaSliderStyle}
+                    />
+                </div>
+                <br />
+                <IconButton aria-label="Previous" onClick={scrollPrev}>
+                    <ChevronLeft />
+                </IconButton>
+                <IconButton aria-label="Next" onClick={scrollNext}>
+                    <ChevronRight />
+                </IconButton>
+            </div>
+            <br />
+            <br />
+            <br />
             <Typography variant="h4">Flow Prototype</Typography>
             <br />
             <Typography variant='body1'>Nicknamed Flow, this secondary product aimed to automatically track areas of test coverage and assess coverage gaps based on risk.</Typography>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <iframe width="100%" height="900" title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLELDGCXEKYpZOij4tOt740%2F%25F0%259F%25A7%25AA-Flow%3Fpage-id%3D0%253A1%26node-id%3D144%253A8604%26viewport%3D336%252C48%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D144%253A8604%26show-proto-sidebar%3D1" allowFullScreen={true}>
             </iframe>
             <br />
