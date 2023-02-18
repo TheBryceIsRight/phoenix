@@ -10,6 +10,8 @@ import MuiContainer from '@mui/material/Container'
 import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
+import Image from 'next/image'
+import AllVoices from "../public/assets/blog/allvoices/allvoices.png"
 
 export default function Index() {
   return (
@@ -46,7 +48,15 @@ export default function Index() {
             <Link href="/work/allvoices">
               <ButtonBase style={{ alignContent: "start" }}>
                 <Container>
-                  <CoverImage title="AllVoices" src="/assets/blog/allvoices/allvoices.png" slug="/work/1-allvoices" />
+                  <Image
+                    src={AllVoices}
+                    alt='Cover Image for AllVoices'
+                    width={1300}
+                    height={630}
+                    style={{ borderRadius: 8 }}
+                    placeholder='blur'
+                    loading="eager"
+                  />
                   <br />
                   <Typography variant='h4'>
                     AllVoices
@@ -68,8 +78,7 @@ export default function Index() {
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Functionize"
-                    coverImage='/assets/blog/functionize/functionize.png'
-                    slug="2-functionize"
+                    src='/assets/blog/functionize/functionize.png'
                     excerpt='Helping testers with a low to no code AI-powered automation platform'
                   />
                 </ButtonBase>
@@ -78,8 +87,7 @@ export default function Index() {
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Elavon - System Status"
-                    coverImage='/assets/blog/systemstatus/system-status.png'
-                    slug="3-elavon-status"
+                    src='/assets/blog/systemstatus/system-status.png'
                     excerpt='Visualizing outages and downtime for transparency and compliance'
                   />
                 </ButtonBase>
@@ -88,8 +96,7 @@ export default function Index() {
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Elavon - Developer Portal"
-                    coverImage='/assets/blog/elavon/dev-portal.png'
-                    slug="4-elavon-dev"
+                    src='/assets/blog/elavon/dev-portal.png'
                     excerpt='Helping developers understand credit card systems through good documentation'
                   />
                 </ButtonBase>
@@ -98,8 +105,7 @@ export default function Index() {
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="About Me"
-                    coverImage='/assets/blog/aboutme/coffee.png'
-                    slug="5-me"
+                    src='/assets/blog/aboutme/coffee.png'
                     excerpt=''
                   />
                 </ButtonBase>

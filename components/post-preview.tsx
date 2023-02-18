@@ -1,24 +1,34 @@
 import CoverImage from './cover-image'
-import Link from 'next/link'
 import { Typography } from '@mui/material'
+import Image from 'next/image'
+import cn from 'classnames'
 
 type Props = {
   title: string
-  coverImage: string
   excerpt: string
-  slug: string
+  src: string
 }
 
 const PostPreview = ({
   title,
-  coverImage,
   excerpt,
-  slug,
+  src
 }: Props) => {
   return (
     <div>
       <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+        <div className="sm:mx-0">
+          <Image
+            src={src}
+            alt={`Cover Image for ${title}`}
+            className={cn('shadow-sm w-full', {
+              'hover:shadow-lg transition-shadow duration-200': "",
+            })}
+            width={1300}
+            height={630}
+            style={{ borderRadius: 8 }}
+          />
+        </div>
       </div>
       <Typography variant='h4'>
         {title}
