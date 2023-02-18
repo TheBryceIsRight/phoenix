@@ -16,8 +16,7 @@ const MoreStories = ({ posts }: Props) => {
           <PostPreview
             key={post.slug}
             title={post.title}
-            coverImage={post.coverImage}
-            slug={post.slug}
+            src={post.coverImage}
             excerpt={post.excerpt}
           />
         ))}
