@@ -12,9 +12,15 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Landing from "../../public/assets/blog/fze-images/Landing.png"
 import Projects from "../../public/assets/blog/fze-images/Projects.png"
 import ActionSteps from "../../public/assets/blog/fze-images/Action_steps.png"
+import DebugEditor from "../../public/assets/blog/fze-images/Debug_Editor.png"
+import CVControls from "../../public/assets/blog/fze-images/CV_Controls.png"
+import Extensions from "../../public/assets/blog/fze-images/Extensions.png"
+import Users from "../../public/assets/blog/fze-images/Users.png"
 import useEmblaCarousel from 'embla-carousel-react'
 import { useCallback, useState } from "react"
 import { ChevronLeft, ChevronRight } from "@mui/icons-material"
+import Autoplay from 'embla-carousel-autoplay'
+
 
 const emblaStyle = {
     overflow: 'hidden'
@@ -29,12 +35,16 @@ const emblaSliderStyle = {
     minWidth: "0",
 }
 
+const autoplayOptions = {
+    delay: 4000,
+    rootNode: (emblaRoot) => emblaRoot.parentElement,
+}
+
 
 export default function Functionize() {
 
-    const [emblaRef, emblaApi] = useEmblaCarousel()
-
-    let imageIndex = 0
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
+    const [index, setIndex] = useState(0);
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -43,6 +53,7 @@ export default function Functionize() {
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext()
     }, [emblaApi])
+
 
     return <MyContainer>
         <Head>
@@ -135,28 +146,59 @@ export default function Functionize() {
                 <div style={emblaContainerStyle}>
                     <Image
                         src={Landing}
-                        alt="AllVoices site map"
-                        width={1000}
-                        height={1000}
+                        alt="Functionize landing page"
+                        width={1200}
+                        height={906}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Projects}
-                        alt="Undraw hero"
-                        width={1000}
-                        height={1000}
+                        alt="Functionize project view"
+                        width={1200}
+                        height={906}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={ActionSteps}
-                        alt="AllVoices site map"
-                        width={1000}
-                        height={1000}
+                        alt="Functionize test editor"
+                        width={1200}
+                        height={906}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={DebugEditor}
+                        alt="Functionize debug editor"
+                        width={1200}
+                        height={906}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={CVControls}
+                        alt="Functionize visual inspection controls"
+                        width={1200}
+                        height={906}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Extensions}
+                        alt="Functionize extensions table"
+                        width={1200}
+                        height={906}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Users}
+                        alt="Functionize users table"
+                        width={1200}
+                        height={906}
                         style={emblaSliderStyle}
                     />
                 </div>
                 <br />
-                <IconButton aria-label="Previous" onClick={scrollPrev}>
+                <IconButton
+                    aria-label="Previous"
+                    onClick={scrollPrev}
+                    disabled={index === 3}>
                     <ChevronLeft />
                 </IconButton>
                 <IconButton aria-label="Next" onClick={scrollNext}>

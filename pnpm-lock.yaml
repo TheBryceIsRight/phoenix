@@ -13,6 +13,8 @@ specifiers:
   autoprefixer: ^10.4.7
   classnames: ^2.3.1
   date-fns: ^2.28.0
+  embla-carousel: ^7.0.9
+  embla-carousel-autoplay: ^7.0.9
   embla-carousel-react: ^7.0.9
   gray-matter: ^4.0.3
   install: ^0.13.0
@@ -35,6 +37,8 @@ dependencies:
   '@mui/material': 5.11.7_rqh7qj4464ntrqrt6banhaqg4q
   classnames: 2.3.2
   date-fns: 2.29.3
+  embla-carousel: 7.0.9
+  embla-carousel-autoplay: 7.0.9_embla-carousel@7.0.9
   embla-carousel-react: 7.0.9_react@18.2.0
   gray-matter: 4.0.3
   install: 0.13.0
@@ -1250,6 +1254,14 @@ packages:
 
   /electron-to-chromium/1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
+
+  /embla-carousel-autoplay/7.0.9_embla-carousel@7.0.9:
+    resolution: {integrity: sha512-I8LhZ5iAyu8L3qoYgOgjnpHK5mv6c1w5a7IcT6Et24BqGf8D+yFWfI28ctz9YvrqH1QbyUezy5LfuaeGaqfclw==}
+    peerDependencies:
+      embla-carousel: 7.0.9
+    dependencies:
+      embla-carousel: 7.0.9
+    dev: false
 
   /embla-carousel-react/7.0.9_react@18.2.0:
     resolution: {integrity: sha512-KGnnZWukN+N2H6VjQf6C9mWmInqtCIiInhkGsJ9ckxri3m3Ks6wRDz+RRlV1kcuPHtRoxyFuBBGNwftWqMO9Pw==}
