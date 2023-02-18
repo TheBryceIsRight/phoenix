@@ -13,7 +13,7 @@ import Landing from "../../public/assets/blog/fze-images/Landing.png"
 import Projects from "../../public/assets/blog/fze-images/Projects.png"
 import ActionSteps from "../../public/assets/blog/fze-images/Action_steps.png"
 import DebugEditor from "../../public/assets/blog/fze-images/Debug_Editor.png"
-import CVControls from "../../public/assets/blog/fze-images/CV_Controls.png"
+import CVControls from "../../public/assets/blog/fze-images/CV_controls.png"
 import Extensions from "../../public/assets/blog/fze-images/Extensions.png"
 import Users from "../../public/assets/blog/fze-images/Users.png"
 import useEmblaCarousel from 'embla-carousel-react'
