@@ -8,7 +8,6 @@ import { useState, useMemo, createContext, useContext, useEffect, Fragment } fro
 import { useRouter } from 'next/router';
 import * as gtag from "../lib/gtag"
 import Script from 'next/script';
-import Head from 'next/head';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 

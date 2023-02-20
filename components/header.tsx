@@ -13,9 +13,24 @@ import Tooltip from '@mui/material/Tooltip';
 import { DarkMode } from '@mui/icons-material';
 import { useContext } from 'react';
 import { ColorModeContext } from '../pages/_app';
+import * as gtag from "../lib/gtag"
+import Script from 'next/script';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
+
+  function resumeClickedEvent() {
+    <Script
+      id="google-analytics"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `gtag('event', 'click', {
+        'event_name': 'resume_click',
+      });`
+      }}
+    />
+    return null
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -35,21 +50,21 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-          Portfolio
+            Portfolio
           </Typography>
           <Tooltip title="Dark Mode" arrow>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                onClick={colorMode.toggleColorMode}
-              >
-                <DarkMode />
-              </IconButton>
-            </Tooltip>
-          <Link href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
+            <IconButton
+              size="large"
+              edge="start"
+              color="secondary"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              onClick={colorMode.toggleColorMode}
+            >
+              <DarkMode />
+            </IconButton>
+          </Tooltip>
+          <Link onClickCapture={resumeClickedEvent()} href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
             <Tooltip title="Resume" arrow>
               <IconButton
                 size="large"
