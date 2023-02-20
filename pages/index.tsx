@@ -3,15 +3,25 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import { ButtonBase, Typography } from '@mui/material'
-import PostPreview from '../components/post-preview'
 import MuiContainer from '@mui/material/Container'
 import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import Image from 'next/image'
 import AllVoices from "../public/assets/blog/allvoices/allvoices.png"
+import AllVoices_dark from "../public/assets/blog/dark_mode/allvoices.png"
+import Functionize from '../public/assets/blog/functionize/functionize.png'
+import Fze_dark from "../public/assets/blog/dark_mode/functionize.png"
+import SystemStatus from "../public/assets/blog/systemstatus/system-status.png"
+import Status_dark from "../public/assets/blog/dark_mode/system-status.png"
+import DevPortal from '../public/assets/blog/elavon/dev-portal.png'
+import DevPortal_dark from "../public/assets/blog/dark_mode/dev-portal.png"
+import Coffee from "../public/assets/blog/aboutme/coffee.png"
+import { useTheme } from '@mui/material'
 
 export default function Index() {
+  const theme = useTheme();
+
   return (
     <>
       <Layout>
@@ -46,15 +56,27 @@ export default function Index() {
             <Link href="/work/allvoices">
               <ButtonBase style={{ alignContent: "start" }}>
                 <Container>
-                  <Image
-                    src={AllVoices}
-                    alt='Cover Image for AllVoices'
-                    width={1300}
-                    height={630}
-                    style={{ borderRadius: 8 }}
-                    placeholder='blur'
-                    loading="eager"
-                  />
+                  {theme.palette.mode === "light" ?
+                    <Image
+                      src={AllVoices}
+                      alt='Cover Image for AllVoices'
+                      width={1300}
+                      height={630}
+                      style={{ borderRadius: 8 }}
+                      placeholder='blur'
+                      loading="eager"
+                    />
+                    :
+                    <Image
+                      src={AllVoices_dark}
+                      alt='Cover Image for AllVoices'
+                      width={1300}
+                      height={630}
+                      style={{ borderRadius: 8 }}
+                      placeholder='blur'
+                      loading="eager"
+                    />
+                  }
                   <br />
                   <Typography variant='h4'>
                     AllVoices
@@ -74,38 +96,134 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/functionize">
                 <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Functionize"
-                    src='/assets/blog/functionize/functionize.png'
-                    excerpt='Helping testers with a low to no code AI-powered automation platform'
-                  />
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        {theme.palette.mode === "light" ?
+                          <Image
+                            src={Functionize}
+                            alt='Cover Image for Functionize'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                          :
+                          <Image
+                            src={Fze_dark}
+                            alt='Cover Image for Functionize'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                        }
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Functionize
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Helping testers with a low to no code AI-powered automation platform</Typography>
+                  </div>
                 </ButtonBase>
               </Link>
               <Link href="/work/elavon-status">
                 <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Elavon - System Status"
-                    src='/assets/blog/systemstatus/system-status.png'
-                    excerpt='Visualizing outages and downtime for transparency and compliance'
-                  />
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        {theme.palette.mode === "light" ?
+                          <Image
+                            src={SystemStatus}
+                            alt='Cover Image for System Status'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                          :
+                          <Image
+                            src={Status_dark}
+                            alt='Cover Image for System Status'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                        }
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Elavon - System Status
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Visualizing outages and downtime for transparency and compliance</Typography>
+                  </div>
                 </ButtonBase>
               </Link>
               <Link href="/work/elavon-dev">
                 <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Elavon - Developer Portal"
-                    src='/assets/blog/elavon/dev-portal.png'
-                    excerpt='Helping developers understand credit card systems through good documentation'
-                  />
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        {theme.palette.mode === "light" ?
+                          <Image
+                            src={DevPortal}
+                            alt='Cover Image for Dev Portal'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                          :
+                          <Image
+                            src={DevPortal_dark}
+                            alt='Cover Image for Dev Portal'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                        }
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Elavon - Developer Portal
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Helping developers understand credit card systems through good documentation</Typography>
+                  </div>
                 </ButtonBase>
               </Link>
               <Link href="/work/me">
                 <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="About Me"
-                    src='/assets/blog/aboutme/coffee.png'
-                    excerpt=''
-                  />
+                <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                          <Image
+                            src={Coffee}
+                            alt='Cover Image for About Me'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      About Me
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>A brief intro</Typography>
+                  </div>
                 </ButtonBase>
               </Link>
             </div>
