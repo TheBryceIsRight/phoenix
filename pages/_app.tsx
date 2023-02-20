@@ -104,9 +104,21 @@ export default function App({ Component, pageProps }: AppProps) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
       }}
     />
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4XZD9D872" />
+    <Script
+      id="google-analytics"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `  window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-Y4XZD9D872');
+            `
+      }}
+    />
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
