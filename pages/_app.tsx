@@ -8,6 +8,7 @@ import { useState, useMemo, createContext, useContext, useEffect, Fragment } fro
 import { useRouter } from 'next/router';
 import * as gtag from "../lib/gtag"
 import Script from 'next/script';
+import Head from 'next/head';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
@@ -90,6 +91,7 @@ export default function App({ Component, pageProps }: AppProps) {
   theme = responsiveFontSizes(theme)
 
   return <div>
+    <Head>
     <Script id="google-tag-manager" strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
@@ -117,6 +119,7 @@ export default function App({ Component, pageProps }: AppProps) {
             `
       }}
     />
+    </Head>
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
