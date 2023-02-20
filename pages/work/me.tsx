@@ -39,12 +39,12 @@ export default function Aboutme() {
             {theme.palette.mode === "light" ?
                 <ProtectedImage
                     src={atlanta}
-                    alt="Logo for royal queen seeds"
+                    alt="Atlanta"
                 />
                 :
                 <ProtectedImage
                     src={atlanta_night}
-                    alt="Logo for royal queen seeds"
+                    alt="Atlanta"
                 />
             }
             <br />
