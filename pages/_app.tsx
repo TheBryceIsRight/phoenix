@@ -91,7 +91,6 @@ export default function App({ Component, pageProps }: AppProps) {
   theme = responsiveFontSizes(theme)
 
   return <div>
-    <Head>
     <Script id="google-tag-manager" strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
@@ -119,7 +118,6 @@ export default function App({ Component, pageProps }: AppProps) {
             `
       }}
     />
-    </Head>
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
