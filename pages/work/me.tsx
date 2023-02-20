@@ -4,12 +4,15 @@ import { Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import atlanta from '../../public/assets/blog/aboutme/ATL.svg'
+import atlanta_night from '../../public/assets/blog/aboutme/ATL_Night.svg'
 import coffee from '../../public/assets/blog/aboutme/coffee.png'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
-
+import { useTheme } from "@mui/material"
 
 export default function Aboutme() {
+    const theme = useTheme();
+
     return <MyContainer>
         <Head>
             <title>About Me</title>
@@ -33,7 +36,17 @@ export default function Aboutme() {
             <br />
             <br />
             <br />
-            <ProtectedImage src={atlanta} alt="Atlanta vectorized, drawn in Figma"/>
+            {theme.palette.mode === "light" ?
+                <ProtectedImage
+                    src={atlanta}
+                    alt="Logo for royal queen seeds"
+                />
+                :
+                <ProtectedImage
+                    src={atlanta_night}
+                    alt="Logo for royal queen seeds"
+                />
+            }
             <br />
             <Typography variant="body1">My hometown, drawn in Figma. 
             </Typography>
