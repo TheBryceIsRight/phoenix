@@ -9,8 +9,14 @@ import style_light from '../../public/assets/blog/elavon/style_guide_light.svg'
 import style_dark from '../../public/assets/blog/elavon/style_guide_dark.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
+import EmblaCarousel from '../../components/emblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 export default function Devportal() {
+    const OPTIONS: EmblaOptionsType = {}
+    const SLIDE_COUNT = 9
+    const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
     return <MyContainer>
         <Head>
             <title>Elavon - Dev Portal</title>
@@ -81,7 +87,7 @@ export default function Devportal() {
             <br />
             <Typography variant='h4'>Information Architecture</Typography>
             <br />
-            <ProtectedImage src={site_map} alt="Elavon dev site map"/>
+            <ProtectedImage src={site_map} alt="Elavon dev site map" />
             <br />
             <br />
             <Typography variant='h4'>Style Guide</Typography>
@@ -99,6 +105,23 @@ export default function Devportal() {
             <br />
             <br />
             <br />
+            <Typography variant="h4">Personas</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="elavon_personas" />
+            <br />
+            <br />
+            <br />
+            <Typography variant="h4">Low Fidelity Mockups</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_lowfi" />
+            <br />
+            <Typography variant="h4">High Fidelity Mockups</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_hifi" />
+            <br />
+            <Typography variant="h4">Dark Mode</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_hifi_dark" />
             <Typography variant="h4">Mobile Prototype</Typography>
             <br />
             <br />

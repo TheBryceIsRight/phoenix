@@ -8,8 +8,14 @@ import undraw_hero from '../../public/assets/blog/elavon/undraw_hero_ss.svg'
 import style_light from '../../public/assets/blog/elavon/style_guide_ss.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
+import EmblaCarousel from '../../components/emblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 export default function Systemstatus() {
+    const OPTIONS: EmblaOptionsType = {}
+    const SLIDE_COUNT = 7
+    const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
     return <MyContainer>
         <Head>
             <title>Elavon - System Status</title>
@@ -88,7 +94,7 @@ export default function Systemstatus() {
             <br />
             <Typography variant='h4'>Information Architecture</Typography>
             <br />
-            <ProtectedImage src={site_map} alt="System status site map"/>
+            <ProtectedImage src={site_map} alt="System status site map" />
             <br />
             <br />
             <Typography variant='h4'>Style Guide</Typography>
@@ -98,6 +104,29 @@ export default function Systemstatus() {
                 alt="Elavon style guide for light mode"
             />
             <br />
+            <br />
+            <br />
+            <br />
+            <Typography variant="h4">Personas</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="elavon_personas" />
+            <br />
+            <br />
+            <br />
+            <Typography variant="h4">Low Fidelity Mockups</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_lowfi" />
+            <br />
+
+            <Typography variant="h4">High Fidelity Mockups</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi" />
+            <br />
+
+            <Typography variant="h4">Dark Mode</Typography>
+            <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi_dark" />
+            <Typography variant="h4">Mobile Prototype</Typography>
             <br />
             <br />
             <br />

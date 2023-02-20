@@ -8,52 +8,14 @@ import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
 import design_system from '../../public/assets/blog/functionize/style_guide.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import Landing from "../../public/assets/blog/fze-images/Landing.png"
-import Projects from "../../public/assets/blog/fze-images/Projects.png"
-import ActionSteps from "../../public/assets/blog/fze-images/Action_steps.png"
-import DebugEditor from "../../public/assets/blog/fze-images/Debug_Editor.png"
-import CVControls from "../../public/assets/blog/fze-images/CV_controls.png"
-import Extensions from "../../public/assets/blog/fze-images/Extensions.png"
-import Users from "../../public/assets/blog/fze-images/Users.png"
-import useEmblaCarousel from 'embla-carousel-react'
-import { useCallback, useState } from "react"
-import { ChevronLeft, ChevronRight } from "@mui/icons-material"
-import Autoplay from 'embla-carousel-autoplay'
-
-
-const emblaStyle = {
-    overflow: 'hidden'
-}
-
-const emblaContainerStyle = {
-    display: 'flex'
-}
-
-const emblaSliderStyle = {
-    flex: "0 0 100%",
-    minWidth: "0",
-}
-
-const autoplayOptions = {
-    delay: 4000,
-    rootNode: (emblaRoot) => emblaRoot.parentElement,
-}
-
+import EmblaCarousel from '../../components/emblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 export default function Functionize() {
 
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
-    const [index, setIndex] = useState(0);
-
-    const scrollPrev = useCallback(() => {
-        if (emblaApi) emblaApi.scrollPrev()
-    }, [emblaApi])
-
-    const scrollNext = useCallback(() => {
-        if (emblaApi) emblaApi.scrollNext()
-    }, [emblaApi])
-
+    const OPTIONS: EmblaOptionsType = {}
+    const SLIDE_COUNT = 7
+    const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
     return <MyContainer>
         <Head>
@@ -139,72 +101,10 @@ export default function Functionize() {
             />
             <br />
             <br />
-            <Typography variant='h4'>High Fidelity Designs</Typography>
+            <Typography variant="h4">High Fidelity Mockups</Typography>
             <br />
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} type="fze_hi_fi" />
             <br />
-            <div style={emblaStyle} ref={emblaRef}>
-                <div style={emblaContainerStyle}>
-                    <Image
-                        src={Landing}
-                        alt="Functionize landing page"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={Projects}
-                        alt="Functionize project view"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={ActionSteps}
-                        alt="Functionize test editor"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={DebugEditor}
-                        alt="Functionize debug editor"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={CVControls}
-                        alt="Functionize visual inspection controls"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={Extensions}
-                        alt="Functionize extensions table"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                    <Image
-                        src={Users}
-                        alt="Functionize users table"
-                        width={1200}
-                        height={906}
-                        style={emblaSliderStyle}
-                    />
-                </div>
-                <br />
-                <IconButton
-                    aria-label="Previous"
-                    onClick={scrollPrev}
-                    disabled={index === 3}>
-                    <ChevronLeft />
-                </IconButton>
-                <IconButton aria-label="Next" onClick={scrollNext}>
-                    <ChevronRight />
-                </IconButton>
-            </div>
             <br />
             <br />
             <br />

@@ -1,6 +1,6 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Container } from "@mui/material"
+import { ButtonBase, Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/blog/allvoices/av_sitemap.svg'
@@ -8,6 +8,10 @@ import undraw_hero from '../../public/assets/blog/allvoices/undraw_hero.svg'
 import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
+import LinkedInAnnouncement from "../../public/assets/blog/allvoices/LinkedIn_Announcement.png"
+import Connections from "../../public/assets/blog/allvoices/Prototype_Connections.png"
+import Link from "next/link"
+
 
 export default function AllVoices() {
     return <MyContainer>
@@ -96,7 +100,7 @@ export default function AllVoices() {
             <Typography variant="h4">Messaging Templates</Typography>
             <br />
             <br />
-            <iframe width="100%" height="700" title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
+            <iframe width="100%" height="800" title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
             </iframe>
             <br />
             <br />
@@ -112,10 +116,51 @@ export default function AllVoices() {
             <br />
             <br />
             <br />
+            <Typography variant="h4">Case Manager 2.0 Redesign</Typography>
+            <br />
+            <Typography variant="body1">A total redesign of the existing case manager and home page, this is the most complete overhaul of the AllVoices core product offering to date. I worked closely with my supervisor Jeff Harris throughout the project for design ideation, validation, and getting the rest of the company onboard for such a dramatic overhaul.</Typography>
+            <br />
+            <Typography variant="body1">I was responsible for drawing all of the Figma assets, assisting in ideation, prototyping, and multiple revisions. The redesign was completed and handed off to development in 3 weeks.</Typography>
+            <br />
+            <Typography variant="h5">LinkedIn Announcement</Typography>
+            <br />
+            <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <ButtonBase>
+                    <Image
+                        src={LinkedInAnnouncement}
+                        alt="LinkedIn announcment of case manager 2.0"
+                    />
+                </ButtonBase>
+            </Link>
+            <br />
+            <br />
+            <br />
+            <Typography variant="h5">Design File</Typography>
+            <br />
+            <iframe width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmbdkirxM5pc1KH8vAqdTOR%2FProject-Facelift%3Fnode-id%3D159%253A8452%26t%3DYxSYO1DcqstRcYva-1" allowFullScreen={true}></iframe>
+            <br />
+            <br />
+            <br />
+            <Typography variant="h5">Prototype Connections</Typography>
+            <br />
+            <Image
+                src={Connections}
+                alt="Prototype connections for case manager 2.0"
+            />
+            <br />
+            <br />
+            <br />
+            <Typography variant="h5">Prototype</Typography>
+            <br />
+            <iframe width="100%" height="980" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmbdkirxM5pc1KH8vAqdTOR%2FCase-Manager-2.0%3Fpage-id%3D159%253A8452%26node-id%3D279%253A38530%26viewport%3D6%252C1662%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D279%253A38530%26show-proto-sidebar%3D1" allowFullScreen={true}></iframe>
+            <br />
+            <br />
+            <br />
+            <br />
             <Typography variant='h4'>Takeaways</Typography>
             <br />
             <br />
-            <Typography variant='h6'>Employees in crisis often have no options except to quit. We provide an alternative.
+            <Typography variant='h6'>Employees in crisis often have no options except to quit. AllVoices provides an alternative.
             </Typography>
             <br />
             <Typography variant='body1'>Anonymous reporting isn&#39;t a dirty word, it allows employees to be honest. When the conversations happen that define the company culture, it&#39;s vitally important that the topics are about things that the employees actually care about. If you&#39;re not getting honest feedback, your feedback is worthless.
@@ -125,7 +170,7 @@ export default function AllVoices() {
             <br />
             <Typography variant='h6'>Letting an employee go is never easy. An accurate record of behavior forces the change that need to happen.</Typography>
             <br />
-            <Typography variant='body1'>No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect people and work on themselves, but some never do. We track every single change to a case with a permanent, unchangeable activity log. We keep bad actors accountable, so when the time comes the paperwork trail is immaculate.
+            <Typography variant='body1'>No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect people and work on themselves, but some never do. AllVoices tracks every single change to a case with a permanent, unchangeable activity log. AllVoices keeps bad actors accountable, so when the time comes the paperwork trail is immaculate.
             </Typography>
             <br />
             <br />
