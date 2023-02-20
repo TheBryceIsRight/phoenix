@@ -9,6 +9,8 @@ import imageByIndex from './imageByIndex'
 import Image from 'next/image'
 import { Typography } from '@mui/material'
 import Autoplay from 'embla-carousel-autoplay'
+import { Container } from '@mui/material'
+import Grid from '@mui/material/Unstable_Grid2';
 
 const autoplayOptions = {
     delay: 8000,
@@ -138,8 +140,16 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         ))}
                     </div>
                 </div>
-                <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-                <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+                <Grid container spacing={2} columns={8}>
+                    <Grid xs>
+                        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+                    </Grid>
+                    <Grid xs={7}>
+                    </Grid>
+                    <Grid xs>
+                        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+                    </Grid>
+                </Grid>
             </div>
 
             <div style={embla__dots}>
