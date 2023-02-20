@@ -7,6 +7,7 @@ specifiers:
   '@mui/icons-material': ^5.11.0
   '@mui/lab': 5.0.0-alpha.120
   '@mui/material': ^5.11.7
+  '@types/gtag.js': ^0.0.12
   '@types/node': ^18.0.3
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
@@ -53,6 +54,7 @@ dependencies:
   typescript: 4.9.5
 
 devDependencies:
+  '@types/gtag.js': 0.0.12
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -925,6 +927,10 @@ packages:
     dependencies:
       '@types/ms': 0.7.31
     dev: false
+
+  /@types/gtag.js/0.0.12:
+    resolution: {integrity: sha512-YQV9bUsemkzG81Ea295/nF/5GijnD2Af7QhEofh7xu+kvCN6RdodgNwwGWXB5GMI3NoyvQo0odNctoH/qLMIpg==}
+    dev: true
 
   /@types/hast/2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}

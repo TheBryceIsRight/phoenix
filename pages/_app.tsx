@@ -4,7 +4,9 @@ import { ThemeProvider, createTheme, responsiveFontSizes, useTheme } from '@mui/
 import Header from '../components/header';
 import CssBaseline from '@mui/material/CssBaseline';
 import { PaletteMode } from '@mui/material';
-import { useState, useMemo, createContext, useContext, useEffect } from 'react';
+import { useState, useMemo, createContext, useContext, useEffect, Fragment } from 'react';
+import { useRouter } from 'next/router';
+import * as gtag from "../lib/gtag"
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
@@ -56,6 +58,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
 
 export default function App({ Component, pageProps }: AppProps) {
   let theme = useTheme();
+  const router = useRouter();
   const colorContext = useContext(ColorModeContext);
   const [mode, setMode] = useState<PaletteMode>('light');
   const colorMode = useMemo(
@@ -69,6 +72,17 @@ export default function App({ Component, pageProps }: AppProps) {
     }),
     [],
   );
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   // Update the theme only if the mode changes
   theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
