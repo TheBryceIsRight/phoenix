@@ -136,7 +136,7 @@ export default function AllVoices() {
             <Typography variant='h4'>3D Animation</Typography>
             <br />
             <br />
-            <div style={figmaWrapper}>
+            <div style={videoWrapper}>
             <iframe style={iframeStyle} src="https://www.youtube.com/embed/TmycswtSMgQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
             </iframe>
             </div>
