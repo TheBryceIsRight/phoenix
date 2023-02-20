@@ -3,12 +3,9 @@ import { IconButton } from '@mui/material'
 import { ChevronLeft, ChevronRight } from '@mui/icons-material'
 
 const embla__button__prev = {
-    bottom: "24rem",
-    left: "1rem"
 }
 
 const embla__button__next = {
-    bottom: "24rem",
 }
 
 type DotButtonPropType = {

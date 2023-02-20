@@ -1,6 +1,6 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Container, IconButton } from "@mui/material"
+import { Box, Container, IconButton } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/blog/functionize/site_map.svg'
@@ -10,6 +10,30 @@ import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
+import { CSSProperties } from "react"
+
+const videoWrapper = {
+    paddingBottom: "56.25%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const figmaWrapper = {
+    paddingBottom: "100.00%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const iframeStyle = {
+    overflow: "hidden",
+    border: 0,
+    alignSelf: "center",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+} as CSSProperties;
 
 export default function Functionize() {
 
@@ -113,16 +137,23 @@ export default function Functionize() {
             <Typography variant='body1'>Nicknamed Flow, this secondary product aimed to automatically track areas of test coverage and assess coverage gaps based on risk.</Typography>
             <br />
             <br />
-            <iframe width="100%" height="900" title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLELDGCXEKYpZOij4tOt740%2F%25F0%259F%25A7%25AA-Flow%3Fpage-id%3D0%253A1%26node-id%3D144%253A8604%26viewport%3D336%252C48%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D144%253A8604%26show-proto-sidebar%3D1" allowFullScreen={true}>
-            </iframe>
+            <div style={figmaWrapper}>
+                <iframe style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLELDGCXEKYpZOij4tOt740%2F%25F0%259F%25A7%25AA-Flow%3Fpage-id%3D0%253A1%26node-id%3D144%253A8604%26viewport%3D336%252C48%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D144%253A8604%26show-proto-sidebar%3D1" allowFullScreen={true}>
+                </iframe>
+            </div>
             <br />
             <br />
             <Typography variant='h4'>UX Overhaul Video Overview</Typography>
             <br />
             <Typography variant='body1'>The recent 5.1 release was the first step in the overhaul of the front end, and the first time many of my updates went live. Most of the changes were aimed at the core area of the product, the test detail page. This video was made with Visual Effects by Andrew Gassanoff and voiceover by Judy Bossi.</Typography>
             <br />
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/86OaXBYycQg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
-            </iframe>
+            <div style={videoWrapper}>
+                <iframe style={iframeStyle} src="https://www.youtube.com/embed/86OaXBYycQg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                </iframe>
+            </div>
+            <br />
+            <br />
+            <br />
             <br />
             <Typography variant='h4'>Takeaways</Typography>
             <br />

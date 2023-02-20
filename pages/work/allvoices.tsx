@@ -11,6 +11,30 @@ import ProtectedImage from "../../components/protected-image"
 import LinkedInAnnouncement from "../../public/assets/blog/allvoices/LinkedIn_Announcement.png"
 import Connections from "../../public/assets/blog/allvoices/Prototype_Connections.png"
 import Link from "next/link"
+import { CSSProperties } from "react"
+
+const videoWrapper = {
+    paddingBottom: "56.25%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const figmaWrapper = {
+    paddingBottom: "100.00%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const iframeStyle = {
+    overflow: "hidden",
+    border: 0,
+    alignSelf: "center",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+} as CSSProperties;
 
 
 export default function AllVoices() {
@@ -100,8 +124,10 @@ export default function AllVoices() {
             <Typography variant="h4">Messaging Templates</Typography>
             <br />
             <br />
-            <iframe width="100%" height="800" title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
-            </iframe>
+            <div style={figmaWrapper}>
+                <iframe style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
+                </iframe>
+            </div>
             <br />
             <br />
             <br />
@@ -110,8 +136,10 @@ export default function AllVoices() {
             <Typography variant='h4'>3D Animation</Typography>
             <br />
             <br />
-            <iframe width="100%" height="750" src="https://www.youtube.com/embed/TmycswtSMgQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+            <div style={figmaWrapper}>
+            <iframe style={iframeStyle} src="https://www.youtube.com/embed/TmycswtSMgQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
             </iframe>
+            </div>
             <br />
             <br />
             <br />
@@ -137,7 +165,9 @@ export default function AllVoices() {
             <br />
             <Typography variant="h5">Design File</Typography>
             <br />
-            <iframe width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmbdkirxM5pc1KH8vAqdTOR%2FProject-Facelift%3Fnode-id%3D159%253A8452%26t%3DYxSYO1DcqstRcYva-1" allowFullScreen={true}></iframe>
+            <div style={figmaWrapper}>
+            <iframe style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmbdkirxM5pc1KH8vAqdTOR%2FProject-Facelift%3Fnode-id%3D159%253A8452%26t%3DYxSYO1DcqstRcYva-1" allowFullScreen={true}></iframe>
+            </div>
             <br />
             <br />
             <br />
@@ -152,7 +182,9 @@ export default function AllVoices() {
             <br />
             <Typography variant="h5">Prototype</Typography>
             <br />
-            <iframe width="100%" height="980" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmbdkirxM5pc1KH8vAqdTOR%2FCase-Manager-2.0%3Fpage-id%3D159%253A8452%26node-id%3D279%253A38530%26viewport%3D6%252C1662%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D279%253A38530%26show-proto-sidebar%3D1" allowFullScreen={true}></iframe>
+            <div style={figmaWrapper}>
+            <iframe style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmbdkirxM5pc1KH8vAqdTOR%2FCase-Manager-2.0%3Fpage-id%3D159%253A8452%26node-id%3D279%253A38530%26viewport%3D6%252C1662%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D279%253A38530%26show-proto-sidebar%3D1" allowFullScreen={true}></iframe>
+            </div>
             <br />
             <br />
             <br />

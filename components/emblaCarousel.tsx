@@ -9,6 +9,7 @@ import imageByIndex from './imageByIndex'
 import Image from 'next/image'
 import { Typography } from '@mui/material'
 import Autoplay from 'embla-carousel-autoplay'
+import AutoHeight from 'embla-carousel-auto-height'
 import { Container } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2';
 
@@ -28,7 +29,9 @@ const embla__viewport = { overflow: "hidden" }
 const embla__container = {
     display: "flex",
     height: "auto",
-    marginLeft: "calc(var(--slide-spacing) * -1)"
+    marginLeft: "calc(var(--slide-spacing) * -1)",
+    alignItems: "flex-start", /* Add this */
+    transition: "height 0.2s"
 }
 const embla__slide = {
     flex: "0 0 var(--slide-size)",
@@ -69,7 +72,7 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
     const { slides, options } = props
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)])
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions), AutoHeight()])
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0)
@@ -140,13 +143,15 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         ))}
                     </div>
                 </div>
-                <Grid container spacing={2} columns={8}>
-                    <Grid xs>
+                <Grid container
+                    spacing={2}
+                    direction="row"
+                    alignItems="stretch"
+                    justifyContent="space-between">
+                    <Grid>
                         <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
                     </Grid>
-                    <Grid xs={7}>
-                    </Grid>
-                    <Grid xs>
+                    <Grid>
                         <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
                     </Grid>
                 </Grid>

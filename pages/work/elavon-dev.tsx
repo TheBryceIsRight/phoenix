@@ -11,6 +11,32 @@ import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
+import { CSSProperties } from "react"
+
+const videoWrapper = {
+    paddingBottom: "56.25%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const figmaWrapper = {
+    paddingBottom: "100.00%",
+    overflow: "hidden",
+    position: "relative",
+} as CSSProperties;
+
+const iframeStyle = {
+    overflow: "hidden",
+    border: 0,
+    alignSelf: "center",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+} as CSSProperties;
+
+
 
 export default function Devportal() {
     const OPTIONS: EmblaOptionsType = {}
@@ -125,8 +151,10 @@ export default function Devportal() {
             <Typography variant="h4">Mobile Prototype</Typography>
             <br />
             <br />
-            <iframe width="100%" height="900" title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4Pydx6tuDUhxGqBaLvzKpO%2FPortfolio-(Copy)%3Fpage-id%3D33%253A2049%26node-id%3D33%253A2050%26viewport%3D1180%252C1331%252C0.45%26scaling%3Dscale-down%26starting-point-node-id%3D33%253A2050" allowFullScreen={true}>
+            <div style={figmaWrapper}>
+            <iframe style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4Pydx6tuDUhxGqBaLvzKpO%2FPortfolio-(Copy)%3Fpage-id%3D33%253A2049%26node-id%3D33%253A2050%26viewport%3D1180%252C1331%252C0.45%26scaling%3Dscale-down%26starting-point-node-id%3D33%253A2050" allowFullScreen={true}>
             </iframe>
+            </div>
             <br />
             <br />
             <br />
