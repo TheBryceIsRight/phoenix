@@ -83,27 +83,24 @@ export const fze_hi_fi: string[] = [Fze1.src, Fze2.src, Fze3.src, Fze4.src, Fze5
 
 
 const imageByIndex = (index: number, type: string): string => {
-    if (type === "devportal_lowfi") {
-        return dev_portal_lowfi[index % dev_portal_lowfi.length]
-    } else if (type === "devportal_hifi") {
-        return devportal_hifi[index % devportal_hifi.length]
-    } else if (type === "devportal_hifi_dark") {
-        return devportal_hifi_dark[index % devportal_hifi_dark.length]
-    } else if (type === "status_lowfi") {
-        return status_lowfi[index % status_lowfi.length]
-    } else if (type === "status_hifi") {
-        return status_hifi[index % status_hifi.length]
-    } else if (type === "status_hifi_dark") {
-        return status_hifi_dark[index % status_hifi_dark.length]
-    } else if (type === "elavon_personas") {
-        return elavon_personas[index % elavon_personas.length]
-    } else if (type === "fze_hi_fi") {
-        return fze_hi_fi[index % fze_hi_fi.length]
-    }
-
-    else {
-        return devportal_hifi_dark[index % devportal_hifi_dark.length]
-    }
+    return type === "devportal_lowfi" ?
+        dev_portal_lowfi[index % dev_portal_lowfi.length]
+    : type === "devportal_hifi" ?
+        devportal_hifi[index % devportal_hifi.length]
+    : type === "devportal_hifi_dark" ?
+        devportal_hifi_dark[index % devportal_hifi_dark.length]
+    : type === "status_lowfi" ?
+        status_lowfi[index % status_lowfi.length]
+    : type === "status_hifi" ?
+        status_hifi[index % status_hifi.length]
+    : type === "status_hifi_dark" ?
+        status_hifi_dark[index % status_hifi_dark.length]
+    : type === "elavon_personas" ?
+        elavon_personas[index % elavon_personas.length]
+    : type === "fze_hi_fi" ?
+        fze_hi_fi[index % fze_hi_fi.length]
+    :
+        devportal_hifi_dark[index % devportal_hifi_dark.length]
 }
 
 
