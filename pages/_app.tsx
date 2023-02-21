@@ -113,7 +113,7 @@ export default function App({ Component, pageProps }: AppProps) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
       
-        gtag('config', 'G-Y4XZD9D872');
+        gtag('config', '${process.env.GTAG_CODE}');
             `
       }}
     />

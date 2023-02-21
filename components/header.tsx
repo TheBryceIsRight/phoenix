@@ -29,7 +29,6 @@ const Header = () => {
       });`
       }}
     />
-    console.log("Resume Clicked")
     return null
   }
 

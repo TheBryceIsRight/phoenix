@@ -10,8 +10,8 @@ import Image from 'next/image'
 import { Typography } from '@mui/material'
 import Autoplay from 'embla-carousel-autoplay'
 import AutoHeight from 'embla-carousel-auto-height'
-import { Container } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2';
+import { CSSProperties } from "react"
 
 const autoplayOptions = {
     delay: 8000,
@@ -24,25 +24,24 @@ const embla = {
     "--slide-size": "100%",
     "--slide-height": "48rem",
     padding: "1.6rem"
-}
-const embla__viewport = { overflow: "hidden" }
+} as CSSProperties
+
+const embla__viewport = { overflow: "hidden" } as CSSProperties
+
 const embla__container = {
     display: "flex",
     height: "auto",
     marginLeft: "calc(var(--slide-spacing) * -1)",
     alignItems: "flex-start", /* Add this */
     transition: "height 0.2s"
-}
+} as CSSProperties
+
 const embla__slide = {
     flex: "0 0 var(--slide-size)",
     minWidth: "0",
     paddingLeft: "var(--slide-spacing)",
-}
-// const embla__slide__img = {
-//     display: "block",
-//     height: "var(--slide-height)",
-//     width: "100%",
-// }
+} as CSSProperties
+
 const embla__slide__number = {
     width: "4.6rem",
     height: "4.6rem",
@@ -53,7 +52,8 @@ const embla__slide__number = {
     backgroundColor: "rgba(var(--background-site-rgb-value), 0.85)",
     lineHeight: "4.6rem",
     fontWeight: 500,
-}
+} as CSSProperties
+
 const embla__dots = {
     zIndex: 1,
     bottom: "1.2rem",
@@ -62,7 +62,7 @@ const embla__dots = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
-}
+} as CSSProperties
 
 type PropType = {
     slides: number[]
