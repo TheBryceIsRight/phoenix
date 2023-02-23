@@ -8,7 +8,7 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 
 ## Deployment
 
-https://bryce-watson-design.vercel.app/(https://bryce-watson-design.vercel.app/)
+[https://bryce-watson-design.vercel.app/](https://bryce-watson-design.vercel.app/)
 
 ## How to use
 
