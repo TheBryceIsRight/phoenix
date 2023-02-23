@@ -17,10 +17,14 @@ pnpm i
 pnpm run dev
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+The site will be start on [http://localhost:3000](http://localhost:3000). If it doesn't work, leave me a comment on this repo or submit a pull request.
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-# Notes
-
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+# Dependencies
+[Next.js v13](https://github.com/vercel/next.js/)
+[Embla Carousel]([https://tailwindcss.com](https://www.embla-carousel.com/))
+[Material UI React v5](https://mui.com/)
+[remark-html](https://github.com/remarkjs/remark-html)
+[Typescript](https://github.com/microsoft/TypeScript)
+[Tailwind CSS](https://tailwindcss.com/)
