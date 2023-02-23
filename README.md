@@ -23,12 +23,8 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 # Dependencies
 [Next.js v13](https://github.com/vercel/next.js/)
-
-[Embla Carousel]([https://tailwindcss.com](https://www.embla-carousel.com/))
+[Embla Carousel](https://www.embla-carousel.com/)
 [Material UI React v5](https://mui.com/)
-
 [remark-html](https://github.com/remarkjs/remark-html)
-
 [Typescript](https://github.com/microsoft/TypeScript)
-
 [Tailwind CSS](https://tailwindcss.com/)
