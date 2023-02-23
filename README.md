@@ -6,9 +6,9 @@ This portfolio is based on the existing [blog-starter](https://github.com/vercel
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using Markdown files as the data source.
 
-## Demo
+## Deployment
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
+([https://bryce-watson-design.vercel.app/](https://bryce-watson-design.vercel.app/))
 
 ## How to use
 
