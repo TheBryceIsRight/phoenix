@@ -120,7 +120,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 </div>
                                 {props.type === "elavon_personas" ?
                                     <Image
-                                        // style={embla__slide__img}
                                         src={imageByIndex(index, props.type)}
                                         alt={altByIndex(index, props.type)}
                                         height={1320}
@@ -128,7 +127,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     />
                                     : props.type === "fze_hi_fi" ?
                                         <Image
-                                            // style={embla__slide__img}
                                             src={imageByIndex(index, props.type)}
                                             alt={altByIndex(index, props.type)}
                                             height={906}

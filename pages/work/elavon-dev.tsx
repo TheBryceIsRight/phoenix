@@ -3,10 +3,10 @@ import MyContainer from "../../components/container"
 import { Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
-import site_map from '../../public/assets/blog/elavon/site_map.svg'
-import undraw_hero from '../../public/assets/blog/elavon/undraw_hero.svg'
-import style_light from '../../public/assets/blog/elavon/style_guide_light.svg'
-import style_dark from '../../public/assets/blog/elavon/style_guide_dark.svg'
+import site_map from '../../public/assets/elavon/site_map.svg'
+import undraw_hero from '../../public/assets/elavon/undraw_hero.svg'
+import style_light from '../../public/assets/elavon/style_guide_light.svg'
+import style_dark from '../../public/assets/elavon/style_guide_dark.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'

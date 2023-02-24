@@ -3,13 +3,13 @@ import MyContainer from "../../components/container"
 import { ButtonBase, Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
-import site_map from '../../public/assets/blog/allvoices/av_sitemap.svg'
-import undraw_hero from '../../public/assets/blog/allvoices/undraw_hero.svg'
-import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
+import site_map from '../../public/assets/allvoices/av_sitemap.svg'
+import undraw_hero from '../../public/assets/allvoices/undraw_hero.svg'
+import design_system from '../../public/assets/allvoices/av_design_system.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
-import LinkedInAnnouncement from "../../public/assets/blog/allvoices/LinkedIn_Announcement.png"
-import Connections from "../../public/assets/blog/allvoices/Prototype_Connections.png"
+import LinkedInAnnouncement from "../../public/assets/allvoices/LinkedIn_Announcement.png"
+import Connections from "../../public/assets/allvoices/Prototype_Connections.png"
 import Link from "next/link"
 import { CSSProperties } from "react"
 

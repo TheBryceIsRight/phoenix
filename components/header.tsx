@@ -48,7 +48,7 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            Portfolio
+            UX Design Portfolio
           </Typography>
           <Tooltip title="Dark Mode" arrow>
             <IconButton

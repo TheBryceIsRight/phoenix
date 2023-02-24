@@ -3,9 +3,9 @@ import MyContainer from "../../components/container"
 import { Box, Container, IconButton } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
-import site_map from '../../public/assets/blog/functionize/site_map.svg'
-import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
-import design_system from '../../public/assets/blog/functionize/style_guide.svg'
+import site_map from '../../public/assets/functionize/site_map.svg'
+import undraw_hero from '../../public/assets/functionize/undraw_hero.svg'
+import design_system from '../../public/assets/functionize/style_guide.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'

@@ -3,9 +3,9 @@ import MyContainer from "../../components/container"
 import { Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
-import atlanta from '../../public/assets/blog/aboutme/ATL.svg'
-import atlanta_night from '../../public/assets/blog/aboutme/ATL_Night.svg'
-import coffee from '../../public/assets/blog/aboutme/coffee.png'
+import atlanta from '../../public/assets/aboutme/ATL.svg'
+import atlanta_night from '../../public/assets/aboutme/ATL_Night.svg'
+import coffee from '../../public/assets/aboutme/coffee.png'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"

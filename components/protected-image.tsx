@@ -1,5 +1,5 @@
 import Image from "next/image"
-import atlanta from '../public/assets/blog/aboutme/ATL.svg'
+import atlanta from '../public/assets/aboutme/ATL.svg'
 import React, { useState, useEffect } from 'react'
 import { Snackbar, AlertTitle } from "@mui/material";
 import MuiAlert, { AlertProps } from '@mui/material/Alert';

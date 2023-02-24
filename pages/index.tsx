@@ -8,15 +8,15 @@ import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import Image from 'next/image'
-import AllVoices from "../public/assets/blog/allvoices/allvoices.png"
-import AllVoices_dark from "../public/assets/blog/dark_mode/allvoices.png"
-import Functionize from '../public/assets/blog/functionize/functionize.png'
-import Fze_dark from "../public/assets/blog/dark_mode/functionize.png"
-import SystemStatus from "../public/assets/blog/systemstatus/system-status.png"
-import Status_dark from "../public/assets/blog/dark_mode/system-status.png"
-import DevPortal from '../public/assets/blog/elavon/dev-portal.png'
-import DevPortal_dark from "../public/assets/blog/dark_mode/dev-portal.png"
-import Coffee from "../public/assets/blog/aboutme/coffee.png"
+import AllVoices from "../public/assets/allvoices/allvoices.png"
+import AllVoices_dark from "../public/assets/dark_mode/allvoices.png"
+import Functionize from '../public/assets/functionize/functionize.png'
+import Fze_dark from "../public/assets/dark_mode/functionize.png"
+import SystemStatus from "../public/assets/systemstatus/system-status.png"
+import Status_dark from "../public/assets/dark_mode/system-status.png"
+import DevPortal from '../public/assets/elavon/dev-portal.png'
+import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
+import Coffee from "../public/assets/aboutme/coffee.png"
 import { useTheme } from '@mui/material'
 
 export default function Index() {
