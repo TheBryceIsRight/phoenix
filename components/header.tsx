@@ -36,7 +36,7 @@ const Header = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
-          <Link href="/" aria-hidden="true" passHref>
+          <Link href="/" passHref>
             <Tooltip title="Home" arrow>
               <IconButton
                 size="large"
