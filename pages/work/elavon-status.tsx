@@ -136,12 +136,14 @@ export default function Systemstatus() {
             <br />
             <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_lowfi" />
             <br />
-
+            <br />
+            <br />
             <Typography variant="h4">High Fidelity Mockups</Typography>
             <br />
             <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi" />
             <br />
-
+            <br />
+            <br />
             <Typography variant="h4">Dark Mode</Typography>
             <br />
             <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi_dark" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconButton } from '@mui/material'
-import { ChevronLeft, ChevronRight } from '@mui/icons-material'
+import { ChevronLeft, ChevronRight, Circle } from '@mui/icons-material'
 
 const embla__button__prev = {
 }
@@ -21,7 +21,11 @@ export const DotButton: React.FC<DotButtonPropType> = (props) => {
             className={'embla__dot'.concat(selected ? ' embla__dot--selected' : '')}
             type="button"
             onClick={onClick}
-        />
+            aria-label="Carousel button"
+            color="secondary"
+        >
+            <Circle/>
+        </IconButton>
     )
 }
 
@@ -38,8 +42,10 @@ export const PrevButton: React.FC<PrevNextButtonPropType> = (props) => {
             style={embla__button__prev}
             onClick={onClick}
             disabled={!enabled}
+            aria-label="Previous"
+            color="secondary"
         >
-            <ChevronLeft />
+            <ChevronLeft/>
         </IconButton>
     )
 }
@@ -52,6 +58,8 @@ export const NextButton: React.FC<PrevNextButtonPropType> = (props) => {
             style={embla__button__next}
             onClick={onClick}
             disabled={!enabled}
+            aria-label="Next"
+            color="secondary"
         >
             <ChevronRight />
         </IconButton>

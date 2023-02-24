@@ -125,7 +125,7 @@ export default function AllVoices() {
             <br />
             <br />
             <div style={figmaWrapper}>
-                <iframe style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
+                <iframe aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
                 </iframe>
             </div>
             <br />
@@ -137,8 +137,8 @@ export default function AllVoices() {
             <br />
             <br />
             <div style={videoWrapper}>
-            <iframe style={iframeStyle} src="https://www.youtube.com/embed/TmycswtSMgQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
-            </iframe>
+                <iframe aria-label="3D animation for integrations youtube video" style={iframeStyle} src="https://www.youtube.com/embed/TmycswtSMgQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                </iframe>
             </div>
             <br />
             <br />
@@ -152,8 +152,8 @@ export default function AllVoices() {
             <br />
             <Typography variant="h5">LinkedIn Announcement</Typography>
             <br />
-            <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank" passHref>
-                <ButtonBase focusRipple={true}>
+            <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank" passHref aria-label="LinkedIn announcment of case manager 2.0">
+                <ButtonBase focusRipple={true} aria-label="LinkedIn announcment of case manager 2.0">
                     <Image
                         src={LinkedInAnnouncement}
                         alt="LinkedIn announcment of case manager 2.0"
@@ -166,7 +166,7 @@ export default function AllVoices() {
             <Typography variant="h5">Design File</Typography>
             <br />
             <div style={figmaWrapper}>
-            <iframe style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmbdkirxM5pc1KH8vAqdTOR%2FProject-Facelift%3Fnode-id%3D159%253A8452%26t%3DYxSYO1DcqstRcYva-1" allowFullScreen={true}></iframe>
+                <iframe aria-label="Case Manager 2.0 Figma design file" style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmbdkirxM5pc1KH8vAqdTOR%2FProject-Facelift%3Fnode-id%3D159%253A8452%26t%3DYxSYO1DcqstRcYva-1" allowFullScreen={true}></iframe>
             </div>
             <br />
             <br />
@@ -183,7 +183,7 @@ export default function AllVoices() {
             <Typography variant="h5">Prototype</Typography>
             <br />
             <div style={figmaWrapper}>
-            <iframe style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmbdkirxM5pc1KH8vAqdTOR%2FCase-Manager-2.0%3Fpage-id%3D159%253A8452%26node-id%3D279%253A38530%26viewport%3D6%252C1662%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D279%253A38530%26show-proto-sidebar%3D1" allowFullScreen={true}></iframe>
+                <iframe aria-label="Case Manager 2.0 Figma prototype file" style={iframeStyle} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmbdkirxM5pc1KH8vAqdTOR%2FCase-Manager-2.0%3Fpage-id%3D159%253A8452%26node-id%3D279%253A38530%26viewport%3D6%252C1662%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D279%253A38530%26show-proto-sidebar%3D1" allowFullScreen={true}></iframe>
             </div>
             <br />
             <br />

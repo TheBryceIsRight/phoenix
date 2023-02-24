@@ -141,9 +141,13 @@ export default function Devportal() {
             <br />
             <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_lowfi" />
             <br />
+            <br />
+            <br />
             <Typography variant="h4">High Fidelity Mockups</Typography>
             <br />
             <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_hifi" />
+            <br />
+            <br />
             <br />
             <Typography variant="h4">Dark Mode</Typography>
             <br />
@@ -152,7 +156,7 @@ export default function Devportal() {
             <br />
             <br />
             <div style={figmaWrapper}>
-            <iframe style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4Pydx6tuDUhxGqBaLvzKpO%2FPortfolio-(Copy)%3Fpage-id%3D33%253A2049%26node-id%3D33%253A2050%26viewport%3D1180%252C1331%252C0.45%26scaling%3Dscale-down%26starting-point-node-id%3D33%253A2050" allowFullScreen={true}>
+            <iframe aria-label="Mobile Figma Prototype" style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4Pydx6tuDUhxGqBaLvzKpO%2FPortfolio-(Copy)%3Fpage-id%3D33%253A2049%26node-id%3D33%253A2050%26viewport%3D1180%252C1331%252C0.45%26scaling%3Dscale-down%26starting-point-node-id%3D33%253A2050" allowFullScreen={true}>
             </iframe>
             </div>
             <br />

@@ -138,7 +138,7 @@ export default function Functionize() {
             <br />
             <br />
             <div style={figmaWrapper}>
-                <iframe style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLELDGCXEKYpZOij4tOt740%2F%25F0%259F%25A7%25AA-Flow%3Fpage-id%3D0%253A1%26node-id%3D144%253A8604%26viewport%3D336%252C48%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D144%253A8604%26show-proto-sidebar%3D1" allowFullScreen={true}>
+                <iframe aria-label="Flow Figma Prototype" style={iframeStyle} title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLELDGCXEKYpZOij4tOt740%2F%25F0%259F%25A7%25AA-Flow%3Fpage-id%3D0%253A1%26node-id%3D144%253A8604%26viewport%3D336%252C48%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D144%253A8604%26show-proto-sidebar%3D1" allowFullScreen={true}>
                 </iframe>
             </div>
             <br />
@@ -148,7 +148,7 @@ export default function Functionize() {
             <Typography variant='body1'>The recent 5.1 release was the first step in the overhaul of the front end, and the first time many of my updates went live. Most of the changes were aimed at the core area of the product, the test detail page. This video was made with Visual Effects by Andrew Gassanoff and voiceover by Judy Bossi.</Typography>
             <br />
             <div style={videoWrapper}>
-                <iframe style={iframeStyle} src="https://www.youtube.com/embed/86OaXBYycQg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                <iframe aria-label="5.1 Release YouTube Video" style={iframeStyle} src="https://www.youtube.com/embed/86OaXBYycQg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
                 </iframe>
             </div>
             <br />
