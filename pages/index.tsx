@@ -54,7 +54,7 @@ export default function Index() {
         <Container>
           <section>
             <Link href="/work/allvoices" passHref>
-              <ButtonBase style={{ alignContent: "start" }} focusRipple={true}>
+              <ButtonBase style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
                 <Container>
                   {theme.palette.mode === "light" ?
                     <Image
@@ -95,7 +95,7 @@ export default function Index() {
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/functionize" passHref>
-                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -131,7 +131,7 @@ export default function Index() {
                 </ButtonBase>
               </Link>
               <Link href="/work/elavon-status" passHref>
-                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -167,7 +167,7 @@ export default function Index() {
                 </ButtonBase>
               </Link>
               <Link href="/work/elavon-dev" passHref>
-                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -203,7 +203,7 @@ export default function Index() {
                 </ButtonBase>
               </Link>
               <Link href="/work/me" passHref>
-                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                 <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
