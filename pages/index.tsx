@@ -34,7 +34,7 @@ export default function Index() {
           <br />
           <Typography variant='h3'>Hi! I'm Bryce</Typography>
           <br />
-          <Typography variant='h5'>I design and build user-centered software, with a focus on accessibility.</Typography>
+          <Typography variant='h4'>I design and build user-centered software, with a focus on accessibility.</Typography>
           <br />
           <Grid container spacing={2} alignItems='center' alignContent='center' maxWidth="lg" flexWrap="wrap" direction="column" >
             <Grid>
