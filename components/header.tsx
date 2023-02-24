@@ -11,26 +11,24 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { InsertDriveFile } from '@mui/icons-material';
 import Tooltip from '@mui/material/Tooltip';
 import { DarkMode } from '@mui/icons-material';
-import { useContext } from 'react';
+import { MoreHoriz } from '@mui/icons-material';
+import { useContext, useState } from 'react';
 import { ColorModeContext } from '../pages/_app';
-import * as gtag from "../lib/gtag"
-import Script from 'next/script';
+import { Menu, MenuItem } from '@mui/material';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
 
-  function resumeClickedEvent() {
-    <Script
-      id="google-analytics"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `gtag('event', 'click', {
-        'event_name': 'resume_click',
-      });`
-      }}
-    />
-    return null
-  }
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -64,45 +62,50 @@ const Header = () => {
               <DarkMode />
             </IconButton>
           </Tooltip>
-          <Link passHref onClickCapture={resumeClickedEvent()} href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
-            <Tooltip title="Resume" arrow>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="Resume - Google Docs"
-                sx={{ mr: 2 }}
-              >
-                <InsertDriveFile />
-              </IconButton>
-            </Tooltip>
-          </Link>
-          <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
-            <Tooltip title="LinkedIn" arrow>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="LinkedIn Profile"
-                sx={{ mr: 2 }}
-              >
-                <LinkedInIcon />
-              </IconButton>
-            </Tooltip>
-          </Link>
-          <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
-            <Tooltip title="GitHub" arrow>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="GitHub Profile"
-                sx={{ mr: 2 }}
-              >
-                <GitHubIcon />
-              </IconButton>
-            </Tooltip>
-          </Link>
+          <IconButton
+            id="context-menu"
+            aria-controls={open ? 'context menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+            color="secondary"
+          >
+            <MoreHoriz />
+          </IconButton>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'context-menu',
+            }}
+          >
+            <Link passHref href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
+              <MenuItem onClick={handleClose} component="a">
+                <ListItemIcon>
+                  <InsertDriveFile fontSize="medium"  color="secondary"/>
+                </ListItemIcon>
+                <ListItemText>Resume</ListItemText>
+              </MenuItem>
+            </Link>
+            <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
+              <MenuItem onClick={handleClose} component="a">
+                <ListItemIcon>
+                  <LinkedInIcon fontSize="medium" color="secondary" />
+                </ListItemIcon>
+                <ListItemText>LinkedIn</ListItemText>
+              </MenuItem>
+            </Link>
+            <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
+              <MenuItem onClick={handleClose} component="a">
+                <ListItemIcon >
+                  <GitHubIcon fontSize="medium" color="secondary"/>
+                </ListItemIcon>
+                <ListItemText>GitHub</ListItemText>
+              </MenuItem>
+            </Link>
+          </Menu>
         </Toolbar>
       </AppBar>
     </Box>
