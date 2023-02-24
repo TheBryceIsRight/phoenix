@@ -11,7 +11,7 @@ const Footer = () => {
           <Typography variant="h4">Bryce Watson&#39;s Design Portfolio</Typography>
           <br/>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <Link href="https://github.com/TheBryceIsRight/phoenix" target="_blank">
+            <Link href="https://github.com/TheBryceIsRight/phoenix" target="_blank" passHref>
               <Button
                 size="large"
                 color="secondary"

@@ -41,7 +41,7 @@ export default function Index() {
               <Typography variant='body1'>If you want to work with me I'm currently accepting freelance opportunities, so drop me a line at</Typography>
             </Grid>
             <Grid xs={8}>
-              <Link href="mailto:brycewatson315@gmail.com" >
+              <Link href="mailto:brycewatson315@gmail.com" passHref>
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                   brycewatson315@gmail.com
                 </Button>
@@ -53,8 +53,8 @@ export default function Index() {
         </MuiContainer>
         <Container>
           <section>
-            <Link href="/work/allvoices">
-              <ButtonBase style={{ alignContent: "start" }}>
+            <Link href="/work/allvoices" passHref>
+              <ButtonBase style={{ alignContent: "start" }} focusRipple={true}>
                 <Container>
                   {theme.palette.mode === "light" ?
                     <Image
@@ -94,8 +94,8 @@ export default function Index() {
             <Typography variant='h3'>Previous Work</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/work/functionize">
-                <ButtonBase style={{ textAlign: 'left' }}>
+              <Link href="/work/functionize" passHref>
+                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -130,8 +130,8 @@ export default function Index() {
                   </div>
                 </ButtonBase>
               </Link>
-              <Link href="/work/elavon-status">
-                <ButtonBase style={{ textAlign: 'left' }}>
+              <Link href="/work/elavon-status" passHref>
+                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -166,8 +166,8 @@ export default function Index() {
                   </div>
                 </ButtonBase>
               </Link>
-              <Link href="/work/elavon-dev">
-                <ButtonBase style={{ textAlign: 'left' }}>
+              <Link href="/work/elavon-dev" passHref>
+                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -202,8 +202,8 @@ export default function Index() {
                   </div>
                 </ButtonBase>
               </Link>
-              <Link href="/work/me">
-                <ButtonBase style={{ textAlign: 'left' }}>
+              <Link href="/work/me" passHref>
+                <ButtonBase style={{ textAlign: 'left' }} focusRipple={true}>
                 <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">

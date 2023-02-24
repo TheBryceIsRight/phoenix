@@ -36,13 +36,13 @@ const Header = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
-          <Link href="/">
+          <Link href="/" aria-hidden="true" passHref>
             <Tooltip title="Home" arrow>
               <IconButton
                 size="large"
                 edge="start"
                 color="secondary"
-                aria-label="menu"
+                aria-label="Home"
                 sx={{ mr: 2 }}
               >
                 <HomeIcon />
@@ -57,46 +57,46 @@ const Header = () => {
               size="large"
               edge="start"
               color="secondary"
-              aria-label="menu"
+              aria-label="Dark Mode"
               sx={{ mr: 2 }}
               onClick={colorMode.toggleColorMode}
             >
               <DarkMode />
             </IconButton>
           </Tooltip>
-          <Link onClickCapture={resumeClickedEvent()} href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
+          <Link passHref onClickCapture={resumeClickedEvent()} href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
             <Tooltip title="Resume" arrow>
               <IconButton
                 size="large"
                 edge="start"
                 color="secondary"
-                aria-label="menu"
+                aria-label="Resume - Google Docs"
                 sx={{ mr: 2 }}
               >
                 <InsertDriveFile />
               </IconButton>
             </Tooltip>
           </Link>
-          <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
+          <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
             <Tooltip title="LinkedIn" arrow>
               <IconButton
                 size="large"
                 edge="start"
                 color="secondary"
-                aria-label="menu"
+                aria-label="LinkedIn Profile"
                 sx={{ mr: 2 }}
               >
                 <LinkedInIcon />
               </IconButton>
             </Tooltip>
           </Link>
-          <Link href="https://github.com/TheBryceIsRight" target="_blank">
+          <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
             <Tooltip title="GitHub" arrow>
               <IconButton
                 size="large"
                 edge="start"
                 color="secondary"
-                aria-label="menu"
+                aria-label="GitHub Profile"
                 sx={{ mr: 2 }}
               >
                 <GitHubIcon />

@@ -152,8 +152,8 @@ export default function AllVoices() {
             <br />
             <Typography variant="h5">LinkedIn Announcement</Typography>
             <br />
-            <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank">
-                <ButtonBase>
+            <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank" passHref>
+                <ButtonBase focusRipple={true}>
                     <Image
                         src={LinkedInAnnouncement}
                         alt="LinkedIn announcment of case manager 2.0"
