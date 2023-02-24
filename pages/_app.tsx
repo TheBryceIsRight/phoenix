@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import * as gtag from "../lib/gtag"
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
+import Meta from '../components/meta';
 
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
@@ -124,6 +125,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <Meta/>
         <Analytics />
       </ThemeProvider>
     </ColorModeContext.Provider>
