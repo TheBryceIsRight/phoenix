@@ -51,6 +51,7 @@ function ProtectedImage({ src, alt }: Props) {
             src={src}
             alt={alt}
             style={{ borderRadius: 6 }}
+            loading="eager"
         ></Image>
     </div>;
 }

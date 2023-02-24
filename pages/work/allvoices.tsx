@@ -64,6 +64,7 @@ export default function AllVoices() {
             <Image
                 src={undraw_hero}
                 alt="Hero image for allvoices"
+                loading="eager"
             />
             <br />
             <br />

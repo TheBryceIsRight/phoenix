@@ -71,6 +71,7 @@ export default function Devportal() {
                 alt="Hero image for functionize"
                 width={1000}
                 height={1000}
+                loading="eager"
             />
             <br />
             <br />

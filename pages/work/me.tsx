@@ -59,6 +59,7 @@ export default function Aboutme() {
                 src={coffee}
                 alt="Me serving coffee next to a Kyoto brewer"
                 style={{ borderRadius: 6 }}
+                loading="eager"
             />
             <br />
             <Typography variant="body1">Photo Credit Georgia Tech Institute Communications
