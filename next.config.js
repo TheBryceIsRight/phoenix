@@ -1,7 +1,9 @@
 // @type {import('next').NextConfig}
 
-export const nextConfig = {
-    compiler: {
-      removeConsole: process.env.NODE_ENV === "production"
-    },
-  }
+const nextConfig = {
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production"
+  },
+}
+
+export default nextConfig
