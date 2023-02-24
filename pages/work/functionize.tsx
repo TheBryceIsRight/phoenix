@@ -46,6 +46,7 @@ export default function Functionize() {
             <title>Functionize</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <main aria-label="Functionize">
         <br />
         <br />
         <br />
@@ -188,5 +189,6 @@ export default function Functionize() {
         <br />
         <br />
         <br />
+        </main>
     </MyContainer>
 }

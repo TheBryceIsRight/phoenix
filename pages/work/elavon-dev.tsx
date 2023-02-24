@@ -48,6 +48,7 @@ export default function Devportal() {
             <title>Elavon - Dev Portal</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <main aria-label="Elavon Dev Portal">
         <br />
         <br />
         <br />
@@ -195,5 +196,6 @@ export default function Devportal() {
         <br />
         <br />
         <br />
+        </main>
     </MyContainer>
 }

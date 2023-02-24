@@ -123,7 +123,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <nav>
         <Header />
+        </nav>
         <Component {...pageProps} />
         <Meta/>
         <Analytics />

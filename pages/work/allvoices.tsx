@@ -43,6 +43,7 @@ export default function AllVoices() {
             <title>AllVoices</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <main aria-label="AllVoices">
         <br />
         <br />
         <br />
@@ -215,5 +216,6 @@ export default function AllVoices() {
         <br />
         <br />
         <br />
+        </main>
     </MyContainer>
 }

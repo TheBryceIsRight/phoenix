@@ -40,6 +40,7 @@ export default function Systemstatus() {
             <title>Elavon - System Status</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <main aria-label="Elavon System Status">
         <br />
         <br />
         <br />
@@ -191,5 +192,6 @@ export default function Systemstatus() {
         <br />
         <br />
         <br />
+        </main>
     </MyContainer>
 }

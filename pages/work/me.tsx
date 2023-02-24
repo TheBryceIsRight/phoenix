@@ -18,7 +18,7 @@ export default function Aboutme() {
             <title>About Me</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-
+        <main aria-label="About Me">
         <br />
         <br />
         <br />
@@ -77,5 +77,6 @@ export default function Aboutme() {
         <br />
         <br />
         <br />
+        </main>
     </MyContainer>
 }
