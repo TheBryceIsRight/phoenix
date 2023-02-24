@@ -12,12 +12,6 @@ import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 
-const videoWrapper = {
-    paddingBottom: "56.25%",
-    overflow: "hidden",
-    position: "relative",
-} as CSSProperties;
-
 const figmaWrapper = {
     paddingBottom: "100.00%",
     overflow: "hidden",
