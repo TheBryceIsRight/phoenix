@@ -63,16 +63,19 @@ const Header = () => {
               <DarkMode />
             </IconButton>
           </Tooltip>
-          <IconButton
-            id="context-menu"
-            aria-controls={open ? 'context menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
-            color="secondary"
-          >
-            <MoreHoriz />
-          </IconButton>
+          <Tooltip title="More Info" arrow>
+            <IconButton
+              id="context-menu"
+              aria-label='More Info'
+              aria-controls={open ? 'context menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}
+              color="secondary"
+            >
+              <MoreHoriz />
+            </IconButton>
+          </Tooltip>
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}
@@ -85,7 +88,7 @@ const Header = () => {
             <Link passHref href="/work/resume">
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
-                  <InsertDriveFile fontSize="medium"  color="secondary"/>
+                  <InsertDriveFile fontSize="medium" color="secondary" />
                 </ListItemIcon>
                 <ListItemText>Resume</ListItemText>
               </MenuItem>
@@ -101,7 +104,7 @@ const Header = () => {
             <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon >
-                  <GitHubIcon fontSize="medium" color="secondary"/>
+                  <GitHubIcon fontSize="medium" color="secondary" />
                 </ListItemIcon>
                 <ListItemText>GitHub</ListItemText>
               </MenuItem>
