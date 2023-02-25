@@ -18,7 +18,7 @@ export const FuncionizeTime = "Jul 2021 - May 2022"
 
 export const FunctionizeTitle = "UX Lead"
 
-export const FunctionizeDesc = "• UX Lead and sole designer for the Functionize testing automation suite. Oversaw conversion of the legacy repository from PHP to Vue.js. Originated and maintained an atomic design system based in Figma."
+export const FunctionizeDesc = "• UX Lead and sole designer for the Functionize testing automation suite. Oversaw conversion of the legacy repository from PHP to Vue.js. Originated and maintained an atomic design system based in Figma. Overhauled core functionality including the test editor and debug experience."
 
 export const FunctionizeLink = "https://www.functionize.com/"
 
