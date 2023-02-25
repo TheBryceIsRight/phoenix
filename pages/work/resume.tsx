@@ -3,7 +3,6 @@ import { Container } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import Head from 'next/head'
-import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"
 import { Button } from "@mui/material"
 import Link from "next/link"
