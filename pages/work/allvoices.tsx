@@ -12,6 +12,7 @@ import LinkedInAnnouncement from "../../public/assets/allvoices/LinkedIn_Announc
 import Connections from "../../public/assets/allvoices/Prototype_Connections.png"
 import Link from "next/link"
 import { CSSProperties } from "react"
+import Footer from "../../components/footer"
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -219,5 +220,8 @@ export default function AllVoices() {
             <br />
             <br />
         </main>
+        <footer>
+            <Footer/>
+        </footer>
     </MyContainer>
 }

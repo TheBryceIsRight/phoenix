@@ -82,20 +82,12 @@ const Header = () => {
               'aria-labelledby': 'context-menu',
             }}
           >
-            <Link passHref href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
+            <Link passHref href="/work/resume">
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
                   <InsertDriveFile fontSize="medium"  color="secondary"/>
                 </ListItemIcon>
                 <ListItemText>Resume</ListItemText>
-              </MenuItem>
-            </Link>
-            <Link passHref href="/work/resume">
-              <MenuItem onClick={handleClose} component="a">
-                <ListItemIcon>
-                  <Science fontSize="medium"  color="secondary"/>
-                </ListItemIcon>
-                <ListItemText>Resume v2</ListItemText>
               </MenuItem>
             </Link>
             <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">

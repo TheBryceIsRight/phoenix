@@ -11,6 +11,8 @@ import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
+import Footer from "../../components/footer"
+
 
 const figmaWrapper = {
     paddingBottom: "100.00%",
@@ -194,5 +196,8 @@ export default function Systemstatus() {
         <br />
         <br />
         </main>
+        <footer>
+            <Footer/>
+        </footer>
     </MyContainer>
 }

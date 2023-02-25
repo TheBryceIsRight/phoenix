@@ -9,6 +9,8 @@ import coffee from '../../public/assets/aboutme/coffee.png'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"
+import Footer from "../../components/footer"
+
 
 export default function Aboutme() {
     const theme = useTheme();
@@ -79,5 +81,8 @@ export default function Aboutme() {
         <br />
         <br />
         </main>
+        <footer>
+            <Footer/>
+        </footer>
     </MyContainer>
 }

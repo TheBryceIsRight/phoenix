@@ -46,7 +46,7 @@ export default function Index() {
                   brycewatson315@gmail.com
                 </Button>
               </Link>
-              </Grid>
+            </Grid>
           </Grid>
           <br />
           <br />
@@ -205,18 +205,18 @@ export default function Index() {
               </Link>
               <Link href="/work/me" passHref>
                 <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
-                <div>
+                  <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
-                          <Image
-                            src={Coffee}
-                            alt='Cover Image for About Me'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
+                        <Image
+                          src={Coffee}
+                          alt='Cover Image for About Me'
+                          width={1300}
+                          height={630}
+                          style={{ borderRadius: 8 }}
+                          placeholder='blur'
+                          loading="eager"
+                        />
                       </div>
                     </div>
                     <Typography variant='h4'>
@@ -224,6 +224,7 @@ export default function Index() {
                     </Typography>
                     <br />
                     <Typography variant='body1'>A brief intro</Typography>
+                    <br />
                   </div>
                 </ButtonBase>
               </Link>

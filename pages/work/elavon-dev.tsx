@@ -12,6 +12,8 @@ import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
+import Footer from "../../components/footer"
+
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -198,5 +200,8 @@ export default function Devportal() {
         <br />
         <br />
         </main>
+        <footer>
+            <Footer/>
+        </footer>
     </MyContainer>
 }
