@@ -111,6 +111,8 @@ export default function Resume() {
                 <br />
                 <br />
                 <Typography variant='h2' fontWeight={300}>Experience</Typography>
+                <br />
+                <br />
                 <ExperienceEntry logo="YOKE" time={YokeTime} title={YokeTitle} description={YokeDesc} link={YokeLink} />
                 <br />
                 <br />
