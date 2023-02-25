@@ -45,7 +45,8 @@ export default function Index() {
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                   brycewatson315@gmail.com
                 </Button>
-              </Link></Grid>
+              </Link>
+              </Grid>
           </Grid>
           <br />
           <br />

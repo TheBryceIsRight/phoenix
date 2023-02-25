@@ -17,6 +17,7 @@ import { ColorModeContext } from '../pages/_app';
 import { Menu, MenuItem } from '@mui/material';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import { Science } from '@mui/icons-material';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
@@ -87,6 +88,14 @@ const Header = () => {
                   <InsertDriveFile fontSize="medium"  color="secondary"/>
                 </ListItemIcon>
                 <ListItemText>Resume</ListItemText>
+              </MenuItem>
+            </Link>
+            <Link passHref href="/work/resume">
+              <MenuItem onClick={handleClose} component="a">
+                <ListItemIcon>
+                  <Science fontSize="medium"  color="secondary"/>
+                </ListItemIcon>
+                <ListItemText>Resume v2</ListItemText>
               </MenuItem>
             </Link>
             <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
