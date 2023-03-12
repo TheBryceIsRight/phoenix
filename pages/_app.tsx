@@ -10,13 +10,8 @@ import * as gtag from "../lib/gtag"
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import Meta from '../components/meta';
-import { Inter } from 'next/font/google'
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
-
-const inter = Inter({
-  subsets: ['latin'],
-})
 
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
@@ -49,9 +44,9 @@ const getDesignTokens = (mode: PaletteMode) => ({
   },
   typography: {
     fontFamily: [
+      'DM_Sans',
       '-apple-system',
       'BlinkMacSystemFont',
-      'Inter',
       '"Segoe UI"',
       '"Helvetica Neue"',
       'Arial',
@@ -130,7 +125,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <nav>
         <Header />
         </nav>
-        <Component {...pageProps} className={inter.className}/>
+        <Component {...pageProps}/>
         <Meta/>
         <Analytics />
       </ThemeProvider>

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: DM_Sans;
+    src: url("/fonts/DMSans-Medium.woff2");
+    format: ("woff2");
+    font-display: swap;
+  }
