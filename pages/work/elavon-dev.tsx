@@ -126,11 +126,13 @@ export default function Devportal() {
                 <Image
                     src={style_light}
                     alt="Elavon style guide for light mode"
+                    style={{ borderRadius: 6 }}
                 />
                 <br />
                 <Image
                     src={style_dark}
                     alt="Elavon style guide for dark mode"
+                    style={{ borderRadius: 6 }}
                 />
                 <br />
                 <br />
@@ -146,7 +148,9 @@ export default function Devportal() {
                 <br />
                 <Image
                     src={user_journey}
-                    alt="Elavon style guide for dark mode"
+                    alt="Elavon user journey"
+                    style={{ borderRadius: 6 }}
+
                 />
                 <br />
                 <br />
