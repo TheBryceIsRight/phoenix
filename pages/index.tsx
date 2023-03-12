@@ -16,7 +16,6 @@ import SystemStatus from "../public/assets/systemstatus/system-status.png"
 import Status_dark from "../public/assets/dark_mode/system-status.png"
 import DevPortal from '../public/assets/elavon/dev-portal.png'
 import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
-import Coffee from "../public/assets/aboutme/coffee.png"
 import LA from '../public/assets/aboutme/LANationalPark.jpg'
 import { useTheme } from '@mui/material'
 
