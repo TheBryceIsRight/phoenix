@@ -17,7 +17,6 @@ import { ColorModeContext } from '../pages/_app';
 import { Menu, MenuItem } from '@mui/material';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { Science } from '@mui/icons-material';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
@@ -49,7 +48,7 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            UX Design Portfolio
+            Bryce Watson's Portfolio
           </Typography>
           <Tooltip title="Dark Mode" arrow>
             <IconButton

@@ -1,16 +1,14 @@
-import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
 import { Container, Button } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import atlanta from '../../public/assets/aboutme/ATL.svg'
 import atlanta_night from '../../public/assets/aboutme/ATL_Night.svg'
-import coffee from '../../public/assets/aboutme/coffee.png'
+import LA from '../../public/assets/aboutme/LANationalPark.jpg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"
 import Footer from "../../components/footer"
-import Grid from '@mui/material/Unstable_Grid2'
 import Link from "next/link"
 import { InsertDriveFile } from "@mui/icons-material"
 
@@ -65,7 +63,7 @@ export default function Aboutme() {
                 <br />
                 <br />
                 <Image
-                    src={coffee}
+                    src={LA}
                     alt="Me serving coffee next to a Kyoto brewer"
                     style={{ borderRadius: 6 }}
                     loading="eager"
