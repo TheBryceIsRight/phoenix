@@ -17,6 +17,7 @@ import Status_dark from "../public/assets/dark_mode/system-status.png"
 import DevPortal from '../public/assets/elavon/dev-portal.png'
 import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
 import Coffee from "../public/assets/aboutme/coffee.png"
+import LA from '../public/assets/aboutme/LANationalPark.jpg'
 import { useTheme } from '@mui/material'
 
 export default function Index() {
@@ -209,7 +210,7 @@ export default function Index() {
                     <div className="mb-5">
                       <div className="sm:mx-0">
                         <Image
-                          src={Coffee}
+                          src={LA}
                           alt='Cover Image for About Me'
                           width={1300}
                           height={630}
