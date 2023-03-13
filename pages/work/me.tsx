@@ -25,20 +25,28 @@ export default function Aboutme() {
             <br />
             <br />
             <br />
+            <Container maxWidth="md">
+                <Typography variant='h3'>About Me</Typography>
+                <br />
+                <Typography variant='h6'>Hey! I'm Bryce, and I live in Atlanta, Georgia. I've worked in Fintech, QA automation, HR Tech, and crowd fundraising as a hybrid UX Designer and full stack developer.
+                </Typography>
+                <br />
+                <Typography variant='h6'>As a UX Designer I'm particularly passionate about accessibility. I've diagnosed, documented, and fixed over a thousand of these issues big and small across the different companies I've worked for.
+                </Typography>
+                <br />
+                <Typography variant='h6'>As a Developer I've helped implement my designs in React (including Next.js, the framework I wrote this site in), Vue, HTML, and CSS. I also have experience as a backend developer at AllVoices, writing performant and robust GraphQL APIs as well as automated tests that continue to operate in production today.
+                </Typography>
+                <br />
+                <br />
+                <Link href="/work/resume" passHref>
+                    <Button color='secondary' variant='outlined' startIcon={<InsertDriveFile />}>
+                        Resume
+                    </Button>
+                </Link>
+                <br />
+            </Container>
             <br />
-            <br />
-            <br />
-            <Typography variant='h3'>About Me</Typography>
-            <br />
-            <Typography variant='h5'>I'm a UX Designer living in Atlanta, Georgia. I love helping create intuitive, efficient, accessible experiences in consumer software though UX Design and Full Stack development.
-            </Typography>
-            <br />
-            <Link href="/work/resume" passHref>
-                <Button color='secondary' variant='outlined' startIcon={<InsertDriveFile />}>
-                    Resume
-                </Button>
-            </Link>
-            <br />
+
             <Container maxWidth="xl">
                 <br />
                 <br />
@@ -69,8 +77,10 @@ export default function Aboutme() {
                     loading="eager"
                 />
                 <br />
-                <Typography variant="body1">Photo Credit Georgia Tech Institute Communications
-                </Typography>
+                <Link href="https://www.linkedin.com/in/ksenia-b/" target="_blank">
+                    <Typography variant="body1">Photo Credit Ksenia Bogolyubtseva - QA Analyst
+                    </Typography>
+                </Link>
                 <br />
                 <br />
             </Container>

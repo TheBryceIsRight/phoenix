@@ -37,6 +37,9 @@ export default function Index() {
           <Typography variant='h4'>I design and build user-centered software, with a focus on accessibility.</Typography>
           <br />
           <Grid container spacing={2} alignItems='center' alignContent='center' maxWidth="lg" flexWrap="wrap" direction="column" >
+            <Grid maxWidth="md">
+              <Typography variant='h6'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
+            </Grid>
             <Grid>
               <Typography variant='body1'>If you want to work with me I'm currently accepting freelance opportunities, so drop me a line at</Typography>
             </Grid>
@@ -83,7 +86,7 @@ export default function Index() {
                     AllVoices
                   </Typography>
                   <br />
-                  <Typography variant="body1">Helping employees speak out in the workplace.</Typography>
+                  <Typography variant="h6">Helping employees speak out in the workplace.</Typography>
                 </Container>
               </ButtonBase>
             </Link>
@@ -127,7 +130,7 @@ export default function Index() {
                       Functionize
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Helping testers with a low to no code AI-powered automation platform</Typography>
+                    <Typography variant='h6'>Helping testers with a low to no code AI-powered automation platform</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -163,7 +166,7 @@ export default function Index() {
                       Elavon - System Status
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Visualizing outages and downtime for transparency and compliance</Typography>
+                    <Typography variant='h6'>Visualizing outages and downtime for transparency and compliance</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -199,7 +202,7 @@ export default function Index() {
                       Elavon - Developer Portal
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Helping developers understand credit card systems through good documentation</Typography>
+                    <Typography variant='h6'>Helping developers understand credit card systems through good documentation</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -223,7 +226,7 @@ export default function Index() {
                       About Me
                     </Typography>
                     <br />
-                    <Typography variant='body1'>A brief intro</Typography>
+                    <Typography variant='h6'>A brief intro</Typography>
                     <br />
                   </div>
                 </ButtonBase>
