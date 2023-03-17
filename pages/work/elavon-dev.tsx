@@ -12,8 +12,8 @@ import ProtectedImage from "../../components/protected-image"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
-import Footer from "../../components/footer"
 import user_journey from '../../public/assets/elavon/UserJourney.svg'
+import Layout from "../../components/layout"
 
 
 const videoWrapper = {
@@ -46,7 +46,7 @@ export default function Devportal() {
     const SLIDE_COUNT = 9
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
-    return <MyContainer>
+    return <Layout><MyContainer>
         <Head>
             <title>Elavon - Dev Portal</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -213,8 +213,6 @@ export default function Devportal() {
             <br />
             <br />
         </main>
-        <footer>
-            <Footer />
-        </footer>
     </MyContainer>
+    </Layout>
 }

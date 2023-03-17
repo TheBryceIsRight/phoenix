@@ -8,14 +8,14 @@ import LA from '../../public/assets/aboutme/LANationalPark.jpg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"
-import Footer from "../../components/footer"
+import Layout from "../../components/layout"
 import Link from "next/link"
 import { InsertDriveFile } from "@mui/icons-material"
 
 export default function Aboutme() {
     const theme = useTheme();
 
-    return <MyContainer>
+    return <Layout><MyContainer>
         <Head>
             <title>About Me</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -96,8 +96,6 @@ export default function Aboutme() {
             <br />
             <br />
         </main>
-        <footer>
-            <Footer />
-        </footer>
     </MyContainer>
+    </Layout>
 }

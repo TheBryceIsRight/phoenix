@@ -37,13 +37,14 @@ import Unity from "../../public/assets/aboutme/Unity.svg"
 import Unity_Dark from "../../public/assets/aboutme/Unity_Dark.svg"
 import ExperienceEntry from "../../components/experienceEntry"
 import { Download } from "@mui/icons-material"
+import Layout from "../../components/layout"
 
 
 
 export default function Resume() {
     const theme = useTheme();
 
-    return <MyContainer>
+    return <Layout><MyContainer>
         <Head>
             <title>Resume</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -368,6 +369,10 @@ export default function Resume() {
             <br />
             <br />
             <br />
+            <br />
+            <br />
+            <br />
         </main>
     </MyContainer>
+    </Layout>
 }
