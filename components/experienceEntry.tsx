@@ -108,7 +108,7 @@ const ExperienceEntry: React.FC<PropType> = (props) => {
             <Grid>
                 <Grid container spacing={{ xs: 2, md: 2, lg: 4 }} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
                     <Grid>
-                        <Typography variant='h6'>{props.title}</Typography>
+                        <Typography variant='h5'>{props.title}</Typography>
                     </Grid>
                     <Grid>
                         <Typography variant='body1' maxWidth={740}>{props.description}</Typography>

@@ -16,9 +16,9 @@ export const AllVoicesTitle2 = "Full Stack Developer"
 
 export const AllVoicesDesc2 = "• Write clean, high-quality, high-performance, maintainable code. Take ownership of end to end feature development working closely with Product Management and Engineering Leads. Support test and deployment of new products and features. Participate in code reviews. Build dynamic, responsive, low latency APIs. Work in a team as well as independently to deliver on Product development schedules and goals."
 
-
-
 export const AllVoicesLink = "https://www.allvoices.co/"
+
+export const AllVoicesNote = "In addition to the responsibilities of the Product Design Lead"
 
 export const FuncionizeTime = "Jul 2021 - May 2022"
 

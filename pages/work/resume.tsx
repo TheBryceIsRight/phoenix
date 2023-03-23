@@ -13,7 +13,7 @@ import { IconButton } from "@mui/material"
 import LinkedIn from "@mui/icons-material/LinkedIn"
 import GitHub from "@mui/icons-material/GitHub"
 import Toolbar from '@mui/material/Toolbar';
-import { YokeDesc, YokeTime, YokeTitle, FuncionizeTime, FunctionizeDesc, FunctionizeTitle, ElavonTime, ElavonTitle, ElavonDesc, GatechTime, GatechDesc, GatechTitle, GatechTATime, GatechTADesc, GatechTATitle, AllVoicesTime, AllVoicesTitle, AllVoicesDesc, YokeLink, AllVoicesLink, FunctionizeLink, ElavonLink, GatechTALink, ToHellWithGeorgia, AllVoicesTitle2, AllVoicesDesc2 } from "../../lib/strings"
+import { YokeDesc, YokeTime, YokeTitle, FuncionizeTime, FunctionizeDesc, FunctionizeTitle, ElavonTime, ElavonTitle, ElavonDesc, GatechTime, GatechDesc, GatechTitle, GatechTATime, GatechTADesc, GatechTATitle, AllVoicesTime, AllVoicesTitle, AllVoicesDesc, YokeLink, AllVoicesLink, FunctionizeLink, ElavonLink, GatechTALink, ToHellWithGeorgia, AllVoicesTitle2, AllVoicesDesc2, AllVoicesNote } from "../../lib/strings"
 import NextJS from "../../public/assets/aboutme/NextJS.svg"
 import NextJS_Dark from "../../public/assets/aboutme/NextJS_Dark.svg"
 import ReactJS from "../../public/assets/aboutme/ReactJS.svg"
@@ -115,15 +115,16 @@ export default function Resume() {
                 <ExperienceEntry logo="YOKE" time={YokeTime} title={YokeTitle} description={YokeDesc} link={YokeLink} />
                 <br />
                 <br />
-                <ExperienceEntry logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle2} description={AllVoicesDesc2} link={AllVoicesLink} />
+                <ExperienceEntry logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle} description={AllVoicesDesc} link={AllVoicesLink} />
                 <Grid container spacing={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 6 }} direction="row" alignItems='flex-start' alignContent='flex-start' maxWidth="xl">
                 <Grid>
                     <Grid container spacing={{ xs: 2, md: 2, lg: 4 }} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
                         <Grid>
-                            <Typography variant='h6'>{AllVoicesTitle}</Typography>
+                            <Typography variant='h5'>{AllVoicesTitle2}</Typography>
+                            <Typography variant='h6'>{AllVoicesNote}</Typography>
                         </Grid>
                         <Grid>
-                            <Typography variant='body1' maxWidth={740}>{AllVoicesDesc}</Typography>
+                            <Typography variant='body1' maxWidth={740}>{AllVoicesDesc2}</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
