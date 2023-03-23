@@ -12,6 +12,12 @@ export const AllVoicesTitle = "Product Design Lead"
 
 export const AllVoicesDesc = "• UX Lead and sole designer for the AllVoices Employee Feedback Management Platform. Created high fidelity mockups using user-centered design for a platform that handles anonymous feedback and HR violations. Acted as the technical accessibility consultant to ensure compliance to WCAG 2.1 AA standards and best practices. Originated and maintained an atomic design system based in Figma. Created 3D graphics and animation in Blender and After Effects. "
 
+export const AllVoicesTitle2 = "Full Stack Developer"
+
+export const AllVoicesDesc2 = "• Write clean, high-quality, high-performance, maintainable code. Take ownership of end to end feature development working closely with Product Management and Engineering Leads. Support test and deployment of new products and features. Participate in code reviews. Build dynamic, responsive, low latency APIs. Work in a team as well as independently to deliver on Product development schedules and goals."
+
+
+
 export const AllVoicesLink = "https://www.allvoices.co/"
 
 export const FuncionizeTime = "Jul 2021 - May 2022"
