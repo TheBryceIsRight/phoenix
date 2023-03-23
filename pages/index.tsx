@@ -16,6 +16,8 @@ import SystemStatus from "../public/assets/systemstatus/system-status.png"
 import Status_dark from "../public/assets/dark_mode/system-status.png"
 import DevPortal from '../public/assets/elavon/dev-portal.png'
 import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
+import SandrasPortfolio from "../public/assets/aboutme/SandraArtAndDesign.png"
+import SandrasPortfolioDark from "../public/assets/aboutme/SandraArtAndDesignDark.png"
 import LA from '../public/assets/aboutme/LANationalPark.jpg'
 import { useTheme } from '@mui/material'
 
@@ -232,6 +234,47 @@ export default function Index() {
                 </ButtonBase>
               </Link>
             </div>
+          </section>
+          <br />
+          <section>
+            <Typography variant='h3'>Freelance Work</Typography>
+            <br />
+            <br />
+            <Typography variant="h6">A graphic design & animation portfolio site I built for my friend, fully translated into English, Spanish, and Catalan</Typography>
+            <br/>
+            <Link href="https://sandra-benito-art-and-design.vercel.app/" passHref target="_blank">
+              <ButtonBase style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
+                <Container>
+
+                  <br />
+                  {theme.palette.mode === "light" ?
+                    <Image
+                      src={SandrasPortfolio}
+                      alt="Cover Image for Sandra's Graphic Design Portfolio"
+                      style={{ borderRadius: 8 }}
+                      placeholder='blur'
+                      loading="eager"
+                    />
+                    :
+                    <Image
+                      src={SandrasPortfolioDark}
+                      alt="Cover Image for Sandra's Graphic Design Portfolio"
+                      style={{ borderRadius: 8 }}
+                      placeholder='blur'
+                      loading="eager"
+                    />
+                  }
+                  <br />
+
+                  <br />
+
+                </Container>
+              </ButtonBase>
+            </Link>
+            <br />
+            <br />
+            <br />
+            <br />
           </section>
         </Container>
       </Layout>
