@@ -117,17 +117,17 @@ export default function Resume() {
                 <br />
                 <ExperienceEntry logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle} description={AllVoicesDesc} link={AllVoicesLink} />
                 <Grid container spacing={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 6 }} direction="row" alignItems='flex-start' alignContent='flex-start' maxWidth="xl">
-                <Grid>
-                    <Grid container spacing={{ xs: 2, md: 2, lg: 4 }} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
-                        <Grid>
-                            <Typography variant='h5'>{AllVoicesTitle2}</Typography>
-                            <Typography variant='h6'>{AllVoicesNote}</Typography>
-                        </Grid>
-                        <Grid>
-                            <Typography variant='body1' maxWidth={740}>{AllVoicesDesc2}</Typography>
+                    <Grid>
+                        <Grid container spacing={{ xs: 2, md: 2, lg: 4 }} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
+                            <Grid>
+                                <Typography variant='h5'>{AllVoicesTitle2}</Typography>
+                                <Typography variant='h6'>{AllVoicesNote}</Typography>
+                            </Grid>
+                            <Grid>
+                                <Typography variant='body1' maxWidth={740}>{AllVoicesDesc2}</Typography>
+                            </Grid>
                         </Grid>
                     </Grid>
-                </Grid>
                 </Grid>
                 <br />
                 <br />
@@ -155,23 +155,25 @@ export default function Resume() {
                 <br />
                 <Grid container spacing={6}>
                     <Grid style={{ textAlign: "center" }}>
-                        {theme.palette.mode === "light" ?
-                            <Image
-                                src={NextJS}
-                                alt="NextJS"
-                                height={100}
-                                width={100}
-                            >
-                            </Image>
-                            :
-                            <Image
-                                src={NextJS_Dark}
-                                alt="NextJS"
-                                height={100}
-                                width={100}
-                            >
-                            </Image>
-                        }
+                        <Tooltip title="I wrote this portfolio in Next.js!">
+                            {theme.palette.mode === "light" ?
+                                <Image
+                                    src={NextJS}
+                                    alt="NextJS"
+                                    height={100}
+                                    width={100}
+                                >
+                                </Image>
+                                :
+                                <Image
+                                    src={NextJS_Dark}
+                                    alt="NextJS"
+                                    height={100}
+                                    width={100}
+                                >
+                                </Image>
+                            }
+                        </Tooltip>
                         <br />
                         <Typography variant='body1'>Next.js</Typography>
                     </Grid>
