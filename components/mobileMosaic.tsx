@@ -13,8 +13,8 @@ const Label = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(0),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0,
+    borderBottomLeftRadius: 4,
+    borderBottomRightRadius: 4,
     elevation: 0,
 }));
 
@@ -35,7 +35,7 @@ const MobileMosaic: React.FC<PropType> = (props) => {
                     <div key={index}>
                         <Label>
                             <br />
-                            <Typography variant="caption">{item.title}</Typography>
+                            <Typography variant="body1">{item.title}</Typography>
                             <br />
                             <Image
                                 src={item.img}
