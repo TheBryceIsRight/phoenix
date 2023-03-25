@@ -12,7 +12,7 @@ import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
-
+import MobileMosaic from "../../components/mobileMosaic"
 
 
 const figmaWrapper = {
@@ -153,6 +153,13 @@ export default function Systemstatus() {
                     <Typography variant="h4">Dark Mode</Typography>
                     <br />
                     <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi_dark" />
+                    <br/>
+                    <br/>
+                    <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
+                    <br/>
+                    <MobileMosaic type="system_status"/>
+                    <br/>
+                    <br/>
                     <Typography variant="h4">Mobile Prototype</Typography>
                     <br />
                     <br />

@@ -1,7 +1,7 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Container } from "@mui/material"
-import { Typography } from "@mui/material"
+import { Container, Box, Typography, Paper } from "@mui/material"
+import { Masonry } from '@mui/lab';
 import Image from 'next/image'
 import site_map from '../../public/assets/elavon/site_map.svg'
 import undraw_hero from '../../public/assets/elavon/undraw_hero.svg'
@@ -14,7 +14,9 @@ import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 import user_journey from '../../public/assets/elavon/UserJourney.svg'
 import Layout from "../../components/layout"
-
+import { itemData } from "../../lib/imageData"
+import { styled } from '@mui/material/styles';
+import MobileMosaic from "../../components/mobileMosaic";
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -38,6 +40,17 @@ const iframeStyle = {
     width: "100%",
     height: "100%",
 } as CSSProperties;
+
+const Label = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(0),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    elevation: 0,
+  }));
 
 
 
@@ -169,6 +182,14 @@ export default function Devportal() {
                 <Typography variant="h4">Dark Mode</Typography>
                 <br />
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_hifi_dark" />
+                <br />
+                <br />
+                <br />
+                <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
+                <br />
+                <MobileMosaic type="dev_portal"/>
+                <br />
+                <br />
                 <Typography variant="h4">Mobile Prototype</Typography>
                 <br />
                 <br />

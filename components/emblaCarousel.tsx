@@ -17,6 +17,7 @@ import { altByIndex } from "./imageByIndex"
 const autoplayOptions = {
     delay: 8000,
     stopOnInteraction: true,
+    stopOnMouseEnter: true,
     rootNode: (emblaRoot) => emblaRoot.parentElement,
 }
 
@@ -74,7 +75,7 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
     const { slides, options } = props
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions), AutoHeight()])
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [AutoHeight()])
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0)
