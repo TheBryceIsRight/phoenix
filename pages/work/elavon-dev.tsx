@@ -50,7 +50,7 @@ const Label = styled(Paper)(({ theme }) => ({
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 0,
     elevation: 0,
-  }));
+}));
 
 
 
@@ -167,6 +167,10 @@ export default function Devportal() {
                 />
                 <br />
                 <br />
+                <Typography variant="h4">Sketches</Typography>
+                <br />
+                <MobileMosaic type="sketches" />
+                <br />
                 <Typography variant="h4">Low Fidelity Mockups</Typography>
                 <br />
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} type="devportal_lowfi" />
@@ -187,7 +191,7 @@ export default function Devportal() {
                 <br />
                 <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
                 <br />
-                <MobileMosaic type="dev_portal"/>
+                <MobileMosaic type="dev_portal" />
                 <br />
                 <br />
                 <Typography variant="h4">Mobile Prototype</Typography>

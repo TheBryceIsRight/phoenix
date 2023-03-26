@@ -1,7 +1,7 @@
 import { Masonry } from "@mui/lab";
 import Image from "next/image";
 import { Typography, Box, Paper, styled } from "@mui/material";
-import { itemData, itemData2 } from "../lib/imageData"
+import { itemData, itemData2, sketches } from "../lib/imageData"
 
 type PropType = {
     type: string
@@ -24,8 +24,10 @@ const MobileMosaic: React.FC<PropType> = (props) => {
 
     if (props.type === "dev_portal") {
         images = itemData
-    } else {
+    } else if(props.type == "system_status") {
         images = itemData2
+    } else {
+        images = sketches
     }
 
     return (

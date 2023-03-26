@@ -9,6 +9,7 @@ import LowFi8 from "../public/assets/elavon/dev-low-fi/low_fi_08.svg"
 import LowFi9 from "../public/assets/elavon/dev-low-fi/low_fi_09.svg"
 import HiFi1_Light from "../public/assets/elavon/dev-hi-fi/hifi_01.svg"
 import HiFi2_Light from "../public/assets/elavon/dev-hi-fi/hifi_02.svg"
+import Light_404 from "../public/assets/elavon/dev-hi-fi/404.png"
 import HiFi3_Light from "../public/assets/elavon/dev-hi-fi/hifi_03.svg"
 import HiFi4_Light from "../public/assets/elavon/dev-hi-fi/hifi_04.svg"
 import HiFi5_Light from "../public/assets/elavon/dev-hi-fi/hifi_05.svg"
@@ -18,6 +19,7 @@ import HiFi8_Light from "../public/assets/elavon/dev-hi-fi/hifi_08.svg"
 import HiFi9_Light from "../public/assets/elavon/dev-hi-fi/hifi_09.svg"
 import HiFi1_Dark from "../public/assets/elavon/dev-hi-fi-dark/hifi_dark_01.svg"
 import HiFi2_Dark from "../public/assets/elavon/dev-hi-fi-dark/hifi_dark_02.svg"
+import Dark_404 from "../public/assets/elavon/dev-hi-fi-dark/404.png"
 import HiFi3_Dark from "../public/assets/elavon/dev-hi-fi-dark/hifi_dark_03.svg"
 import HiFi4_Dark from "../public/assets/elavon/dev-hi-fi-dark/hifi_dark_04.svg"
 import HiFi5_Dark from "../public/assets/elavon/dev-hi-fi-dark/hifi_dark_05.svg"
@@ -69,13 +71,13 @@ export const dev_portal_lowfi: string[] = [LowFi1, LowFi2, LowFi3, LowFi4, LowFi
 
 export const dev_portal_lowfi_alt: string[] = ["Home Page Low Fidelity Mockup", "Contact Us Page Low Fidelity Mockup", "Product Page Low Fidelity Mockup", "Product Documentation Home Page Low Fidelity Mockup", "Contact Us Page Low Fidelity Mockup", "Marketplace Page Low Fidelity Mockup", "Profile Page Low Fidelity Mockup", "Product Detail Page Low Fidelity Mockup", "Profile Page Low Fidelity Mockup Alt"]
 
-export const devportal_hifi: string[] = [HiFi1_Light, HiFi2_Light, HiFi3_Light, HiFi4_Light, HiFi5_Light, HiFi6_Light, HiFi7_Light, HiFi8_Light, HiFi9_Light]
+export const devportal_hifi: string[] = [HiFi1_Light, HiFi2_Light, Light_404, HiFi3_Light, HiFi4_Light, HiFi5_Light, HiFi6_Light, HiFi7_Light, HiFi8_Light, HiFi9_Light]
 
-export const dev_portal_hifi_alt: string[] = ["Home Page High Fidelity Mockup", "Contact Us Page High Fidelity Mockup", "Product Page High Fidelity Mockup", "Product Documentation Home Page High Fidelity Mockup", "Contact Us Page High Fidelity Mockup", "Marketplace Page High Fidelity Mockup", "Profile Page High Fidelity Mockup", "Product Detail Page High Fidelity Mockup", "Profile Page High Fidelity Mockup Alt"]
+export const dev_portal_hifi_alt: string[] = ["Home Page High Fidelity Mockup", "Contact Us Page High Fidelity Mockup", "404 Page Light High Fidelity Mockup", "Product Page High Fidelity Mockup", "Product Documentation Home Page High Fidelity Mockup", "Contact Us Page High Fidelity Mockup", "Marketplace Page High Fidelity Mockup", "Profile Page High Fidelity Mockup", "Product Detail Page High Fidelity Mockup", "Profile Page High Fidelity Mockup Alt"]
 
-export const devportal_hifi_dark: string[] = [HiFi1_Dark, HiFi2_Dark, HiFi3_Dark, HiFi4_Dark, HiFi5_Dark, HiFi6_Dark, HiFi7_Dark, HiFi8_Dark, HiFi9_Dark]
+export const devportal_hifi_dark: string[] = [HiFi1_Dark, HiFi2_Dark, Dark_404,  HiFi3_Dark, HiFi4_Dark, HiFi5_Dark, HiFi6_Dark, HiFi7_Dark, HiFi8_Dark, HiFi9_Dark]
 
-export const dev_portal_hifi_dark_alt: string[] = ["Home Page Dark High Fidelity Mockup", "Contact Us Page Dark High Fidelity Mockup", "Product Page Dark High Fidelity Mockup", "Product Documentation Home Page Dark High Fidelity Mockup", "Contact Us Page Dark High Fidelity Mockup", "Marketplace Page Dark High Fidelity Mockup", "Profile Page Dark High Fidelity Mockup", "Product Detail Page Dark High Fidelity Mockup", "Profile Page Dark High Fidelity Mockup Alt"]
+export const dev_portal_hifi_dark_alt: string[] = ["Home Page Dark High Fidelity Mockup", "Contact Us Page Dark High Fidelity Mockup", "404 Page Dark High Fidelity Mockup",  "Product Page Dark High Fidelity Mockup", "Product Documentation Home Page Dark High Fidelity Mockup", "Contact Us Page Dark High Fidelity Mockup", "Marketplace Page Dark High Fidelity Mockup", "Profile Page Dark High Fidelity Mockup", "Product Detail Page Dark High Fidelity Mockup", "Profile Page Dark High Fidelity Mockup Alt"]
 
 export const status_lowfi: string[] = [StatusLowFi1, StatusLowFi2, StatusLowFi3, StatusLowFi4, StatusLowFi5, StatusLowFi6, StatusLowFi7]
 
