@@ -10,7 +10,7 @@ export const AllVoicesTime = "May 2022 - Jan 2023"
 
 export const AllVoicesTitle = "Product Design Lead"
 
-export const AllVoicesDesc = "• UX Lead and sole designer for the AllVoices Employee Feedback Management Platform. Created high fidelity mockups using user-centered design for a platform that handles anonymous feedback and HR violations. Acted as the technical accessibility consultant to ensure compliance to WCAG 2.1 AA standards and best practices. Originated and maintained an atomic design system based in Figma. Created 3D graphics and animation in Blender and After Effects. "
+export const AllVoicesDesc = "• Product Design Lead and sole designer for the AllVoices Employee Feedback Management Platform. Created high fidelity mockups using user-centered design for a platform that handles anonymous feedback and HR violations. Acted as the technical accessibility consultant to ensure compliance to WCAG 2.1 AA standards and best practices. Originated and maintained an atomic design system based in Figma. Created 3D graphics and animation in Blender and After Effects. "
 
 export const AllVoicesTitle2 = "Full Stack Developer"
 
@@ -22,9 +22,9 @@ export const AllVoicesNote = "In addition to the responsibilities of the Product
 
 export const FuncionizeTime = "Jul 2021 - May 2022"
 
-export const FunctionizeTitle = "UX Lead"
+export const FunctionizeTitle = "Product Design Lead"
 
-export const FunctionizeDesc = "• UX Lead and sole designer for the Functionize testing automation suite. Originated and maintained an atomic design system based in Figma. Overhauled core functionality including the test editor and debug experience. Co-led an international team in conversion of the legacy website in PHP to it’s total replacement in Vue.js."
+export const FunctionizeDesc = "• Product Design Lead and sole designer for the Functionize testing automation suite. Originated and maintained an atomic design system based in Figma. Overhauled core functionality including the test editor and debug experience. Co-led an international team in conversion of the legacy website in PHP to it’s total replacement in Vue.js."
 
 export const FunctionizeLink = "https://www.functionize.com/"
 

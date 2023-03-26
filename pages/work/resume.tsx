@@ -36,6 +36,7 @@ import Blender from "../../public/assets/aboutme/Blender.svg"
 import Unity from "../../public/assets/aboutme/Unity.svg"
 import Unity_Dark from "../../public/assets/aboutme/Unity_Dark.svg"
 import ExperienceEntry from "../../components/experienceEntry"
+import ExperienceEntryExtended from "../../components/experienceEntryExtended"
 import { Download } from "@mui/icons-material"
 import Layout from "../../components/layout"
 
@@ -115,20 +116,7 @@ export default function Resume() {
                 <ExperienceEntry logo="YOKE" time={YokeTime} title={YokeTitle} description={YokeDesc} link={YokeLink} />
                 <br />
                 <br />
-                <ExperienceEntry logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle} description={AllVoicesDesc} link={AllVoicesLink} />
-                <Grid container spacing={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 6 }} direction="row" alignItems='flex-start' alignContent='flex-start' maxWidth="xl">
-                    <Grid>
-                        <Grid container spacing={{ xs: 2, md: 2, lg: 4 }} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
-                            <Grid>
-                                <Typography variant='h5'>{AllVoicesTitle2}</Typography>
-                                <Typography variant='h6'>{AllVoicesNote}</Typography>
-                            </Grid>
-                            <Grid>
-                                <Typography variant='body1' maxWidth={740}>{AllVoicesDesc2}</Typography>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
+                <ExperienceEntryExtended logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle} description={AllVoicesDesc} link={AllVoicesLink} title2={AllVoicesTitle2} description2={AllVoicesDesc2} note={AllVoicesNote} />
                 <br />
                 <br />
                 <ExperienceEntry logo="Functionize" time={FuncionizeTime} title={FunctionizeTitle} description={FunctionizeDesc} link={FunctionizeLink} />
