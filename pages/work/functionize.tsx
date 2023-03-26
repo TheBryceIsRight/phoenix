@@ -160,7 +160,7 @@ export default function Functionize() {
                 <Typography variant='h4'>Takeaways</Typography>
                 <br />
                 <br />
-                <Typography variant='h4'>Listen to your customers
+                <Typography variant='h6'>Listen to your customers
                 </Typography>
                 <br />
                 <Typography variant='body1'>Customers often have great suggestions for ways to improve the product. I enjoyed talking to testers and sdets who have used Functionize as their automation tool and what their pain points where.
