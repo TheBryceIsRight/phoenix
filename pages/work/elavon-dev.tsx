@@ -16,7 +16,7 @@ import user_journey from '../../public/assets/elavon/UserJourney.svg'
 import Layout from "../../components/layout"
 import { itemData } from "../../lib/imageData"
 import { styled } from '@mui/material/styles';
-import MobileMosaic from "../../components/mobileMosaic";
+import Mosaic from "../../components/mosaic";
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -169,7 +169,7 @@ export default function Devportal() {
                 <br />
                 <Typography variant="h4">Sketches</Typography>
                 <br />
-                <MobileMosaic type="sketches" />
+                <Mosaic type="sketches" />
                 <br />
                 <Typography variant="h4">Low Fidelity Mockups</Typography>
                 <br />
@@ -191,7 +191,7 @@ export default function Devportal() {
                 <br />
                 <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
                 <br />
-                <MobileMosaic type="dev_portal" />
+                <Mosaic type="dev_portal" />
                 <br />
                 <br />
                 <Typography variant="h4">Mobile Prototype</Typography>

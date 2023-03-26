@@ -12,7 +12,7 @@ import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
-import MobileMosaic from "../../components/mobileMosaic"
+import Mosaic from "../../components/mosaic"
 
 
 const figmaWrapper = {
@@ -157,7 +157,7 @@ export default function Systemstatus() {
                     <br/>
                     <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
                     <br/>
-                    <MobileMosaic type="system_status"/>
+                    <Mosaic type="system_status"/>
                     <br/>
                     <br/>
                     <Typography variant="h4">Mobile Prototype</Typography>
