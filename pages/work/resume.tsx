@@ -37,6 +37,7 @@ import Unity from "../../public/assets/aboutme/Unity.svg"
 import Unity_Dark from "../../public/assets/aboutme/Unity_Dark.svg"
 import ExperienceEntry from "../../components/experienceEntry"
 import ExperienceEntryExtended from "../../components/experienceEntryExtended"
+import AdobeXD from "../../public/assets/aboutme/XD.svg"
 import { Download } from "@mui/icons-material"
 import Layout from "../../components/layout"
 
@@ -304,6 +305,16 @@ export default function Resume() {
                         </Image>
                         <br />
                         <Typography variant='body1'>Sketch</Typography>
+                    </Grid>
+                    <Grid style={{ textAlign: "center" }}>
+                        <Image
+                            src={AdobeXD}
+                            alt="Illustrator"
+                            height={100}
+                        >
+                        </Image>
+                        <br />
+                        <Typography variant='body1'>Adobe XD</Typography>
                     </Grid>
                     <Grid style={{ textAlign: "center" }}>
                         <Image
