@@ -79,7 +79,7 @@ export default function AllVoices() {
                     <Typography variant='h4'>How do we give employees a platform to make their voice heard in the workplace?
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Everyone deserves a voice in workplace culture reform. As the head of product design at AllVoices I help employees find a space to better communicate with their leadership teams. I report to Jeff Harris, VP of Product and work with Annie Meadows, Senior Product Owner, and Mateo Allen, Project Manager.
+                    <Typography variant='body1'>Everyone deserves a voice in workplace culture reform. As the head of product design at AllVoices I helped employees find a space to better communicate with their leadership teams. I reported to Jeff Harris, VP of Product and worked with Annie Meadows, Senior Product Owner, and Mateo Allen, Project Manager.
                     </Typography>
                     <br />
                     <br />
@@ -89,7 +89,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant='h6'>Employees First</Typography>
                     <br />
-                    <Typography variant='body1'>Our platform provides a space to provide feedback but also serious concerns that may be criminal in nature. Retaliation is unfortunately common, and software like AllVoices helps create a paper trail that keeps bad actors accountable for their behavior.
+                    <Typography variant='body1'>Their platform provides a space to provide feedback but also serious concerns that may be criminal in nature. Retaliation is unfortunately common, and software like AllVoices helps create a paper trail that keeps bad actors accountable for their behavior.
                     </Typography>
                     <br />
                     <br />
@@ -101,7 +101,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant='h6'>Multi-dimensional impact</Typography>
                     <br />
-                    <Typography variant='body1'>At AllVoices I began to offer a broader set skills than I had performed in the past and got 3D animation in Blender, 2D animation in After Effects, and graphical illustration approved for marketing use. I also helped out with full-stack development in Node.js to make the company&#39;s Slack integration.
+                    <Typography variant='body1'>At AllVoices I began to offer a broader set skills than I had performed in the past and got 3D animation in Blender, 2D animation in After Effects, and graphical illustration approved for marketing use. I also helped out with full-stack development in Node.js to make the company&#39;s Slack integration and wrote fully complete GraphQL APIs for a number of projects.
                     </Typography>
                     <br />
                     <br />
@@ -207,7 +207,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant='h6'>Letting an employee go is never easy. An accurate record of behavior forces the change that need to happen.</Typography>
                     <br />
-                    <Typography variant='body1'>No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect people and work on themselves, but some never do. AllVoices tracks every single change to a case with a permanent, unchangeable activity log. AllVoices keeps bad actors accountable, so when the time comes the paperwork trail is immaculate.
+                    <Typography variant='body1'>No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect others and work on themselves, but some never do. AllVoices tracks every single change to a case with a permanent, unchangeable activity log. AllVoices keeps bad actors accountable, so when employees continue to exhibit poor behavior the paper trail is immaculate.
                     </Typography>
                     <br />
                     <br />
