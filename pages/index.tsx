@@ -43,7 +43,7 @@ export default function Index() {
               <Typography variant='h6'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
             </Grid>
             <Grid>
-              <Typography variant='body1'>If you want to work with me I'm currently accepting freelance opportunities, so drop me a line at</Typography>
+              <Typography variant='body1'>If you want to work with me I'm currently looking for full time and contract opportunities, so drop me a line at</Typography>
             </Grid>
             <Grid xs={8}>
               <Link href="mailto:brycewatson315@gmail.com" passHref>
