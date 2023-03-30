@@ -130,6 +130,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                         <Image
                                             src={imageByIndex(index, props.type)}
                                             alt={altByIndex(index, props.type)}
+                                            height={906}
+                                            width={1200}
                                         />
                                         :
                                         <Image
