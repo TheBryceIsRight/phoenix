@@ -11,6 +11,23 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import Meta from '../components/meta';
 
+declare module '@mui/material/styles' {
+    interface Palette {
+      hover: Palette['primary'];
+    }
+    interface PaletteOptions {
+      hover?: PaletteOptions['primary'];
+    }
+    interface PaletteColor {
+      lighter?: string;
+      darker?: string;
+    }
+    interface SimplePaletteColorOptions {
+      lighter?: string;
+      darker?: string;
+    }
+}
+
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
 const getDesignTokens = (mode: PaletteMode) => ({
@@ -28,6 +45,9 @@ const getDesignTokens = (mode: PaletteMode) => ({
         background: {
           default: '#fff',
         },
+        hover: {
+          main: "#f3f3f3",
+        },
       }
       : {
         // palette values for dark mode
@@ -39,6 +59,9 @@ const getDesignTokens = (mode: PaletteMode) => ({
         },
         background: {
           default: '#1A1A1A',
+        },
+        hover: {
+          main: "#313131",
         },
       }),
   },
@@ -123,10 +146,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <nav>
-        <Header />
+          <Header />
         </nav>
-        <Component {...pageProps}/>
-        <Meta/>
+        <Component {...pageProps} />
+        <Meta />
         <Analytics />
       </ThemeProvider>
     </ColorModeContext.Provider>

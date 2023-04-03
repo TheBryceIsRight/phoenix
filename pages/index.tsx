@@ -19,10 +19,22 @@ import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
 import SandrasPortfolio from "../public/assets/aboutme/SandraArtAndDesign.png"
 import SandrasPortfolioDark from "../public/assets/aboutme/SandraArtAndDesignDark.png"
 import LA from '../public/assets/aboutme/LANationalPark.jpg'
-import { useTheme } from '@mui/material'
+import { useTheme, styled, ButtonProps } from '@mui/material'
+import { grey } from '@mui/material/colors';
+
 
 export default function Index() {
   const theme = useTheme();
+
+  const PreviewButton = styled(Button)<ButtonProps>(({ theme }) => ({
+    backgroundColor: theme.palette.primary.main,
+    '&:hover': {
+      backgroundColor: theme.palette.hover.main,
+    },
+    color: theme.palette.secondary.main,
+    textTransform: 'none',
+    padding: 10
+  }));
 
   return (
     <>
@@ -60,7 +72,7 @@ export default function Index() {
         <Container>
           <section>
             <Link href="/work/allvoices" passHref>
-              <ButtonBase style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
+              <PreviewButton style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
                 <Container>
                   {theme.palette.mode === "light" ?
                     <Image
@@ -90,7 +102,7 @@ export default function Index() {
                   <br />
                   <Typography variant="h6">Helping employees speak out in the workplace.</Typography>
                 </Container>
-              </ButtonBase>
+              </PreviewButton>
             </Link>
           </section>
           <br />
@@ -101,7 +113,7 @@ export default function Index() {
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/functionize" passHref>
-                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -134,10 +146,10 @@ export default function Index() {
                     <br />
                     <Typography variant='h6'>Helping testers with a low to no code AI-powered automation platform</Typography>
                   </div>
-                </ButtonBase>
+                </PreviewButton>
               </Link>
               <Link href="/work/elavon-status" passHref>
-                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -170,10 +182,10 @@ export default function Index() {
                     <br />
                     <Typography variant='h6'>Visualizing outages and downtime for transparency and compliance</Typography>
                   </div>
-                </ButtonBase>
+                </PreviewButton>
               </Link>
               <Link href="/work/elavon-dev" passHref>
-                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -206,10 +218,10 @@ export default function Index() {
                     <br />
                     <Typography variant='h6'>Helping developers understand credit card systems through good documentation</Typography>
                   </div>
-                </ButtonBase>
+                </PreviewButton>
               </Link>
               <Link href="/work/me" passHref>
-                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -231,7 +243,7 @@ export default function Index() {
                     <Typography variant='h6'>A brief intro</Typography>
                     <br />
                   </div>
-                </ButtonBase>
+                </PreviewButton>
               </Link>
             </div>
           </section>
@@ -243,7 +255,7 @@ export default function Index() {
             <Typography variant="h6">A graphic design & animation portfolio site I built for my friend, fully translated into English, Spanish, and Catalan</Typography>
             <br/>
             <Link href="https://sandra-benito-art-and-design.vercel.app/" passHref target="_blank">
-              <ButtonBase style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
+              <PreviewButton style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
                 <Container>
 
                   <br />
@@ -269,7 +281,7 @@ export default function Index() {
                   <br />
 
                 </Container>
-              </ButtonBase>
+              </PreviewButton>
             </Link>
             <br />
             <br />
