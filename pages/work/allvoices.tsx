@@ -1,7 +1,7 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
 import { ButtonBase, Container } from "@mui/material"
-import { Typography } from "@mui/material"
+import { Typography, styled, Button, ButtonProps } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/allvoices/av_sitemap.svg'
 import undraw_hero from '../../public/assets/allvoices/undraw_hero.svg'
@@ -39,6 +39,19 @@ const iframeStyle = {
 
 
 export default function AllVoices() {
+
+    const CustomButton = styled(Button)<ButtonProps>(({ theme }) => ({
+        backgroundColor: theme.palette.primary.main,
+        '&:hover': {
+          backgroundColor: theme.palette.hover.main,
+        },
+        color: theme.palette.secondary.main,
+        textTransform: 'none',
+        padding: 20,
+        alignContent: "start", 
+        borderRadius: 4,
+        focusRipple: true
+      }));
 
     return <Layout>
         <MyContainer>
@@ -158,12 +171,12 @@ export default function AllVoices() {
                     <Typography variant="h5">LinkedIn Announcement</Typography>
                     <br />
                     <Link href="https://www.linkedin.com/posts/allvoicesco_release-alert-today-we-launched-a-activity-7024489225152581632-rD5Z?utm_source=share&utm_medium=member_desktop" target="_blank" passHref aria-label="LinkedIn announcment of case manager 2.0">
-                        <ButtonBase focusRipple={true} aria-label="LinkedIn announcment of case manager 2.0">
+                        <CustomButton focusRipple={true} aria-label="LinkedIn announcment of case manager 2.0">
                             <Image
                                 src={LinkedInAnnouncement}
                                 alt="LinkedIn announcment of case manager 2.0"
                             />
-                        </ButtonBase>
+                        </CustomButton>
                     </Link>
                     <br />
                     <br />

@@ -33,7 +33,10 @@ export default function Index() {
     },
     color: theme.palette.secondary.main,
     textTransform: 'none',
-    padding: 10
+    padding: 10,
+    alignContent: "start", 
+    borderRadius: 6,
+    focusRipple: true
   }));
 
   return (
@@ -72,7 +75,7 @@ export default function Index() {
         <Container>
           <section>
             <Link href="/work/allvoices" passHref>
-              <PreviewButton style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
+              <PreviewButton>
                 <Container>
                   {theme.palette.mode === "light" ?
                     <Image
@@ -113,7 +116,7 @@ export default function Index() {
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/functionize" passHref>
-                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -149,7 +152,7 @@ export default function Index() {
                 </PreviewButton>
               </Link>
               <Link href="/work/elavon-status" passHref>
-                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -185,7 +188,7 @@ export default function Index() {
                 </PreviewButton>
               </Link>
               <Link href="/work/elavon-dev" passHref>
-                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -221,7 +224,7 @@ export default function Index() {
                 </PreviewButton>
               </Link>
               <Link href="/work/me" passHref>
-                <PreviewButton style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                <PreviewButton>
                   <div>
                     <div className="mb-5">
                       <div className="sm:mx-0">
@@ -255,9 +258,8 @@ export default function Index() {
             <Typography variant="h6">A graphic design & animation portfolio site I built for my friend, fully translated into English, Spanish, and Catalan</Typography>
             <br/>
             <Link href="https://sandra-benito-art-and-design.vercel.app/" passHref target="_blank">
-              <PreviewButton style={{ alignContent: "start", borderRadius: 6 }} focusRipple={true}>
+              <PreviewButton>
                 <Container>
-
                   <br />
                   {theme.palette.mode === "light" ?
                     <Image

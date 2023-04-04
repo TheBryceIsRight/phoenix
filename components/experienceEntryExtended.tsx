@@ -14,7 +14,7 @@ import Elavon_Dark from "../public/assets/aboutme/Elavon_Dark.svg"
 import GT_Dark from "../public/assets/aboutme/GT_Dark.svg"
 import { ButtonBase } from '@mui/material';
 import Link from 'next/link';
-import { useTheme } from "@mui/material"
+import { useTheme, styled, Button, ButtonProps } from "@mui/material"
 
 
 type PropType = {
@@ -32,13 +32,26 @@ type PropType = {
 const ExperienceEntryExtended: React.FC<PropType> = (props) => {
     const theme = useTheme();
 
+    const LogoButton = styled(Button)<ButtonProps>(({ theme }) => ({
+        backgroundColor: theme.palette.primary.main,
+        '&:hover': {
+          backgroundColor: theme.palette.hover.main,
+        },
+        color: theme.palette.secondary.main,
+        textTransform: 'none',
+        padding: 10,
+        alignContent: "start", 
+        borderRadius: 4,
+        focusRipple: true
+      }));
+
     return (
         <Grid container spacing={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 6 }} direction="row" alignItems='flex-start' alignContent='flex-start' maxWidth="xl">
             <Grid>
                 <Grid container spacing={2} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
                     <Grid>
                         <Link passHref href={props.link} target="_blank">
-                            <ButtonBase style={{ borderRadius: 4, padding: 10 }} focusRipple={true}>
+                            <LogoButton>
                                 {props.logo === "YOKE" && theme.palette.mode === "light" ?
                                     <Image
                                         src={YOKE}
@@ -100,7 +113,7 @@ const ExperienceEntryExtended: React.FC<PropType> = (props) => {
                                                                         width={200}
                                                                     />
                                 }
-                            </ButtonBase>
+                            </LogoButton>
                         </Link>
                     </Grid>
                     <Grid>
