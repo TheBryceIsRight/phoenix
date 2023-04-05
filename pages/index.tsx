@@ -41,6 +41,8 @@ export default function Index() {
 
   const XPadding = {xs: 3, sm: 8, md: 15, lg: 20, xl: 25}
   const XPaddingPreviousWork = {xs: 4, sm: 8, md: 12, lg: 25, xl: 30}
+  const XPaddingFreelance = {xs: 4, sm: 8, md: 12, lg: 25, xl: 30}
+
 
   return (
     <>
@@ -261,7 +263,7 @@ export default function Index() {
             </div>
           </Grid>
           <br />
-          <Grid paddingX={XPadding}>
+          <Grid paddingX={XPaddingFreelance}>
             <Typography variant='h3'>Freelance Work</Typography>
             <br />
             <br />
