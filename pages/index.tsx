@@ -39,6 +39,9 @@ export default function Index() {
     focusRipple: true
   }));
 
+  const XPadding = {xs: 3, sm: 8, md: 15, lg: 20, xl: 25}
+  const XPaddingPreviousWork = {xs: 4, sm: 8, md: 12, lg: 25, xl: 30}
+
   return (
     <>
       <Layout>
@@ -60,7 +63,7 @@ export default function Index() {
             <Grid>
               <Typography variant='body1'>If you want to work with me I'm currently looking for full time and contract opportunities, so drop me a line at</Typography>
             </Grid>
-            <Grid xs={8}>
+            <Grid>
               <Link href="mailto:brycewatson315@gmail.com" passHref>
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                   brycewatson315@gmail.com
@@ -72,8 +75,15 @@ export default function Index() {
           <br />
           <br />
         </MuiContainer>
-        <Container>
-          <section>
+        <Grid 
+          container 
+          alignContent="center" 
+          alignItems="center"
+          direction="column"
+          justifyContent="center"
+          spacing={0}
+          >
+          <Grid paddingX={XPadding}>
             <Link href="/work/allvoices" passHref>
               <PreviewButton>
                 <Container>
@@ -107,11 +117,11 @@ export default function Index() {
                 </Container>
               </PreviewButton>
             </Link>
-          </section>
+            </Grid>
           <br />
           <br />
           <br />
-          <section>
+          <Grid paddingX={XPaddingPreviousWork}>
             <Typography variant='h3'>Previous Work</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
@@ -249,9 +259,9 @@ export default function Index() {
                 </PreviewButton>
               </Link>
             </div>
-          </section>
+          </Grid>
           <br />
-          <section>
+          <Grid paddingX={XPadding}>
             <Typography variant='h3'>Freelance Work</Typography>
             <br />
             <br />
@@ -289,8 +299,8 @@ export default function Index() {
             <br />
             <br />
             <br />
-          </section>
-        </Container>
+          </Grid>
+        </Grid>
       </Layout>
     </>
   )
