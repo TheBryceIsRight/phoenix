@@ -194,6 +194,21 @@ export default function Devportal() {
                 <Mosaic type="dev_portal" />
                 <br />
                 <br />
+                <Typography variant="h4">Animations</Typography>
+                <br />
+                <div style={videoWrapper}>
+                        <iframe aria-label="Disputes animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/DZyMV6V0Exk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                        </iframe>
+                    </div>
+                <br />
+                <br />
+                <div style={videoWrapper}>
+                        <iframe aria-label="Business Management animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/aK-3Fwy9m-Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                        </iframe>
+                    </div>
+                <br />
+                <br/>
+                <br/>
                 <Typography variant="h4">Mobile Prototype</Typography>
                 <br />
                 <br />
