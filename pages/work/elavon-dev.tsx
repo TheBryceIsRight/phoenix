@@ -99,7 +99,7 @@ export default function Devportal() {
                 <Typography variant='h4'>How do we make our documentation as helpful as possible?
                 </Typography>
                 <br />
-                <Typography variant='body1'>As any developer will tell you, coding without documentation is a bit like flying without a radar. Having clear, concise, and approachable technical documentation not only makes devs lives easier, but it can be used by our sales team as a powerful marketing tool. The previous documentation hub, known as Developer Portal, was lacking in several aspects: visual clarity, performance, accessibility, and the technology had several layers of technical debt. The decision was made to scrap the previous site entirely, and build something completely new: an AWS integrated, markdown powered CMS running on Grav.
+                <Typography variant='body1'>As any developer will tell you, coding without documentation is a bit like flying without a radar. Having clear, concise, and approachable technical documentation not only makes devs lives easier, but it can be used by our sales team as a powerful marketing tool. The previous documentation hub, known as Developer Portal, was lacking in several aspects: visual clarity, performance, accessibility, and the technology had several layers of technical debt. The decision was made to scrap the previous site entirely, and build something completely new: an AWS integrated, markdown powered CMS running on Grav. Elavon has thousands of pages of technical documentation, so converting it from PDF and organizing it was no small undertaking.
                 </Typography>
                 <br />
                 <Typography variant='body1'>I worked with our digital Illustrator Keith Rosemond and my manager Robbie Beers on this project.
@@ -191,24 +191,46 @@ export default function Devportal() {
                 <br />
                 <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
                 <br />
+                <Typography variant="body1">All designs in this project were required to be fully responsive. 4K and tablet designs are omitted for brevity.</Typography>
+                <br />
+                <br />
                 <Mosaic type="dev_portal" />
                 <br />
                 <br />
                 <Typography variant="h4">Animations</Typography>
                 <br />
-                <div style={videoWrapper}>
-                        <iframe aria-label="Disputes animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/DZyMV6V0Exk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
-                        </iframe>
-                    </div>
+                <Typography variant="h6">Animations to enhance the API product categories.</Typography>
                 <br />
+                <Typography variant="body1">Tools: Adobe Ilustrator, After Effects</Typography>
                 <br />
                 <div style={videoWrapper}>
-                        <iframe aria-label="Business Management animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/aK-3Fwy9m-Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
-                        </iframe>
-                    </div>
+                    <iframe aria-label="Disputes animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/DZyMV6V0Exk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                    </iframe>
+                </div>
                 <br />
-                <br/>
-                <br/>
+                <br />
+                <div style={videoWrapper}>
+                    <iframe aria-label="Business Management animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/aK-3Fwy9m-Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                    </iframe>
+                </div>
+                <br />
+                <Typography variant="caption">Original graphic illustrations drawn by Keith Rosemond. All Rights Reserved.</Typography>
+                <br />
+                <br />
+                <Typography variant="h6">Animations to add movement to U.S. Bank's icon catalog</Typography>
+                <br />
+                <div style={videoWrapper}>
+                    <iframe aria-label="Rotating globe animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/78ycBtGeL6o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                    </iframe>
+                </div>
+                <br />
+                <br />
+                <div style={videoWrapper}>
+                    <iframe aria-label="Rotating globe animation youtube video" style={iframeStyle} src="https://www.youtube.com/embed/SV9B2IdBW-U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}>
+                    </iframe>
+                </div>
+                <br />
+                <br />
                 <Typography variant="h4">Mobile Prototype</Typography>
                 <br />
                 <br />
