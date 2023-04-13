@@ -1,6 +1,8 @@
 import { useTheme, styled, Button, ButtonProps, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { DevModeContext } from "../context/DevModeContext";
+import { useContext } from "react";
 
 type PropType = {
     title: string
@@ -12,9 +14,9 @@ type PropType = {
     link: string
 }
 
-
-export default function PreviousWork(props:PropType) {
+export default function PreviousWork(props: PropType) {
     const theme = useTheme();
+    const { devMode, setDevMode } = useContext(DevModeContext);
 
     const PreviewButton = styled(Button)<ButtonProps>(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
@@ -30,12 +32,12 @@ export default function PreviousWork(props:PropType) {
     }));
 
     return (
-        <Link href={props.link} passHref>
+        <Link href={`/${devMode}/${props.link}`} passHref>
             <PreviewButton>
                 <div>
                     <div className="mb-5">
                         <div className="sm:mx-0">
-                            {theme.palette.mode === "light" ?
+                            {theme.palette.mode === "light" && devMode === "design" ?
                                 <Image
                                     src={props.coverImage}
                                     alt={`Cover Image for ${props.title}`}
@@ -46,17 +48,39 @@ export default function PreviousWork(props:PropType) {
                                     loading="eager"
                                     blurDataURL={props.coverImage}
                                 />
-                                :
-                                <Image
-                                    src={props.coverImageDark}
-                                    alt={`Cover Image for ${props.title}`}
-                                    width={1300}
-                                    height={630}
-                                    style={{ borderRadius: 8 }}
-                                    placeholder='blur'
-                                    loading="eager"
-                                    blurDataURL={props.coverImageDark}
-                                />
+                                : (theme.palette.mode === "dark" && devMode === "design") ?
+                                    <Image
+                                        src={props.coverImageDark}
+                                        alt={`Cover Image for ${props.title}`}
+                                        width={1300}
+                                        height={630}
+                                        style={{ borderRadius: 8 }}
+                                        placeholder='blur'
+                                        loading="eager"
+                                        blurDataURL={props.coverImageDark}
+                                    />
+                                    : (theme.palette.mode === "light" && devMode === "dev") ?
+                                        <Image
+                                            src={props.coverImageDev}
+                                            alt={`Cover Image for ${props.title}`}
+                                            width={1300}
+                                            height={630}
+                                            style={{ borderRadius: 8 }}
+                                            placeholder='blur'
+                                            loading="eager"
+                                            blurDataURL={props.coverImageDev}
+                                        />
+                                        :
+                                        <Image
+                                            src={props.coverImageDarkDev}
+                                            alt={`Cover Image for ${props.title}`}
+                                            width={1300}
+                                            height={630}
+                                            style={{ borderRadius: 8 }}
+                                            placeholder='blur'
+                                            loading="eager"
+                                            blurDataURL={props.coverImageDarkDev}
+                                        />
                             }
                         </div>
                     </div>

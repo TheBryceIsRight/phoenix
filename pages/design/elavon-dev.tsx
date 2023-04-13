@@ -17,6 +17,10 @@ import Layout from "../../components/layout"
 import { itemData } from "../../lib/imageData"
 import { styled } from '@mui/material/styles';
 import Mosaic from "../../components/mosaic";
+import { Button, ButtonProps, Stack, Chip } from "@mui/material"
+import { Code } from '@mui/icons-material';
+import Link from "next/link";
+
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -94,7 +98,10 @@ export default function Devportal() {
                 <br />
             </Container>
             <Container maxWidth="lg">
-                <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
+                <Stack spacing={2} direction="row" alignItems="center">
+                    <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
+                        <Chip label="Designer Version" />
+                </Stack>
                 <br />
                 <Typography variant='h4'>How do we make our documentation as helpful as possible?
                 </Typography>
@@ -104,6 +111,13 @@ export default function Devportal() {
                 <br />
                 <Typography variant='body1'>I worked with our digital Illustrator Keith Rosemond and my manager Robbie Beers on this project.
                 </Typography>
+                <br />
+                <Typography variant='body1'>This page covers my work as an accessibility specialist. If you are looking for my designer work, you can go here:
+                </Typography>
+                <br />
+                <Link href="/dev/elavon-dev" passHref>
+                    <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
+                </Link>
                 <br />
                 <br />
                 <br />

@@ -1,6 +1,6 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Box, Container, IconButton } from "@mui/material"
+import { Chip, Container, Stack, Button } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/functionize/site_map.svg'
@@ -12,6 +12,9 @@ import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
+import Link from "next/link"
+import { Code } from '@mui/icons-material';
+
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -74,12 +77,15 @@ export default function Functionize() {
                 <br />
             </Container>
             <Container maxWidth="lg">
-                <Typography variant='h3'>Functionize</Typography>
+                <Stack spacing={2} direction="row" alignItems="center">
+                    <Typography variant='h3'>Functionize</Typography>
+                    <Chip label="Designer Version" />
+                </Stack>
                 <br />
                 <Typography variant='h4'>How do we fulfill the promise of automation for quality assurance professionals?
                 </Typography>
                 <br />
-                <Typography variant='body1'>Full automated testing is still quite a ways away. However, that doesn&#39;t mean that the AI we have now isn&#39;t incredibly powerful, and Functionize attempts to harnass the latest developments in the science to make powerful, reliable tests for QA. The goal is to make tests that you can&#39;t ever break, even if you tried.
+                <Typography variant='body1'>Fully automated testing is still quite a ways away. However, that doesn&#39;t mean that the AI we have now isn&#39;t incredibly powerful, and Functionize attempts to harnass the latest developments in the science to make powerful, reliable tests for QA. The goal is to make tests that you can&#39;t ever break, even if you tried.
                 </Typography>
                 <br />
                 <Typography variant='body1'>When I arrived at Functionize, you could argue the AI was too good - we had a world class backend, with some of the most advanced XPath replacements in the entire industry. Lost in all the money and time spent on the model was a similar level of effort to make the software polished and functional. Without a modern Javascript framework or a dedicated UX designer, the website was slow, inconsistent, hard to parse, and ultimately didn&#39;t demo very well. I was brought in to turn it around.
@@ -87,6 +93,15 @@ export default function Functionize() {
                 <br />
                 <Typography variant='body1'>I worked with Elise Carmichael (VP Product) and Andrew Gassanoff (Visual Designer) on this project.
                 </Typography>
+                <br />
+                    <Typography variant='body1'>This page covers my work as the Lead Product Designer. If you are looking for my work as a developer and accessibility specialist, you can go here:
+                    </Typography>
+                    <br />
+                    <Link href="/dev/functionize" passHref>
+                        <Button variant="outlined" color="secondary" startIcon={<Code/>}>Switch to Developer View</Button>
+                    </Link>
+                    <br />
+                <br />
                 <br />
                 <br />
                 <Typography variant='h4'>Goals</Typography>

@@ -1,5 +1,6 @@
 import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import { useContext } from 'react';
+import { DevModeContext } from '../context/DevModeContext';
 import { Button, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from 'next/link';
@@ -10,6 +11,8 @@ import { Divider } from '@mui/material';
 import { Box } from '@mui/material';
 
 const Footer = () => {
+  const { devMode, setDevMode } = useContext(DevModeContext);
+
   return (<footer>
     <Divider />
     <br />
@@ -42,10 +45,10 @@ const Footer = () => {
       </Grid>
       <br />
       <Stack direction="row" spacing={2} flexWrap="wrap" alignItems="stretch" justifyContent="center">
-            <Link href="/design/allvoices" passHref><Button variant="text" color="secondary">AllVoices</Button></Link>
-            <Link href="/design/functionize" passHref><Button variant="text" color="secondary">Functionize</Button></Link>
-            <Link href="/design/elavon-status" passHref><Button variant="text" color="secondary">System Status</Button></Link>
-            <Link href="/design/elavon-dev" passHref><Button variant="text" color="secondary">Developer Portal</Button></Link>
+            <Link href={`/${devMode}/allvoices`} passHref><Button variant="text" color="secondary">AllVoices</Button></Link>
+            <Link href={`/${devMode}/functionize`} passHref><Button variant="text" color="secondary">Functionize</Button></Link>
+            <Link href={`/${devMode}/elavon-status`} passHref><Button variant="text" color="secondary">System Status</Button></Link>
+            <Link href={`/${devMode}/elavon-dev`} passHref><Button variant="text" color="secondary">Developer Portal</Button></Link>
             <Link href="/design/me" passHref><Button variant="text" color="secondary">About Me</Button></Link>
           </Stack>
       <br />

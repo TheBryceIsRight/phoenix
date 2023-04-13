@@ -2,25 +2,33 @@ import Container from '../components/container'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import { ButtonBase, Typography } from '@mui/material'
+import { Typography, Button, useTheme, styled, ButtonProps  } from '@mui/material'
 import MuiContainer from '@mui/material/Container'
-import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import Image from 'next/image'
 import AllVoices from "../public/assets/allvoices/allvoices.png"
 import AllVoices_dark from "../public/assets/dark_mode/allvoices.png"
+import AllVoices_dev from "../public/assets/allvoices/dev-allvoices.png"
+import AllVoices_dark_dev from "../public/assets/dark_mode/dev-allvoices.png"
 import Functionize from '../public/assets/functionize/functionize.png'
 import Fze_dark from "../public/assets/dark_mode/functionize.png"
+import Fze_dark_dev from "../public/assets/dark_mode/dev-functionize.png"
+import Functionize_dev from "../public/assets/functionize/dev-functionize.png"
 import SystemStatus from "../public/assets/systemstatus/system-status.png"
 import Status_dark from "../public/assets/dark_mode/system-status.png"
+import SystemStatus_dev from "../public/assets/systemstatus/dev-system-status.png"
+import Status_dark_dev from "../public/assets/dark_mode/dev-system-status.png"
 import DevPortal from '../public/assets/elavon/dev-portal.png'
 import DevPortal_dark from "../public/assets/dark_mode/dev-portal.png"
+import DevPortal_dev from '../public/assets/elavon/dev-dev-portal.png'
+import DevPortal_dark_dev from "../public/assets/dark_mode/dev-dev-portal.png"
 import SandrasPortfolio from "../public/assets/aboutme/SandraArtAndDesign.png"
 import SandrasPortfolioDark from "../public/assets/aboutme/SandraArtAndDesignDark.png"
 import LA from '../public/assets/aboutme/LANationalPark.jpg'
-import { useTheme, styled, ButtonProps } from '@mui/material'
+import LA_reversed from '../public/assets/aboutme/LANationalParkMirrored.png'
 import PreviousWork from '../components/previousWork'
+import HeroWork from '../components/heroWork'
 
 export default function Index() {
   const theme = useTheme();
@@ -85,39 +93,15 @@ export default function Index() {
           spacing={0}
         >
           <Grid paddingX={XPadding}>
-            <Link href="/design/allvoices" passHref>
-              <PreviewButton>
-                <Container>
-                  {theme.palette.mode === "light" ?
-                    <Image
-                      src={AllVoices}
-                      alt='Cover Image for AllVoices'
-                      width={1300}
-                      height={630}
-                      style={{ borderRadius: 8 }}
-                      placeholder='blur'
-                      loading="eager"
-                    />
-                    :
-                    <Image
-                      src={AllVoices_dark}
-                      alt='Cover Image for AllVoices'
-                      width={1300}
-                      height={630}
-                      style={{ borderRadius: 8 }}
-                      placeholder='blur'
-                      loading="eager"
-                    />
-                  }
-                  <br />
-                  <Typography variant='h4'>
-                    AllVoices
-                  </Typography>
-                  <br />
-                  <Typography variant="h6">Helping employees speak out in the workplace.</Typography>
-                </Container>
-              </PreviewButton>
-            </Link>
+            <HeroWork
+                title="AllVoices"
+                description="Helping employees speak out in the workplace"
+                link="/allvoices"
+                coverImage={AllVoices.src}
+                coverImageDark={AllVoices_dark.src}
+                coverImageDev={AllVoices_dev.src}
+                coverImageDarkDev={AllVoices_dark_dev.src}
+              />
           </Grid>
           <br />
           <br />
@@ -129,38 +113,38 @@ export default function Index() {
               <PreviousWork
                 title="Functionize"
                 description="Helping testers with a low to no code AI-powered automation platform"
-                link="/design/functionize"
+                link="/functionize"
                 coverImage={Functionize.src}
                 coverImageDark={Fze_dark.src}
-                coverImageDev={Functionize.src}
-                coverImageDarkDev={Fze_dark.src}
+                coverImageDev={Functionize_dev.src}
+                coverImageDarkDev={Fze_dark_dev.src}
               />
               <PreviousWork
                 title="Elavon - System Status"
                 description="Visualizing outages and downtime for transparency and compliance"
-                link="/design/elavon-status"
+                link="/elavon-status"
                 coverImage={SystemStatus.src}
                 coverImageDark={Status_dark.src}
-                coverImageDev={SystemStatus.src}
-                coverImageDarkDev={Status_dark.src}
+                coverImageDev={SystemStatus_dev.src}
+                coverImageDarkDev={Status_dark_dev.src}
               />
               <PreviousWork
                 title="Elavon - Developer Portal"
                 description="Helping developers understand credit card systems through good documentation"
-                link="/design/elavon-dev"
+                link="/elavon-dev"
                 coverImage={DevPortal.src}
                 coverImageDark={DevPortal_dark.src}
-                coverImageDev={DevPortal.src}
-                coverImageDarkDev={DevPortal_dark.src}
+                coverImageDev={DevPortal_dev.src}
+                coverImageDarkDev={DevPortal_dark_dev.src}
               />
               <PreviousWork
                 title="About Me"
                 description="A brief intro"
-                link="/design/me"
+                link="/me"
                 coverImage={LA.src}
                 coverImageDark={LA.src}
-                coverImageDev={LA.src}
-                coverImageDarkDev={LA.src}
+                coverImageDev={LA_reversed.src}
+                coverImageDarkDev={LA_reversed.src}
               />
             </div>
           </Grid>

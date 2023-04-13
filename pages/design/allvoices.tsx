@@ -1,7 +1,7 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
 import { ButtonBase, Container } from "@mui/material"
-import { Typography, styled, Button, ButtonProps } from "@mui/material"
+import { Typography, styled, Button, ButtonProps, Stack, Chip } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/allvoices/av_sitemap.svg'
 import undraw_hero from '../../public/assets/allvoices/undraw_hero.svg'
@@ -13,6 +13,8 @@ import Connections from "../../public/assets/allvoices/Prototype_Connections.png
 import Link from "next/link"
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
+import { Code } from '@mui/icons-material';
+
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -43,15 +45,15 @@ export default function AllVoices() {
     const CustomButton = styled(Button)<ButtonProps>(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
         '&:hover': {
-          backgroundColor: theme.palette.hover.main,
+            backgroundColor: theme.palette.hover.main,
         },
         color: theme.palette.secondary.main,
         textTransform: 'none',
         padding: 20,
-        alignContent: "start", 
+        alignContent: "start",
         borderRadius: 4,
         focusRipple: true
-      }));
+    }));
 
     return <Layout>
         <MyContainer>
@@ -87,13 +89,23 @@ export default function AllVoices() {
                     <br />
                 </Container>
                 <Container maxWidth="lg">
-                    <Typography variant='h3'>AllVoices</Typography>
+                    <Stack spacing={2} direction="row" alignItems="center">
+                        <Typography variant='h3'>AllVoices</Typography>
+                            <Chip label="Designer Version" />
+                    </Stack>
                     <br />
                     <Typography variant='h4'>How do we give employees a platform to make their voice heard in the workplace?
                     </Typography>
                     <br />
                     <Typography variant='body1'>Everyone deserves a voice in workplace culture reform. As the head of product design at AllVoices I helped employees find a space to better communicate with their leadership teams. I reported to Jeff Harris, VP of Product and worked with Annie Meadows, Senior Product Owner, and Mateo Allen, Project Manager.
                     </Typography>
+                    <br />
+                    <Typography variant='body1'>This page covers my work as the Lead Product Designer. If you are looking for my developer work, you can go here:
+                    </Typography>
+                    <br />
+                    <Link href="/dev/allvoices" passHref>
+                        <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
+                    </Link>
                     <br />
                     <br />
                     <br />

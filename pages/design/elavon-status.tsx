@@ -1,6 +1,6 @@
 import SummaryCard from "../../components/summary-card"
 import MyContainer from "../../components/container"
-import { Container } from "@mui/material"
+import { Container, Button, Stack, Chip } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
 import site_map from '../../public/assets/elavon/site_map_ss.svg'
@@ -13,6 +13,8 @@ import { EmblaOptionsType } from 'embla-carousel-react'
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
 import Mosaic from "../../components/mosaic"
+import Link from "next/link"
+import { Code } from '@mui/icons-material';
 
 
 const figmaWrapper = {
@@ -74,7 +76,10 @@ export default function Systemstatus() {
                     <br />
                 </Container>
                 <Container maxWidth="lg">
-                    <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
+                    <Stack spacing={2} direction="row" alignItems="center">
+                        <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
+                            <Chip label="Designer Version" />
+                    </Stack>
                     <br />
                     <Typography variant='h4'>How do we inform others of outages of critical systems?
                     </Typography>
@@ -92,6 +97,12 @@ export default function Systemstatus() {
                     <Typography variant='body1'>This project was done with the help of Ariel Rodriguez, the only developer, and Craig Bruce, our product owner.
                     </Typography>
                     <br />
+                    <Typography variant='body1'>This page covers my work as the UX/UI Designer. If you are looking for my developer work, you can go here:
+                    </Typography>
+                    <br />
+                    <Link href="/dev/elavon-status" passHref>
+                        <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
+                    </Link>
                     <br />
                     <br />
                     <br />
@@ -153,13 +164,13 @@ export default function Systemstatus() {
                     <Typography variant="h4">Dark Mode</Typography>
                     <br />
                     <EmblaCarousel slides={SLIDES} options={OPTIONS} type="status_hifi_dark" />
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <Typography variant="h4">Mobile High Fidelity Mockups</Typography>
-                    <br/>
-                    <Mosaic type="system_status"/>
-                    <br/>
-                    <br/>
+                    <br />
+                    <Mosaic type="system_status" />
+                    <br />
+                    <br />
                     <Typography variant="h4">Mobile Prototype</Typography>
                     <br />
                     <div style={figmaWrapper}>

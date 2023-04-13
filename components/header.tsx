@@ -16,15 +16,37 @@ import { Menu, MenuItem } from '@mui/material';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { DevModeContext } from '../context/DevModeContext';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
   const { devMode, setDevMode } = useContext(DevModeContext);
+  const router = useRouter()
 
   const handleRoleChange = () => {
     const isCurrentDev = devMode === 'dev';
     setDevMode(isCurrentDev ? 'design' : 'dev');
-    console.log("\nDeveloper Mode: ", devMode)
+    console.log("\nCurrent route: ", router.pathname)
+
+    if (router.pathname === "/design/elavon-dev") {
+      router.push("/dev/elavon-dev")
+    } else if (router.pathname === "/dev/elavon-dev") {
+      router.push("/design/elavon-dev")
+    } else if (router.pathname === "/design/elavon-status") {
+      router.push("/dev/elavon-status")
+    } else if (router.pathname === "/dev/elavon-status") {
+      router.push("/design/elavon-status")
+    } else if (router.pathname === "/design/functionize") {
+      router.push("/dev/functionize")
+    } else if (router.pathname === "/dev/functionize") {
+      router.push("/design/functionize")
+    } else if (router.pathname === "/design/allvoices") {
+      router.push("/dev/allvoices")
+    } else if (router.pathname === "/dev/allvoices") {
+      router.push("/design/allvoices")
+    } else {
+
+    }
   };
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -70,7 +92,7 @@ const Header = () => {
               <DarkMode />
             </IconButton>
           </Tooltip>
-          {/* {devMode === 'dev' ?
+          {devMode === 'dev' ?
             <Tooltip title="Developer Mode" arrow>
               <IconButton
                 size="large"
@@ -96,7 +118,7 @@ const Header = () => {
                 <Palette />
               </IconButton>
             </Tooltip>
-          } */}
+          }
           <Tooltip title="More Info" arrow>
             <IconButton
               id="context-menu"
