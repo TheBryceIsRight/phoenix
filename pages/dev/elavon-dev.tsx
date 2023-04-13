@@ -127,7 +127,7 @@ export default function Devportal() {
                 <br />
                 <Typography variant='h6'>Better Developer Experience</Typography>
                 <br />
-                <Typography variant='body1'>As we weren't able to adopt Figma at the time, the lead developer and I devised a method of pushing all of my Sketch updates to an internal git repo so that everything would be clearly backed up and documented. This helped him understand what the main changes were since everything was in one file. This also helped me get familiar with Git early on, as over a year and a half of this project was worked on while I was still fully enrolled at the Georgia Institute of Technology.
+                <Typography variant='body1'>As we weren't able to adopt Figma at the time, the lead developer and I devised a method of pushing all of my Sketch updates to an internal git repo so that everything would be clearly backed up and documented. This helped him understand what the main changes were since everything was in one file. This also helped me become familiar with Git early on, as over a year and a half of this project was worked on while I was still fully enrolled at the Georgia Institute of Technology.
                 </Typography>
                 <br />
                 <br />
