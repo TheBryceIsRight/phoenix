@@ -179,7 +179,7 @@ export default function AllVoices() {
                     <Typography variant='h6'>Designers work better when they understand their developers
                     </Typography>
                     <br />
-                    <Typography variant='body1'>While some designers may scoff at the idea that learning to code is important, it is impossible to fully account for what you're asking someone to build for you unless you grasp how they are doing it. Joining the back end team and closing PRs gave me a much better understanding of the scope of work required anytime someone recommended a new feature or product.
+                    <Typography variant='body1'>While some designers may underappreciate the idea that learning to code is important, it is impossible to fully account for what you're asking someone to build for you unless you grasp how they are doing it. Joining the back end team and closing PRs gave me a much better understanding of the scope of work required anytime someone recommended a new feature or product.
                     </Typography>
                     <br />
                     <br />
