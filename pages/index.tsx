@@ -20,8 +20,7 @@ import SandrasPortfolio from "../public/assets/aboutme/SandraArtAndDesign.png"
 import SandrasPortfolioDark from "../public/assets/aboutme/SandraArtAndDesignDark.png"
 import LA from '../public/assets/aboutme/LANationalPark.jpg'
 import { useTheme, styled, ButtonProps } from '@mui/material'
-import { grey } from '@mui/material/colors';
-
+import PreviousWork from '../components/previousWork'
 
 export default function Index() {
   const theme = useTheme();
@@ -34,14 +33,14 @@ export default function Index() {
     color: theme.palette.secondary.main,
     textTransform: 'none',
     padding: 10,
-    alignContent: "start", 
+    alignContent: "start",
     borderRadius: 6,
     focusRipple: true
   }));
 
-  const XPadding = {xs: 3, sm: 8, md: 15, lg: 20, xl: 25}
-  const XPaddingPreviousWork = {xs: 4, sm: 8, md: 12, lg: 25, xl: 30}
-  const XPaddingFreelance = {xs: 4, sm: 8, md: 12, lg: 25, xl: 30}
+  const XPadding = { xs: 3, sm: 8, md: 15, lg: 20, xl: 25 }
+  const XPaddingPreviousWork = { xs: 4, sm: 8, md: 12, lg: 25, xl: 30 }
+  const XPaddingFreelance = { xs: 4, sm: 8, md: 12, lg: 25, xl: 30 }
 
 
   return (
@@ -77,14 +76,14 @@ export default function Index() {
           <br />
           <br />
         </MuiContainer>
-        <Grid 
-          container 
-          alignContent="center" 
+        <Grid
+          container
+          alignContent="center"
           alignItems="center"
           direction="column"
           justifyContent="center"
           spacing={0}
-          >
+        >
           <Grid paddingX={XPadding}>
             <Link href="/design/allvoices" passHref>
               <PreviewButton>
@@ -119,7 +118,7 @@ export default function Index() {
                 </Container>
               </PreviewButton>
             </Link>
-            </Grid>
+          </Grid>
           <br />
           <br />
           <br />
@@ -127,139 +126,42 @@ export default function Index() {
             <Typography variant='h3'>Previous Work</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/design/functionize" passHref>
-                <PreviewButton>
-                  <div>
-                    <div className="mb-5">
-                      <div className="sm:mx-0">
-                        {theme.palette.mode === "light" ?
-                          <Image
-                            src={Functionize}
-                            alt='Cover Image for Functionize'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                          :
-                          <Image
-                            src={Fze_dark}
-                            alt='Cover Image for Functionize'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                        }
-                      </div>
-                    </div>
-                    <Typography variant='h4'>
-                      Functionize
-                    </Typography>
-                    <br />
-                    <Typography variant='h6'>Helping testers with a low to no code AI-powered automation platform</Typography>
-                  </div>
-                </PreviewButton>
-              </Link>
-              <Link href="/design/elavon-status" passHref>
-                <PreviewButton>
-                  <div>
-                    <div className="mb-5">
-                      <div className="sm:mx-0">
-                        {theme.palette.mode === "light" ?
-                          <Image
-                            src={SystemStatus}
-                            alt='Cover Image for System Status'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                          :
-                          <Image
-                            src={Status_dark}
-                            alt='Cover Image for System Status'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                        }
-                      </div>
-                    </div>
-                    <Typography variant='h4'>
-                      Elavon - System Status
-                    </Typography>
-                    <br />
-                    <Typography variant='h6'>Visualizing outages and downtime for transparency and compliance</Typography>
-                  </div>
-                </PreviewButton>
-              </Link>
-              <Link href="/design/elavon-dev" passHref>
-                <PreviewButton>
-                  <div>
-                    <div className="mb-5">
-                      <div className="sm:mx-0">
-                        {theme.palette.mode === "light" ?
-                          <Image
-                            src={DevPortal}
-                            alt='Cover Image for Dev Portal'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                          :
-                          <Image
-                            src={DevPortal_dark}
-                            alt='Cover Image for Dev Portal'
-                            width={1300}
-                            height={630}
-                            style={{ borderRadius: 8 }}
-                            placeholder='blur'
-                            loading="eager"
-                          />
-                        }
-                      </div>
-                    </div>
-                    <Typography variant='h4'>
-                      Elavon - Developer Portal
-                    </Typography>
-                    <br />
-                    <Typography variant='h6'>Helping developers understand credit card systems through good documentation</Typography>
-                  </div>
-                </PreviewButton>
-              </Link>
-              <Link href="/design/me" passHref>
-                <PreviewButton>
-                  <div>
-                    <div className="mb-5">
-                      <div className="sm:mx-0">
-                        <Image
-                          src={LA}
-                          alt='Cover Image for About Me'
-                          width={1300}
-                          height={630}
-                          style={{ borderRadius: 8 }}
-                          placeholder='blur'
-                          loading="eager"
-                        />
-                      </div>
-                    </div>
-                    <Typography variant='h4'>
-                      About Me
-                    </Typography>
-                    <br />
-                    <Typography variant='h6'>A brief intro</Typography>
-                    <br />
-                  </div>
-                </PreviewButton>
-              </Link>
+              <PreviousWork
+                title="Functionize"
+                description="Helping testers with a low to no code AI-powered automation platform"
+                link="/design/functionize"
+                coverImage={Functionize.src}
+                coverImageDark={Fze_dark.src}
+                coverImageDev={Functionize.src}
+                coverImageDarkDev={Fze_dark.src}
+              />
+              <PreviousWork
+                title="Elavon - System Status"
+                description="Visualizing outages and downtime for transparency and compliance"
+                link="/design/elavon-status"
+                coverImage={SystemStatus.src}
+                coverImageDark={Status_dark.src}
+                coverImageDev={SystemStatus.src}
+                coverImageDarkDev={Status_dark.src}
+              />
+              <PreviousWork
+                title="Elavon - Developer Portal"
+                description="Helping developers understand credit card systems through good documentation"
+                link="/design/elavon-dev"
+                coverImage={DevPortal.src}
+                coverImageDark={DevPortal_dark.src}
+                coverImageDev={DevPortal.src}
+                coverImageDarkDev={DevPortal_dark.src}
+              />
+              <PreviousWork
+                title="About Me"
+                description="A brief intro"
+                link="/design/me"
+                coverImage={LA.src}
+                coverImageDark={LA.src}
+                coverImageDev={LA.src}
+                coverImageDarkDev={LA.src}
+              />
             </div>
           </Grid>
           <br />
@@ -268,7 +170,7 @@ export default function Index() {
             <br />
             <br />
             <Typography variant="h6">A graphic design & animation portfolio site I built for my friend, fully translated into English, Spanish, and Catalan</Typography>
-            <br/>
+            <br />
             <Link href="https://sandra-benito-art-and-design.vercel.app/" passHref target="_blank">
               <PreviewButton>
                 <Container>
@@ -291,9 +193,7 @@ export default function Index() {
                     />
                   }
                   <br />
-
                   <br />
-
                 </Container>
               </PreviewButton>
             </Link>
