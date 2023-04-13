@@ -111,13 +111,13 @@ export default function Systemstatus() {
                     <br />
                     <Typography variant='h6'>Accessible color contrast</Typography>
                     <br />
-                    <Typography variant='body1'>Inital builds of the website were incredibly non-compliant with contrast standards set by WCAG 2.1 AA. While U.S. Bank had committed to these stndards, I pushed for full AAA compliance.
+                    <Typography variant='body1'>Initial builds of the website were incredibly non-compliant with contrast standards set by WCAG 2.1 AA. While U.S. Bank had committed to these standards, I pushed for full AAA compliance.
                     </Typography>
                     <br />
                     <br />
-                    <Typography variant='h6'>Full screen reader support</Typography>
+                    <Typography variant='h6'>Fullscreen reader support</Typography>
                     <br />
-                    <Typography variant='body1'>Neither member of the team were familiar with screen readers as a concept, which shouldn't have surprised me as acccessibility was often considered a QA issue at Elavon (but it still did). As the front end was based on the Lightning Design System and included hundreds of important CSS overrides, even getting the screen reader to understand a heading was initially a challenge.  
+                    <Typography variant='body1'>Neither member of the team was familiar with screen readers as a concept, which shouldn't have surprised me as acccessibility was often considered a QA issue at Elavon (but it still did). As the front end was based on the Lightning Design System and included hundreds of important CSS overrides, even getting the screen reader to understand a heading was initially a challenge.  
                     </Typography>
                     <br />
                     <br />
@@ -141,7 +141,7 @@ export default function Systemstatus() {
                     <Typography variant='h6'>Accessibility is not just a requirement, it&#39;s the right thing to do.
                     </Typography>
                     <br />
-                    <Typography variant='body1'>I took the entire accessibility curriculum from Deque over the course of designing the site, and it really changed how I view even simple things like Javascript widgets. The team did not always understand why I was so gung ho about screen readers, but now they do.
+                    <Typography variant='body1'>I took the entire accessibility curriculum from Deque over the course of designing the site, and it really changed how I view even simple things like Javascript widgets. The team did not always understand why I was so gung-ho about screen readers, but now they do.
                     </Typography>
                     <br />
                     <br />
