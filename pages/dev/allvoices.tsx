@@ -162,7 +162,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant="h4">Accessibility</Typography>
                     <br />
-                    <Typography variant='body1'>One of the first things I worked on at AllVoices, I scanned the entire form submission flow using Axe Pro by Deque systems and fixed several critical color contrast and form label issues.
+                    <Typography variant='body1'>One of the first things I worked on at AllVoices was scanning the form submission flow using Axe Pro by Deque systems and fixing several critical color contrast and form label issues.
                     </Typography>
                     <br />
                     <div style={figmaWrapper}>
