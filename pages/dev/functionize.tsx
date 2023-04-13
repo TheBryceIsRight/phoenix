@@ -56,7 +56,7 @@ export default function Functionize() {
             <br />
             <br />
             <SummaryCard
-                role="Design Lead"
+                role="Accessibility Specialist"
                 company="Functionize"
                 timeframe="July 2021 - May 2022"
                 teamstyle="Solo Designer"

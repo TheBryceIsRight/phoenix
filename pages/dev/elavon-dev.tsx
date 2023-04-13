@@ -70,7 +70,7 @@ export default function Devportal() {
             <br />
             <br />
             <SummaryCard
-                role="UX Designer"
+                role="Accessibility Specialist"
                 company="Elavon, subsidiary of U.S. Bank"
                 timeframe="Aug 2018 - Jan 2020"
                 teamstyle="Solo Designer"

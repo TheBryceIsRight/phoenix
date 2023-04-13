@@ -54,7 +54,7 @@ export default function Systemstatus() {
                 <br />
                 <br />
                 <SummaryCard
-                    role="UX Designer"
+                    role="Accessibility Specialist"
                     company="Elavon, subsidiary of U.S. Bank"
                     timeframe="Feb 2020 - August 2020"
                     teamstyle="Accessibility Specialist"

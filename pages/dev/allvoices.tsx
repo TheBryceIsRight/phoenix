@@ -110,7 +110,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant='h6'>Data Security</Typography>
                     <br />
-                    <Typography variant='body1'>This platform has no shortage of very important personal information that needs to be properly protected from prying eyes or vengeful employees. I needed to ensure every feature had the proper set of permissions and was secure using the highest standard of encryption.
+                    <Typography variant='body1'>This platform has no shortage of very important personal information that needs to be properly protected. I needed to ensure that every feature had the proper set of permissions and was secure using the highest standard of encryption.
                     </Typography>
                     <br />
                     <br />
