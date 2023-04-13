@@ -166,7 +166,7 @@ export default function Functionize() {
                 <br />
                 <Typography variant='h6'>Overcommunication is tiring, but it prevents misunderstanding in async environments</Typography>
                 <br />
-                <Typography variant='body1'>Creating the 38 tailored action types, each with 4 tabs, and all of them having different pieces of data cut for relevance, took a seriously long time. I had to go over every single input with the technical writer and project manager for every state the component could be in. But at the end of the process, we implemented a single test step component with 152 possible states with no issues. Previously each step had all of the same inputs and finding the info you wanted was incredibly taxing,so it also provided a much better user experience,.
+                <Typography variant='body1'>Creating the 38 tailored action types, each with 4 tabs, and all of them having different pieces of data cut for relevance, took a seriously long time. I had to go over every single input with the technical writer and project manager for every state the component could be in. But at the end of the process, we implemented a single test step component with 152 possible states with no issues. Previously each step had all of the same inputs and finding the info you wanted was incredibly taxing,so it also provided a much better user experience.
                 </Typography>
                 <br />
                 <br />
