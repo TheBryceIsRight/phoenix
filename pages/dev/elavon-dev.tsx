@@ -160,7 +160,7 @@ export default function Devportal() {
                 <Typography variant='h6'>Listen first, ask questions later
                 </Typography>
                 <br />
-                <Typography variant='body1'>As this was my first full time job out of college (and during college), I quickly realized there was a lot of things I needed to learn. Fortunately the team did a great job of helping me understand a large complex documentation site piece by piece until I got a handle on it.
+                <Typography variant='body1'>As this was my first full time job out of college (and during college), I quickly realized that there were a lot of things I needed to learn. Fortunately the team did a great job of helping me understand a large complex documentation site piece by piece until I got a handle on it.
                 </Typography>
                 <br />
                 <br />
