@@ -38,7 +38,7 @@ export default function Aboutme() {
                 </Typography>
                 <br />
                 <br />
-                <Link href="/work/resume" passHref>
+                <Link href="/design/resume" passHref>
                     <Button color='secondary' variant='outlined' startIcon={<InsertDriveFile />}>
                         Resume
                     </Button>

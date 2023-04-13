@@ -10,22 +10,23 @@ import * as gtag from "../lib/gtag"
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import Meta from '../components/meta';
+import { DevModeContext } from '../context/DevModeContext';
 
 declare module '@mui/material/styles' {
-    interface Palette {
-      hover: Palette['primary'];
-    }
-    interface PaletteOptions {
-      hover?: PaletteOptions['primary'];
-    }
-    interface PaletteColor {
-      lighter?: string;
-      darker?: string;
-    }
-    interface SimplePaletteColorOptions {
-      lighter?: string;
-      darker?: string;
-    }
+  interface Palette {
+    hover: Palette['primary'];
+  }
+  interface PaletteOptions {
+    hover?: PaletteOptions['primary'];
+  }
+  interface PaletteColor {
+    lighter?: string;
+    darker?: string;
+  }
+  interface SimplePaletteColorOptions {
+    lighter?: string;
+    darker?: string;
+  }
 }
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
@@ -82,11 +83,13 @@ const getDesignTokens = (mode: PaletteMode) => ({
 });
 
 
+
 export default function App({ Component, pageProps }: AppProps) {
   let theme = useTheme();
   const router = useRouter();
   const colorContext = useContext(ColorModeContext);
   const [mode, setMode] = useState<PaletteMode>('light');
+  const [devMode, setDevMode] = useState<string>('dev');
   const colorMode = useMemo(
     () => ({
       // The dark mode switch would invoke this method
@@ -142,16 +145,18 @@ export default function App({ Component, pageProps }: AppProps) {
             `
       }}
     />
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <nav>
-          <Header />
-        </nav>
-        <Component {...pageProps} />
-        <Meta />
-        <Analytics />
-      </ThemeProvider>
-    </ColorModeContext.Provider>
+    <DevModeContext.Provider value={{devMode, setDevMode}}>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <nav>
+            <Header />
+          </nav>
+          <Component {...pageProps} />
+          <Meta />
+          <Analytics />
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </DevModeContext.Provider>
   </div>
 }

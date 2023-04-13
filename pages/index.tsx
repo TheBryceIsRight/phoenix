@@ -86,7 +86,7 @@ export default function Index() {
           spacing={0}
           >
           <Grid paddingX={XPadding}>
-            <Link href="/work/allvoices" passHref>
+            <Link href="/design/allvoices" passHref>
               <PreviewButton>
                 <Container>
                   {theme.palette.mode === "light" ?
@@ -127,7 +127,7 @@ export default function Index() {
             <Typography variant='h3'>Previous Work</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/work/functionize" passHref>
+              <Link href="/design/functionize" passHref>
                 <PreviewButton>
                   <div>
                     <div className="mb-5">
@@ -163,7 +163,7 @@ export default function Index() {
                   </div>
                 </PreviewButton>
               </Link>
-              <Link href="/work/elavon-status" passHref>
+              <Link href="/design/elavon-status" passHref>
                 <PreviewButton>
                   <div>
                     <div className="mb-5">
@@ -199,7 +199,7 @@ export default function Index() {
                   </div>
                 </PreviewButton>
               </Link>
-              <Link href="/work/elavon-dev" passHref>
+              <Link href="/design/elavon-dev" passHref>
                 <PreviewButton>
                   <div>
                     <div className="mb-5">
@@ -235,7 +235,7 @@ export default function Index() {
                   </div>
                 </PreviewButton>
               </Link>
-              <Link href="/work/me" passHref>
+              <Link href="/design/me" passHref>
                 <PreviewButton>
                   <div>
                     <div className="mb-5">
