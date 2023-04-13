@@ -160,7 +160,7 @@ export default function Functionize() {
                 <Typography variant='h6'>Consistency = predictability
                 </Typography>
                 <br />
-                <Typography variant='body1'>Occaisonally developers would send me prototypes where they had tried to make their own table, menu, or some other typical UI component. I would redirect them to Vuetify, which often had a prebuilt component right there ready for them to use. 
+                <Typography variant='body1'>Occasionally developers would send me prototypes where they had tried to make their own table, menu, or some other typical UI component. I would redirect them to Vuetify, which often had a pre-built component right there ready for them to use. 
                 </Typography>
                 <br />
                 <br />
