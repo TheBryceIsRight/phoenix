@@ -113,7 +113,7 @@ export default function Functionize() {
                 <br />
                 <Typography variant='h6'>Better Keyboard Support</Typography>
                 <br />
-                <Typography variant='body1'>That had previously been no attention paid to whether the platform supported visually impaired or blind invididuals. I resolved to change that by testing the site for keyboard accessibility exhaustively, one tab click at a time.
+                <Typography variant='body1'>There had previously been no attention paid to whether the platform supported visually impaired or blind invididuals. I resolved to change that by testing the site for keyboard accessibility exhaustively, one tab click at a time.
                 </Typography>
                 <br />
                 <br />
