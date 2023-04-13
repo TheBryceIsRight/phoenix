@@ -167,7 +167,7 @@ export default function Devportal() {
                 <Typography variant='h6'>Designs are temporary, but good software can live a life all its own
                 </Typography>
                 <br />
-                <Typography variant='body1'>I was freqenutly amazed at the age of much of Elavon's internal systems, including the team of COBOL developers everyone collectively referred to as "the dinosoaurs" 🦕. But in many ways, it's a testament to the original developers that these financial systems continue to function largely without issue decades later. The information architect made sure that I understood that while designs may follow the whims of trends or the capabilities of new front end systems, the underlying data structure can last quite a long time.
+                <Typography variant='body1'>I was frequently amazed at the age of much of Elavon's internal systems, including the team of COBOL developers everyone collectively referred to as "the dinosoaurs" 🦕. But in many ways, it's a testament to the original developers that these financial systems continue to function largely without issue decades later. The information architect made sure that I understood that while designs may follow the whims of trends or the capabilities of new front end systems, the underlying data structure can last quite a long time.
                 </Typography>
                 <br />
                 <br />
