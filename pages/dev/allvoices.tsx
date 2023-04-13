@@ -64,10 +64,10 @@ export default function AllVoices() {
                 <br />
                 <br />
                 <SummaryCard
-                    role="UX Lead"
+                    role="Full Stack Developer"
                     company="AllVoices"
                     timeframe="May 2022 - Jan 2023"
-                    teamstyle="Full Stack Developer"
+                    teamstyle="Back end Dev Team of 4"
                     tools="Next.js, React, Typescript, Node.js, GraphQL, Mocha, Git, AWS"
                 >
                 </SummaryCard>
@@ -151,7 +151,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant="h4">Messaging Templates</Typography>
                     <br />
-                    <Typography variant='body1'>This was one of the first features I wrote where I was wholly responsible from end to end, including backend API tests in Mocha.js. It includes multiple permissions checks so that only those who create a message template can see the delete icon.
+                    <Typography variant='body1'>This was one of the first features I wrote where I was wholly responsible from end to end, including back end API tests in Mocha.js. It includes multiple permissions checks so that only those who create a message template can see the delete icon.
                     </Typography>
                     <br />
                     <div style={figmaWrapper}>
