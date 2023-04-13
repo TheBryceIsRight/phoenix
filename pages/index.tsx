@@ -96,7 +96,7 @@ export default function Index() {
             <HeroWork
                 title="AllVoices"
                 description="Helping employees speak out in the workplace"
-                link="/allvoices"
+                link="allvoices"
                 coverImage={AllVoices.src}
                 coverImageDark={AllVoices_dark.src}
                 coverImageDev={AllVoices_dev.src}
@@ -113,7 +113,7 @@ export default function Index() {
               <PreviousWork
                 title="Functionize"
                 description="Helping testers with a low to no code AI-powered automation platform"
-                link="/functionize"
+                link="functionize"
                 coverImage={Functionize.src}
                 coverImageDark={Fze_dark.src}
                 coverImageDev={Functionize_dev.src}
@@ -122,7 +122,7 @@ export default function Index() {
               <PreviousWork
                 title="Elavon - System Status"
                 description="Visualizing outages and downtime for transparency and compliance"
-                link="/elavon-status"
+                link="elavon-status"
                 coverImage={SystemStatus.src}
                 coverImageDark={Status_dark.src}
                 coverImageDev={SystemStatus_dev.src}
@@ -131,7 +131,7 @@ export default function Index() {
               <PreviousWork
                 title="Elavon - Developer Portal"
                 description="Helping developers understand credit card systems through good documentation"
-                link="/elavon-dev"
+                link="elavon-dev"
                 coverImage={DevPortal.src}
                 coverImageDark={DevPortal_dark.src}
                 coverImageDev={DevPortal_dev.src}
@@ -140,7 +140,7 @@ export default function Index() {
               <PreviousWork
                 title="About Me"
                 description="A brief intro"
-                link="/me"
+                link="me"
                 coverImage={LA.src}
                 coverImageDark={LA.src}
                 coverImageDev={LA_reversed.src}

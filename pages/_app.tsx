@@ -89,7 +89,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const colorContext = useContext(ColorModeContext);
   const [mode, setMode] = useState<PaletteMode>('light');
-  const [devMode, setDevMode] = useState<string>('dev');
+  const [devMode, setDevMode] = useState<string>('design');
   const colorMode = useMemo(
     () => ({
       // The dark mode switch would invoke this method

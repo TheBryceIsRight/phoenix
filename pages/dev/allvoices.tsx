@@ -87,9 +87,7 @@ export default function AllVoices() {
                 <Container maxWidth="lg">
                     <Stack spacing={2} direction="row" alignItems="center">
                         <Typography variant='h3'>AllVoices</Typography>
-                        <Link href="/design/allvoices" passHref>
-                            <Chip label="Developer Version" />
-                        </Link>
+                        <Chip label="Developer Version" />
                     </Stack>
                     <br />
                     <Typography variant='h4'>How do we give employees a platform to make their voice heard in the workplace?
