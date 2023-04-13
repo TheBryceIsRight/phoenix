@@ -121,7 +121,7 @@ export default function Devportal() {
                 <br />
                 <Typography variant='h6'>Accessible Documentation</Typography>
                 <br />
-                <Typography variant='body1'>Much our documentation that needed migrating was in PDF format, and ultimately the most accessible form is HTML. During my downtime from designing I pitched in on the tech writing team to convert some exisiting docs.
+                <Typography variant='body1'>Much of the documentation that needed migrating was in PDF format, and ultimately the most accessible form is HTML. During my downtime from designing I pitched in on the tech writing team to convert some exisiting docs.
                 </Typography>
                 <br />
                 <br />
