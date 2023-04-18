@@ -14,6 +14,7 @@ import { CSSProperties } from "react"
 import Layout from "../../components/layout"
 import Link from "next/link"
 import { Code } from '@mui/icons-material';
+import SwitchButton from "../../components/switchButton"
 
 
 const videoWrapper = {
@@ -94,13 +95,14 @@ export default function Functionize() {
                 <Typography variant='body1'>I worked with Elise Carmichael (VP Product) and Andrew Gassanoff (Visual Designer) on this project.
                 </Typography>
                 <br />
-                    <Typography variant='body1'>This page covers my work as the Lead Product Designer. If you are looking for my work as a developer and accessibility specialist, you can go here:
-                    </Typography>
-                    <br />
-                    <Link href="/dev/functionize" passHref>
-                        <Button variant="outlined" color="secondary" startIcon={<Code/>}>Switch to Developer View</Button>
-                    </Link>
-                    <br />
+                <Typography variant='body1'>This page covers my work as the Lead Product Designer. If you are looking for my work as a developer and accessibility specialist, you can go here:
+                </Typography>
+                <br />
+                {/* <Link href="/dev/functionize" passHref>
+                    <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
+                </Link> */}
+                <SwitchButton route="functionize" />
+                <br />
                 <br />
                 <br />
                 <br />

@@ -20,6 +20,7 @@ import Mosaic from "../../components/mosaic";
 import { Button, ButtonProps, Stack, Chip } from "@mui/material"
 import { Code } from '@mui/icons-material';
 import Link from "next/link";
+import SwitchButton from "../../components/switchButton"
 
 
 const videoWrapper = {
@@ -100,7 +101,7 @@ export default function Devportal() {
             <Container maxWidth="lg">
                 <Stack spacing={2} direction="row" alignItems="center">
                     <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
-                        <Chip label="Designer Version" />
+                    <Chip label="Designer Version" />
                 </Stack>
                 <br />
                 <Typography variant='h4'>How do we make our documentation as helpful as possible?
@@ -115,9 +116,10 @@ export default function Devportal() {
                 <Typography variant='body1'>This page covers my work as an accessibility specialist. If you are looking for my designer work, you can go here:
                 </Typography>
                 <br />
-                <Link href="/dev/elavon-dev" passHref>
+                {/* <Link href="/dev/elavon-dev" passHref>
                     <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
-                </Link>
+                </Link> */}
+                <SwitchButton route="elavon-dev" />
                 <br />
                 <br />
                 <br />

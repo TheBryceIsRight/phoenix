@@ -1,14 +1,13 @@
-import MyContainer from "../../components/container"
+import MyContainer from "../components/container"
 import { Container, Button } from "@mui/material"
 import { Typography } from "@mui/material"
 import Image from 'next/image'
-import atlanta from '../../public/assets/aboutme/ATL.svg'
-import atlanta_night from '../../public/assets/aboutme/ATL_Night.svg'
-import LA from '../../public/assets/aboutme/LANationalPark.jpg'
+import atlanta from '/public/assets/aboutme/ATL.svg'
+import atlanta_night from '/public/assets/aboutme/ATL_Night.svg'
+import LA from '/public/assets/aboutme/LANationalPark.jpg'
 import Head from 'next/head'
-import ProtectedImage from "../../components/protected-image"
 import { useTheme } from "@mui/material"
-import Layout from "../../components/layout"
+import Layout from "../components/layout"
 import Link from "next/link"
 import { InsertDriveFile } from "@mui/icons-material"
 
@@ -38,7 +37,7 @@ export default function Aboutme() {
                 </Typography>
                 <br />
                 <br />
-                <Link href="/design/resume" passHref>
+                <Link href="/resume" passHref>
                     <Button color='secondary' variant='outlined' startIcon={<InsertDriveFile />}>
                         Resume
                     </Button>
@@ -52,14 +51,18 @@ export default function Aboutme() {
                 <br />
                 <br />
                 {theme.palette.mode === "light" ?
-                    <ProtectedImage
+                    <Image
                         src={atlanta}
                         alt="Atlanta"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
                     />
                     :
-                    <ProtectedImage
+                    <Image
                         src={atlanta_night}
                         alt="Atlanta"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
                     />
                 }
                 <br />

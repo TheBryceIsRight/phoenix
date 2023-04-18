@@ -10,6 +10,7 @@ import { CSSProperties } from "react"
 import Layout from "../../components/layout"
 import Link from "next/link"
 import { Palette } from '@mui/icons-material';
+import SwitchButton from "../../components/switchButton"
 
 
 const videoWrapper = {
@@ -99,9 +100,10 @@ export default function AllVoices() {
                     <Typography variant='body1'>This page covers my work as Full Stack Developer. If you are looking for my design work, you can go here:
                     </Typography>
                     <br />
-                    <Link href="/design/allvoices" passHref>
+                    {/* <Link href="/design/allvoices" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Palette />}>Switch to Designer View</Button>
-                    </Link>
+                    </Link> */}
+                    <SwitchButton route="allvoices" />
                     <br />
                     <br />
                     <br />

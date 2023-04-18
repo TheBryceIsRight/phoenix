@@ -14,6 +14,7 @@ import Link from "next/link"
 import { CSSProperties } from "react"
 import Layout from "../../components/layout"
 import { Code } from '@mui/icons-material';
+import SwitchButton from "../../components/switchButton"
 
 
 const videoWrapper = {
@@ -91,7 +92,7 @@ export default function AllVoices() {
                 <Container maxWidth="lg">
                     <Stack spacing={2} direction="row" alignItems="center">
                         <Typography variant='h3'>AllVoices</Typography>
-                            <Chip label="Designer Version" />
+                        <Chip label="Designer Version" />
                     </Stack>
                     <br />
                     <Typography variant='h4'>How do we give employees a platform to make their voice heard in the workplace?
@@ -103,9 +104,10 @@ export default function AllVoices() {
                     <Typography variant='body1'>This page covers my work as the Lead Product Designer. If you are looking for my developer work, you can go here:
                     </Typography>
                     <br />
-                    <Link href="/dev/allvoices" passHref>
+                    {/* <Link href="/dev/allvoices" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
-                    </Link>
+                    </Link> */}
+                    <SwitchButton route="allvoices" />
                     <br />
                     <br />
                     <br />

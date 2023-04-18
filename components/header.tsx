@@ -141,7 +141,7 @@ const Header = () => {
               'aria-labelledby': 'context-menu',
             }}
           >
-            <Link passHref href="/design/resume">
+            <Link passHref href="/resume">
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
                   <InsertDriveFile fontSize="medium" color="secondary" />

@@ -30,68 +30,134 @@ export default function PreviousWork(props: PropType) {
         borderRadius: 6,
         focusRipple: true
     }));
-
-    return (
-        <Link href={`/${devMode}/${props.link}`} passHref>
-            <PreviewButton>
-                <div>
-                    <div className="mb-5">
-                        <div className="sm:mx-0">
-                            {theme.palette.mode === "light" && devMode === "design" ?
-                                <Image
-                                    src={props.coverImage}
-                                    alt={`Cover Image for ${props.title}`}
-                                    width={1300}
-                                    height={630}
-                                    style={{ borderRadius: 8 }}
-                                    placeholder='blur'
-                                    loading="eager"
-                                    blurDataURL={props.coverImage}
-                                />
-                                : (theme.palette.mode === "dark" && devMode === "design") ?
+    if (props.link !== "me" && props.link !== "resume") {
+        return (
+            <Link href={`/${devMode}/${props.link}`} passHref>
+                <PreviewButton>
+                    <div>
+                        <div className="mb-5">
+                            <div className="sm:mx-0">
+                                {theme.palette.mode === "light" && devMode === "design" ?
                                     <Image
-                                        src={props.coverImageDark}
+                                        src={props.coverImage}
                                         alt={`Cover Image for ${props.title}`}
                                         width={1300}
                                         height={630}
                                         style={{ borderRadius: 8 }}
                                         placeholder='blur'
                                         loading="eager"
-                                        blurDataURL={props.coverImageDark}
+                                        blurDataURL={props.coverImage}
                                     />
-                                    : (theme.palette.mode === "light" && devMode === "dev") ?
+                                    : (theme.palette.mode === "dark" && devMode === "design") ?
                                         <Image
-                                            src={props.coverImageDev}
+                                            src={props.coverImageDark}
                                             alt={`Cover Image for ${props.title}`}
                                             width={1300}
                                             height={630}
                                             style={{ borderRadius: 8 }}
                                             placeholder='blur'
                                             loading="eager"
-                                            blurDataURL={props.coverImageDev}
+                                            blurDataURL={props.coverImageDark}
                                         />
-                                        :
-                                        <Image
-                                            src={props.coverImageDarkDev}
-                                            alt={`Cover Image for ${props.title}`}
-                                            width={1300}
-                                            height={630}
-                                            style={{ borderRadius: 8 }}
-                                            placeholder='blur'
-                                            loading="eager"
-                                            blurDataURL={props.coverImageDarkDev}
-                                        />
-                            }
+                                        : (theme.palette.mode === "light" && devMode === "dev") ?
+                                            <Image
+                                                src={props.coverImageDev}
+                                                alt={`Cover Image for ${props.title}`}
+                                                width={1300}
+                                                height={630}
+                                                style={{ borderRadius: 8 }}
+                                                placeholder='blur'
+                                                loading="eager"
+                                                blurDataURL={props.coverImageDev}
+                                            />
+                                            :
+                                            <Image
+                                                src={props.coverImageDarkDev}
+                                                alt={`Cover Image for ${props.title}`}
+                                                width={1300}
+                                                height={630}
+                                                style={{ borderRadius: 8 }}
+                                                placeholder='blur'
+                                                loading="eager"
+                                                blurDataURL={props.coverImageDarkDev}
+                                            />
+                                }
+                            </div>
                         </div>
+                        <Typography variant='h4'>
+                            {props.title}
+                        </Typography>
+                        <br />
+                        <Typography variant='h6'>{props.description}</Typography>
                     </div>
-                    <Typography variant='h4'>
-                        {props.title}
-                    </Typography>
-                    <br />
-                    <Typography variant='h6'>{props.description}</Typography>
-                </div>
-            </PreviewButton>
-        </Link>
-    )
+                </PreviewButton>
+            </Link>
+
+        )
+    } else {
+        return (
+            <Link href={`/${props.link}`} passHref>
+                <PreviewButton>
+                    <div>
+                        <div className="mb-5">
+                            <div className="sm:mx-0">
+                                {theme.palette.mode === "light" && devMode === "design" ?
+                                    <Image
+                                        src={props.coverImage}
+                                        alt={`Cover Image for ${props.title}`}
+                                        width={1300}
+                                        height={630}
+                                        style={{ borderRadius: 8 }}
+                                        placeholder='blur'
+                                        loading="eager"
+                                        blurDataURL={props.coverImage}
+                                    />
+                                    : (theme.palette.mode === "dark" && devMode === "design") ?
+                                        <Image
+                                            src={props.coverImageDark}
+                                            alt={`Cover Image for ${props.title}`}
+                                            width={1300}
+                                            height={630}
+                                            style={{ borderRadius: 8 }}
+                                            placeholder='blur'
+                                            loading="eager"
+                                            blurDataURL={props.coverImageDark}
+                                        />
+                                        : (theme.palette.mode === "light" && devMode === "dev") ?
+                                            <Image
+                                                src={props.coverImageDev}
+                                                alt={`Cover Image for ${props.title}`}
+                                                width={1300}
+                                                height={630}
+                                                style={{ borderRadius: 8 }}
+                                                placeholder='blur'
+                                                loading="eager"
+                                                blurDataURL={props.coverImageDev}
+                                            />
+                                            :
+                                            <Image
+                                                src={props.coverImageDarkDev}
+                                                alt={`Cover Image for ${props.title}`}
+                                                width={1300}
+                                                height={630}
+                                                style={{ borderRadius: 8 }}
+                                                placeholder='blur'
+                                                loading="eager"
+                                                blurDataURL={props.coverImageDarkDev}
+                                            />
+                                }
+                            </div>
+                        </div>
+                        <Typography variant='h4'>
+                            {props.title}
+                        </Typography>
+                        <br />
+                        <Typography variant='h6'>{props.description}</Typography>
+                    </div>
+                </PreviewButton>
+            </Link>
+
+        )
+    }
 
 }

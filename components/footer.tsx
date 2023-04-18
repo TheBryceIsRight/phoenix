@@ -35,7 +35,7 @@ const Footer = () => {
                 View the code on GitHub
               </Button>
             </Link>
-            <Link href="/design/resume" passHref>
+            <Link href="/resume" passHref>
               <Button color='secondary' size="large" startIcon={<InsertDriveFile />}>
                 Resume
               </Button>
@@ -49,7 +49,7 @@ const Footer = () => {
             <Link href={`/${devMode}/functionize`} passHref><Button variant="text" color="secondary">Functionize</Button></Link>
             <Link href={`/${devMode}/elavon-status`} passHref><Button variant="text" color="secondary">System Status</Button></Link>
             <Link href={`/${devMode}/elavon-dev`} passHref><Button variant="text" color="secondary">Developer Portal</Button></Link>
-            <Link href="/design/me" passHref><Button variant="text" color="secondary">About Me</Button></Link>
+            <Link href="/me" passHref><Button variant="text" color="secondary">About Me</Button></Link>
           </Stack>
       <br />
       <Box alignContent="center" textAlign="center" style={{ width: "100%" }}>

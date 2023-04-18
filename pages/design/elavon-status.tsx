@@ -15,6 +15,7 @@ import Layout from "../../components/layout"
 import Mosaic from "../../components/mosaic"
 import Link from "next/link"
 import { Code } from '@mui/icons-material';
+import SwitchButton from "../../components/switchButton"
 
 
 const figmaWrapper = {
@@ -78,7 +79,7 @@ export default function Systemstatus() {
                 <Container maxWidth="lg">
                     <Stack spacing={2} direction="row" alignItems="center">
                         <Typography variant='h3'>Elavon, subsidiary of U.S. Bank</Typography>
-                            <Chip label="Designer Version" />
+                        <Chip label="Designer Version" />
                     </Stack>
                     <br />
                     <Typography variant='h4'>How do we inform others of outages of critical systems?
@@ -100,9 +101,10 @@ export default function Systemstatus() {
                     <Typography variant='body1'>This page covers my work as the UX/UI Designer. If you are looking for my developer work, you can go here:
                     </Typography>
                     <br />
-                    <Link href="/dev/elavon-status" passHref>
+                    {/* <Link href="/dev/elavon-status" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
-                    </Link>
+                    </Link> */}
+                    <SwitchButton route="elavon-status" />
                     <br />
                     <br />
                     <br />
