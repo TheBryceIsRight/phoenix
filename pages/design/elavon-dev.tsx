@@ -119,7 +119,7 @@ export default function Devportal() {
                 {/* <Link href="/dev/elavon-dev" passHref>
                     <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
                 </Link> */}
-                <SwitchButton route="elavon-dev" />
+                <SwitchButton />
                 <br />
                 <br />
                 <br />

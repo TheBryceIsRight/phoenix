@@ -15,7 +15,7 @@ import ProtectedImage from "../../components/protected-image"
 import site_map from '../../public/assets/elavon/site_map.svg'
 import ACME_home from "../../public/assets/acme/ACME-home.png"
 import ACME_details from "../../public/assets/acme/ACME-details.png"
-
+import SwitchButton from "../../components/switchButton";
 
 const videoWrapper = {
     paddingBottom: "56.25%",
@@ -110,9 +110,7 @@ export default function Devportal() {
                 <Typography variant='body1'>This page covers my work as an accessibility specialist. If you are looking for my designer work, you can go here:
                 </Typography>
                 <br />
-                <Link href="/design/elavon-dev" passHref>
-                    <Button variant="outlined" color="secondary" startIcon={<Palette />}>Switch to Designer View</Button>
-                </Link>
+                <SwitchButton />
                 <br />
                 <br />
                 <br />

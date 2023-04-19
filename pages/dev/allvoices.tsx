@@ -68,7 +68,7 @@ export default function AllVoices() {
                     role="Full Stack Developer"
                     company="AllVoices"
                     timeframe="May 2022 - Jan 2023"
-                    teamstyle="Back end Dev Team of 4"
+                    teamstyle="Backend Dev Team of 4"
                     tools="Next.js, React, Typescript, Node.js, GraphQL, Mocha, Git, AWS"
                 >
                 </SummaryCard>
@@ -103,7 +103,7 @@ export default function AllVoices() {
                     {/* <Link href="/design/allvoices" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Palette />}>Switch to Designer View</Button>
                     </Link> */}
-                    <SwitchButton route="allvoices" />
+                    <SwitchButton />
                     <br />
                     <br />
                     <br />
@@ -124,7 +124,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant='h6'>360° View</Typography>
                     <br />
-                    <Typography variant='body1'>Quickly into my role at AllVoices I outpaced the rate of new design work, which led to me adopting an entire second role: full stack developer. As front end had enough resources, I primarily wrote back end APIs in Node.js within Next.js using GraphQL. I would also occaisonally take front end React stories so that I could link the two sides of the feature together. Few developers on staff had an understanding of the platform from both angles, so I was also a resource for bug diagnosis and remidation.
+                    <Typography variant='body1'>Quickly into my role at AllVoices I outpaced the rate of new design work, which led to me adopting an entire second role: full stack developer. As front end had enough resources, I primarily wrote backend APIs in Node.js within Next.js using GraphQL. I would also occaisonally take front end React stories so that I could link the two sides of the feature together. Few developers on staff had an understanding of the platform from both angles, so I was also a resource for bug diagnosis and remidation.
                     </Typography>
                     <br />
                     <br />
@@ -153,7 +153,7 @@ export default function AllVoices() {
                     <br />
                     <Typography variant="h4">Messaging Templates</Typography>
                     <br />
-                    <Typography variant='body1'>This was one of the first features I wrote where I was wholly responsible from end to end, including back end API tests in Mocha.js. It includes multiple permissions checks so that only those who create a message template can see the delete icon.
+                    <Typography variant='body1'>This was one of the first features I wrote where I was wholly responsible from end to end, including backend API tests in Mocha.js. It includes multiple permissions checks so that only those who create a message template can see the delete icon.
                     </Typography>
                     <br />
                     <div style={figmaWrapper}>
@@ -181,7 +181,7 @@ export default function AllVoices() {
                     <Typography variant='h6'>Designers work better when they understand their developers
                     </Typography>
                     <br />
-                    <Typography variant='body1'>While some designers may underappreciate the idea that learning to code is important, it is impossible to fully account for what you're asking someone to build for you unless you grasp how they are doing it. Joining the back end team and closing PRs gave me a much better understanding of the scope of work required anytime someone recommended a new feature or product.
+                    <Typography variant='body1'>While some designers may underappreciate the idea that learning to code is important, it is impossible to fully account for what you're asking someone to build for you unless you grasp how they are doing it. Joining the backend team and closing PRs gave me a much better understanding of the scope of work required anytime someone recommended a new feature or product.
                     </Typography>
                     <br />
                     <br />

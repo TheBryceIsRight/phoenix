@@ -1,15 +1,10 @@
-import Link from "next/link"
 import { Button } from "@mui/material"
 import { Code, Palette } from '@mui/icons-material';
 import { useContext } from "react";
 import { DevModeContext } from "../context/DevModeContext";
 import { useRouter } from 'next/router';
 
-type PropType = {
-    route: string
-}
-
-export default function SwitchButton(props:PropType) {
+export default function SwitchButton() {
 
     const { devMode, setDevMode } = useContext(DevModeContext);
     const router = useRouter()
@@ -17,8 +12,26 @@ export default function SwitchButton(props:PropType) {
     const handleRoleChange = () => {
         const isCurrentDev = devMode === 'dev';
         setDevMode(isCurrentDev ? 'design' : 'dev');
-        // console.log("\nCurrent route: ", router.pathname)
-        router.push(`/${devMode}/${props.route}`)
+
+        if (router.pathname === "/design/elavon-dev") {
+            router.push("/dev/elavon-dev")
+          } else if (router.pathname === "/dev/elavon-dev") {
+            router.push("/design/elavon-dev")
+          } else if (router.pathname === "/design/elavon-status") {
+            router.push("/dev/elavon-status")
+          } else if (router.pathname === "/dev/elavon-status") {
+            router.push("/design/elavon-status")
+          } else if (router.pathname === "/design/functionize") {
+            router.push("/dev/functionize")
+          } else if (router.pathname === "/dev/functionize") {
+            router.push("/design/functionize")
+          } else if (router.pathname === "/design/allvoices") {
+            router.push("/dev/allvoices")
+          } else if (router.pathname === "/dev/allvoices") {
+            router.push("/design/allvoices")
+          } else {
+      
+          }
     };
 
     return (

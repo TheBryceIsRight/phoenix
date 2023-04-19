@@ -15,7 +15,7 @@ import Layout from "../../components/layout"
 import Mosaic from "../../components/mosaic"
 import Link from "next/link"
 import { Palette } from '@mui/icons-material';
-
+import SwitchButton from "../../components/switchButton"
 
 
 const figmaWrapper = {
@@ -100,9 +100,7 @@ export default function Systemstatus() {
                     <Typography variant='body1'>This page covers my work as a developer and accessibility specialist. If you are looking for my designer work, you can go here:
                     </Typography>
                     <br />
-                    <Link href="/design/elavon-status" passHref>
-                        <Button variant="outlined" color="secondary" startIcon={<Palette/>}>Switch to Designer View</Button>
-                    </Link>
+                    <SwitchButton />
                     <br />
                     <br />
                     <br />

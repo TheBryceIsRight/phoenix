@@ -104,7 +104,7 @@ export default function Systemstatus() {
                     {/* <Link href="/dev/elavon-status" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
                     </Link> */}
-                    <SwitchButton route="elavon-status" />
+                    <SwitchButton />
                     <br />
                     <br />
                     <br />

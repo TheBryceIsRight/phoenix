@@ -107,7 +107,7 @@ export default function AllVoices() {
                     {/* <Link href="/dev/allvoices" passHref>
                         <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
                     </Link> */}
-                    <SwitchButton route="allvoices" />
+                    <SwitchButton />
                     <br />
                     <br />
                     <br />

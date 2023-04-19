@@ -101,7 +101,7 @@ export default function Functionize() {
                 {/* <Link href="/dev/functionize" passHref>
                     <Button variant="outlined" color="secondary" startIcon={<Code />}>Switch to Developer View</Button>
                 </Link> */}
-                <SwitchButton route="functionize" />
+                <SwitchButton />
                 <br />
                 <br />
                 <br />
