@@ -9,7 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Tooltip from '@mui/material/Tooltip';
-import { DarkMode, MoreHoriz, InsertDriveFile, Code, Palette } from '@mui/icons-material';
+import { DarkMode, MoreHoriz, InsertDriveFile, Code, Palette, EmojiPeople } from '@mui/icons-material';
 import { useContext, useState } from 'react';
 import { ColorModeContext } from '../pages/_app';
 import { Menu, MenuItem } from '@mui/material';
@@ -147,6 +147,14 @@ const Header = () => {
                   <InsertDriveFile fontSize="medium" color="secondary" />
                 </ListItemIcon>
                 <ListItemText>Resume</ListItemText>
+              </MenuItem>
+            </Link>
+            <Link passHref href="/me">
+              <MenuItem onClick={handleClose} component="a">
+                <ListItemIcon>
+                  <EmojiPeople fontSize="medium" color="secondary" />
+                </ListItemIcon>
+                <ListItemText>About Me</ListItemText>
               </MenuItem>
             </Link>
             <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
