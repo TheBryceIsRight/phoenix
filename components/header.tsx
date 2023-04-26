@@ -9,7 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Tooltip from '@mui/material/Tooltip';
-import { DarkMode, MoreHoriz, InsertDriveFile, Code, Palette, EmojiPeople } from '@mui/icons-material';
+import { DarkMode, MoreHoriz, InsertDriveFile, Code, Palette, EmojiPeople, Close } from '@mui/icons-material';
 import { useContext, useState } from 'react';
 import { ColorModeContext } from '../pages/_app';
 import { Menu, MenuItem } from '@mui/material';
@@ -17,16 +17,35 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { DevModeContext } from '../context/DevModeContext';
 import { useRouter } from 'next/router';
+import { Fragment } from 'react';
+import Snackbar from '@mui/material/Snackbar';
+
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
   const { devMode, setDevMode } = useContext(DevModeContext);
+  const [snackOpen, setSnackOpen] = useState(false);
+
+  const handleSnackClick = () => {
+    setSnackOpen(true);
+  };
+
+  const handleSnackClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setSnackOpen(false);
+  };
+
   const router = useRouter()
 
   const handleRoleChange = () => {
     const isCurrentDev = devMode === 'dev';
     setDevMode(isCurrentDev ? 'design' : 'dev');
-    console.log("\nCurrent route: ", router.pathname)
+    console.log("\nCurrent route: ", router.pathname);
+
+    setSnackOpen(true);
 
     if (router.pathname === "/design/elavon-dev") {
       router.push("/dev/elavon-dev")
@@ -48,6 +67,22 @@ const Header = () => {
 
     }
   };
+
+  const action = (
+    <Fragment>
+      <Button color="primary" size="small" onClick={handleRoleChange}>
+        Undo
+      </Button>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleSnackClose}
+      >
+        <Close fontSize="small" />
+      </IconButton>
+    </Fragment>
+  );
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -176,6 +211,14 @@ const Header = () => {
           </Menu>
         </Toolbar>
       </AppBar>
+      <Snackbar
+        anchorOrigin={{vertical: "bottom", horizontal: "center"}}
+        open={snackOpen}
+        autoHideDuration={6000}
+        onClose={handleSnackClose}
+        message={`Switched to ${devMode === 'dev' ? 'Developer' : 'Designer'} mode`}
+        action={action}
+      />
     </Box>
   )
 }
