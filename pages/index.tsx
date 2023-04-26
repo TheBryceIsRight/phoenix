@@ -70,7 +70,7 @@ export default function Index() {
               <Typography variant='h6'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
             </Grid>
             <Grid>
-              <Typography variant='body1'>If you want to work with me I'm currently looking for full time and contract opportunities, so drop me a line at</Typography>
+              <Typography variant='body1'>I recently took a full time position, so I'm no longer looking for opportunities. I'm still open for part time freelance work though, so drop me a line</Typography>
             </Grid>
             <Grid>
               <Link href="mailto:brycewatson315@gmail.com" passHref>
