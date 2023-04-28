@@ -11,6 +11,7 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import Meta from '../components/meta';
 import { DevModeContext } from '../context/DevModeContext';
+import { hotjar } from 'react-hotjar';
 
 declare module '@mui/material/styles' {
   interface Palette {
@@ -112,6 +113,10 @@ export default function App({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    hotjar.initialize(3470949, 6)
+  }, [])
 
   // Update the theme only if the mode changes
   theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
