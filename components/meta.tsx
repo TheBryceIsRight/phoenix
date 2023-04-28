@@ -6,7 +6,7 @@ const Meta = () => {
   return (
     <Head>
       {/* Hotjar Tracking Code for https://bryce-watson-design.vercel.app/ */}
-      <Script id="hotjar-tracking-code" strategy="afterInteractive"
+      {/* <Script id="hotjar-tracking-code" strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `    (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -16,7 +16,7 @@ const Meta = () => {
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}}
-      />
+      /> */}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
