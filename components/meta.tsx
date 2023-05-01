@@ -5,18 +5,6 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 const Meta = () => {
   return (
     <Head>
-      {/* Hotjar Tracking Code for https://bryce-watson-design.vercel.app/ */}
-      {/* <Script id="hotjar-tracking-code" strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `    (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3470949,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}}
-      /> */}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
