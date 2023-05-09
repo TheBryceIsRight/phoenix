@@ -21,6 +21,7 @@ The site will be start on [http://localhost:3000](http://localhost:3000). If it 
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
+
 # Dependencies
 [Next.js v13](https://github.com/vercel/next.js/)
 
