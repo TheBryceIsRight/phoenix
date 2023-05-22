@@ -13,7 +13,7 @@ import { IconButton } from "@mui/material"
 import LinkedIn from "@mui/icons-material/LinkedIn"
 import GitHub from "@mui/icons-material/GitHub"
 import Toolbar from '@mui/material/Toolbar';
-import { YokeDesc, YokeTime, YokeTitle, FuncionizeTime, FunctionizeDesc, FunctionizeTitle, ElavonTime, ElavonTitle, ElavonDesc, GatechTime, GatechDesc, GatechTitle, GatechTATime, GatechTADesc, GatechTATitle, AllVoicesTime, AllVoicesTitle, AllVoicesDesc, YokeLink, AllVoicesLink, FunctionizeLink, ElavonLink, GatechTALink, ToHellWithGeorgia, AllVoicesTitle2, AllVoicesDesc2, AllVoicesNote } from "../lib/strings"
+import { YokeDesc, YokeTime, YokeTitle, FuncionizeTime, FunctionizeDesc, FunctionizeTitle, ElavonTime, ElavonTitle, ElavonDesc, GatechTime, GatechDesc, GatechTitle, GatechTATime, GatechTADesc, GatechTATitle, AllVoicesTime, AllVoicesTitle, AllVoicesDesc, YokeLink, AllVoicesLink, FunctionizeLink, ElavonLink, GatechTALink, ToHellWithGeorgia, AllVoicesTitle2, AllVoicesDesc2, AllVoicesNote, GKTime, GKTitle, GKDesc, GKLink } from "../lib/strings"
 import NextJS from "../public/assets/aboutme/NextJS.svg"
 import NextJS_Dark from "../public/assets/aboutme/NextJS_Dark.svg"
 import ReactJS from "../public/assets/aboutme/ReactJS.svg"
@@ -112,6 +112,15 @@ export default function Resume() {
                 <br />
                 <br />
                 <Typography variant='h2' fontWeight={300}>Experience</Typography>
+                <br />
+                <br />
+                <ExperienceEntry
+                    logo="GitKraken"
+                    time={GKTime}
+                    title={GKTitle}
+                    description={GKDesc}
+                    link={GKLink} />
+                <br />
                 <br />
                 <br />
                 <ExperienceEntry

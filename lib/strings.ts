@@ -1,4 +1,12 @@
-export const YokeTime = "Jan 2023 - Present"
+export const GKTime = "April 2023 - Present"
+
+export const GKTitle = "Product UX Designer"
+
+export const GKDesc = ""
+
+export const GKLink = "https://www.gitkraken.com/"
+
+export const YokeTime = "Jan 2023 - March 2023"
 
 export const YokeTitle = "Senior UX Designer"
 

@@ -2,6 +2,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
 import React from 'react';
+import GitKraken from "../public/assets/gitkraken/GitKraken-light.svg"
+import GitKraken_dark from "../public/assets/gitkraken/GitKraken-dark.svg"
 import YOKE from "../public/assets/aboutme/YOKE.svg"
 import AllVoices from "../public/assets/aboutme/AllVoices.svg"
 import Functionize from "../public/assets/aboutme/Functionize.svg"
@@ -49,17 +51,31 @@ const ExperienceEntry: React.FC<PropType> = (props) => {
                     <Grid>
                         <Link passHref href={props.link} target="_blank">
                             <LogoButton>
-                                {props.logo === "YOKE" && theme.palette.mode === "light" ?
+                                {props.logo === "GitKraken" && theme.palette.mode === "light" ?
+                                <Image
+                                    src={GitKraken}
+                                    alt="GitKraken"
+                                    width={200}
+                                />
+                                : props.logo === "GitKraken" && theme.palette.mode === "dark" ?
+                                    <Image
+                                        src={GitKraken_dark}
+                                        alt="GitKraken"
+                                        width={200}
+                                    />
+                                : props.logo === "YOKE" && theme.palette.mode === "light" ?
                                 <Image
                                     src={YOKE}
                                     alt="YOKE"
-                                    width={200}
+                                    width={100}
+                                    style={{marginRight: 100}}
                                 />
                                 : props.logo === "YOKE" && theme.palette.mode === "dark" ?
                                     <Image
                                         src={YOKE_Dark}
                                         alt="YOKE"
-                                        width={200}
+                                        width={100}
+                                        style={{marginRight: 100}}
                                     />
                                 : props.logo === "AllVoices" && theme.palette.mode === "dark" ?
                                     <Image
@@ -101,13 +117,15 @@ const ExperienceEntry: React.FC<PropType> = (props) => {
                                 : props.logo === "Elavon" && theme.palette.mode === "light" ?
                                     <Image
                                         src={Elavon}
-                                        alt="Georgia Institute of Technology"
-                                        width={200}
+                                        alt="Elavon"
+                                        width={100}
+                                        style={{marginRight: 100}}
                                     />
                                     : <Image
                                         src={Elavon_Dark}
-                                        alt="YOKE"
-                                        width={200}
+                                        alt="Elavon"
+                                        width={100}
+                                        style={{marginRight: 100}}
                                     />
                             }
                             </LogoButton>
