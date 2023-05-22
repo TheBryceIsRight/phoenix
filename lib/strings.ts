@@ -1,6 +1,6 @@
 export const YokeTime = "Jan 2023 - Present"
 
-export const YokeTitle = "Head of Design"
+export const YokeTitle = "Senior UX Designer"
 
 export const YokeDesc = "• Design Lead for a sports focused crowd fundraising platform similar to Patreon. Created high fidelity mockups using user-centered design that are informed by analytics. Acted as the technical accessibility consultant to ensure compliance to WCAG 2.1 AA standards and best practices. Originated and maintain an atomic design system based in Figma. Was responsible for training design interns, working with stakeholders on design requirements, and leading design strategy. Was expected to interview, vet, and lead a team of designers as the company scaled."
 

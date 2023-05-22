@@ -114,26 +114,59 @@ export default function Resume() {
                 <Typography variant='h2' fontWeight={300}>Experience</Typography>
                 <br />
                 <br />
-                <ExperienceEntry logo="YOKE" time={YokeTime} title={YokeTitle} description={YokeDesc} link={YokeLink} />
+                <ExperienceEntry
+                    logo="YOKE"
+                    time={YokeTime}
+                    title={YokeTitle}
+                    description={YokeDesc}
+                    link={YokeLink} />
                 <br />
                 <br />
-                <ExperienceEntryExtended logo="AllVoices" time={AllVoicesTime} title={AllVoicesTitle} description={AllVoicesDesc} link={AllVoicesLink} title2={AllVoicesTitle2} description2={AllVoicesDesc2} note={AllVoicesNote} />
+                <ExperienceEntryExtended
+                    logo="AllVoices"
+                    time={AllVoicesTime}
+                    title={AllVoicesTitle}
+                    description={AllVoicesDesc}
+                    link={AllVoicesLink}
+                    title2={AllVoicesTitle2}
+                    description2={AllVoicesDesc2}
+                    note={AllVoicesNote} />
                 <br />
                 <br />
-                <ExperienceEntry logo="Functionize" time={FuncionizeTime} title={FunctionizeTitle} description={FunctionizeDesc} link={FunctionizeLink} />
+                <ExperienceEntry
+                    logo="Functionize"
+                    time={FuncionizeTime}
+                    title={FunctionizeTitle}
+                    description={FunctionizeDesc}
+                    link={FunctionizeLink} />
                 <br />
                 <br />
-                <ExperienceEntry logo="Elavon" time={ElavonTime} title={ElavonTitle} description={ElavonDesc} link={ElavonLink} />
+                <ExperienceEntry
+                    logo="Elavon"
+                    time={ElavonTime}
+                    title={ElavonTitle}
+                    description={ElavonDesc}
+                    link={ElavonLink} />
                 <br />
                 <br />
-                <ExperienceEntry logo="GT" time={GatechTATime} title={GatechTATitle} description={GatechTADesc} link={GatechTALink} />
+                <ExperienceEntry
+                    logo="GT"
+                    time={GatechTATime}
+                    title={GatechTATitle}
+                    description={GatechTADesc}
+                    link={GatechTALink} />
                 <br />
                 <br />
                 <br />
                 <Typography variant='h2' fontWeight={300}>Education</Typography>
                 <br />
                 <br />
-                <ExperienceEntry logo="GT" time={GatechTime} title={GatechTitle} description={GatechDesc} link={ToHellWithGeorgia} />
+                <ExperienceEntry
+                    logo="GT"
+                    time={GatechTime}
+                    title={GatechTitle}
+                    description={GatechDesc}
+                    link={ToHellWithGeorgia} />
                 <br />
                 <br />
                 <Typography variant='h2' fontWeight={300}>Skills</Typography>
