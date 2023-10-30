@@ -13,8 +13,8 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 ## Setup
 
 ```bash
-pnpm i
-pnpm run dev
+yarn
+yarn run dev
 ```
 
 The site will be start on [http://localhost:3000](http://localhost:3000). If it doesn't work, leave me a comment on this repo or submit a pull request.
