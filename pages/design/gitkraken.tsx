@@ -144,7 +144,7 @@ export default function GitKraken() {
                    <Typography variant='h4'>Style Guide</Typography>
                     <br />
                     <div style={figmaWrapper}>
-                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYJvOtvtVmUMCCPNEi2xfzn%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D1%253A767%26mode%3Ddesign%26t%3DB2zDXoBcb4o4kfz9-1" allowFullScreen={true}>
+                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D2%253A948%26mode%3Ddesign%26t%3D1w1R30P2iqbE2X0v-1" allowFullScreen={true}>
                         </iframe>
                     </div>
                     <br />
