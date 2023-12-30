@@ -63,6 +63,10 @@ const Header = () => {
       router.push("/dev/allvoices")
     } else if (router.pathname === "/dev/allvoices") {
       router.push("/design/allvoices")
+    } else if (router.pathname === "/design/gitkraken") {
+      router.push("/dev/gitkraken")
+    } else if (router.pathname === "/dev/gitkraken") {
+      router.push("/design/gitkraken")
     } else {
 
     }
@@ -113,7 +117,7 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            Bryce Watson's Portfolio
+            Bryce's Portfolio
           </Typography>
           <Tooltip title="Dark Mode" arrow>
             <IconButton

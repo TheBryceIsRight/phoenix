@@ -45,6 +45,7 @@ const Footer = () => {
       </Grid>
       <br />
       <Stack direction="row" spacing={2} flexWrap="wrap" alignItems="stretch" justifyContent="center">
+            <Link href={`/${devMode}/gitkraken`} passHref><Button variant="text" color="secondary">GitKraken</Button></Link>
             <Link href={`/${devMode}/allvoices`} passHref><Button variant="text" color="secondary">AllVoices</Button></Link>
             <Link href={`/${devMode}/functionize`} passHref><Button variant="text" color="secondary">Functionize</Button></Link>
             <Link href={`/${devMode}/elavon-status`} passHref><Button variant="text" color="secondary">System Status</Button></Link>

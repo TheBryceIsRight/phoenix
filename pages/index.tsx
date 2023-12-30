@@ -7,6 +7,10 @@ import MuiContainer from '@mui/material/Container'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import Image from 'next/image'
+import GitKraken from "../public/assets/gitkraken/gitkraken.png"
+import GitKraken_dark from "../public/assets/gitkraken/gitkraken_dark.png"
+import GitKraken_dev from "../public/assets/gitkraken/gitkraken_dev.png"
+import GitKraken_dark_dev from "../public/assets/gitkraken/gitkraken_dark_dev.png"
 import AllVoices from "../public/assets/allvoices/allvoices.png"
 import AllVoices_dark from "../public/assets/dark_mode/allvoices.png"
 import AllVoices_dev from "../public/assets/allvoices/dev-allvoices.png"
@@ -92,6 +96,20 @@ export default function Index() {
           justifyContent="center"
           spacing={0}
         >
+          <Grid paddingX={XPadding}>
+            <HeroWork
+                title="GitKraken"
+                description="Helping developers create the future"
+                link="gitkraken"
+                coverImage={GitKraken.src}
+                coverImageDark={GitKraken_dark.src}
+                coverImageDev={GitKraken_dev.src}
+                coverImageDarkDev={GitKraken_dark_dev.src}
+              />
+          </Grid>
+          <br />
+          <br />
+          <br />
           <Grid paddingX={XPadding}>
             <HeroWork
                 title="AllVoices"

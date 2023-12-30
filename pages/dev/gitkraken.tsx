@@ -89,7 +89,7 @@ export default function GitKraken() {
                 <Container maxWidth="lg">
                     <Stack spacing={2} direction="row" alignItems="center">
                         <Typography variant='h3'>GitKraken</Typography>
-                        <Chip label="Designer Version" />
+                        <Chip label="Developer Version" />
                     </Stack>
                     <br />
                     <Typography variant='h4'>How do we equip the modern software development team to do their best work?
@@ -117,32 +117,25 @@ export default function GitKraken() {
                     <Typography variant='h4'>Goals</Typography>
                     <br />
                     <br />
-                    <Typography variant='h6'>World Class Developer Tools</Typography>
+                    <Typography variant='h6'>High Standards of Code Quality</Typography>
                     <br />
-                    <Typography variant='body1'>GitKraken has a large and dedicated userbase, we strive to give developers the experience they deserve from their tooling. 
+                    <Typography variant='body1'>As our own developers use GitKraken daily, we have high standards for the performance of our frontend experience. UI should be snappy, easy to maintain, and enjoyable to use and develop for.
                     </Typography>
                     <br />
                     <br />
-                    <Typography variant='h6'>Design System </Typography>
+                    <Typography variant='h6'>Speed is of the Essence</Typography>
                     <br />
-                    <Typography variant='body1'>One of my first initiatives upon entering this role was to standardize all major UI components in a design system. This would eventually result in a prototype of the entire client in Figma, complete with interactive states throughout. 
+                    <Typography variant='body1'>We move quickly at GitKraken, because our users deserve the latest and greatest developer experience. That often means that small things would get fixed in design QA, which I helped contribute to. 
                     </Typography>
                     <br />
                     <br />
-                    <Typography variant='h6'>Accessibility is still key</Typography>
+                    <Typography variant='h6'>Accessibility</Typography>
                     <br />
-                    <Typography variant='body1'>I helped to remediate a11y issues by scanning for them in Figma with Axe and Contrast Checkers, as well as fixing them in products with Axe Pro. 
+                    <Typography variant='body1'>While there's always more work to be be done, we strive to provide a an exceptional experience for all users, regardless of ability. 
                     </Typography>
                     <br />
                     <br />
                     <br />
-                    <br />
-                   <Typography variant='h4'>Style Guide</Typography>
-                    <br />
-                    <div style={figmaWrapper}>
-                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D2%253A948%26mode%3Ddesign%26t%3D1w1R30P2iqbE2X0v-1" allowFullScreen={true}>
-                        </iframe>
-                    </div>
                     <br />
                     <br />
                     <br />
