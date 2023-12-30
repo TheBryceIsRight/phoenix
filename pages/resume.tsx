@@ -94,16 +94,19 @@ export default function Resume() {
                                 </IconButton>
                             </Tooltip>
                         </Link>
-                        <Link passHref href="https://drive.google.com/file/d/1EfUdvWhO8S5Fy01H_M4GIAn5HqMgfqLi/view?usp=share_link" target="_blank">
+                        <Link passHref href="https://drive.google.com/file/d/1IfeDgsPbhzMN7PU0KCVsFuJ6S6qsBJe0/view?usp=drive_link" target="_blank">
                             <Tooltip title="Download Resume" arrow>
-                                <IconButton
+                                <Button
                                     size="large"
                                     color="secondary"
-                                    aria-label="GitHub"
+                                    aria-label="Download Resume"
+                                    startIcon={
+                                        <Download />
+                                    }
                                     sx={{ mr: 2 }}
                                 >
-                                    <Download />
-                                </IconButton>
+                                    Download Resume
+                                </Button>
                             </Tooltip>
                         </Link>
                     </Toolbar>
