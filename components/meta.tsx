@@ -42,8 +42,8 @@ const Meta = () => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
       <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
       <meta property="twitter:image:alt" content="laptop with user interface and the AllVoices logo"></meta>
-      <meta property="twitter:image" content="https://res.cloudinary.com/bryce-portfolio/image/upload/v1703969210/GitKraken.png"></meta>
-      <meta property="og:image" content="https://res.cloudinary.com/bryce-portfolio/image/upload/v1703969210/GitKraken.png"></meta>
+      <meta property="twitter:image" content="https://res.cloudinary.com/bryce-portfolio/image/upload/v1703969612/og_image_gi5r17.png"></meta>
+      <meta property="og:image" content="https://res.cloudinary.com/bryce-portfolio/image/upload/v1703969612/og_image_gi5r17.png"></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta property="twitter:title" content="Bryce Watson's Design Portfolio"></meta>
       <meta property="twitter:description" content="A summary of my work as a Product Designer"></meta>
