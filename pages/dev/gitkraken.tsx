@@ -3,7 +3,7 @@ import MyContainer from "../../components/container"
 import { ButtonBase, Container } from "@mui/material"
 import { Typography, styled, Button, ButtonProps, Stack, Chip } from "@mui/material"
 import Image from 'next/image'
-import undraw_hero from '../../public/assets/gitkraken/undraw_hero.svg'
+import undraw_hero from '../../public/assets/gitkraken/programming.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import Link from "next/link"
@@ -147,7 +147,7 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
-                    <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>
+                    <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹💨</Typography>
                     <br />
                     <br />
                     <br />
