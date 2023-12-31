@@ -103,6 +103,7 @@ export default function GitKraken() {
                         src={RepoViewScreenshot}
                         alt="Hero image for GitKraken"
                         loading="eager"
+                        style={{borderRadius: 6}}
                     />
                     <br />
                     {/* <Typography variant='body1'>This page covers my work as the Product UX Designer. If you are looking for my developer work, you can go here:
