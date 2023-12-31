@@ -133,7 +133,7 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h6'>Accessibility is still key</Typography>
                     <br />
-                    <Typography variant='body1'>I remediated a11y issues by scanning for them in Figma with Axe and Contrast Checkersand fixing them with Axe Pro. 
+                    <Typography variant='body1'>I remediated a11y issues by scanning for them in Figma with Axe and Contrast Checkers and fixing them with Axe Pro. 
                     </Typography>
                     <br />
                     <br />
