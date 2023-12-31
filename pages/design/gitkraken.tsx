@@ -141,7 +141,7 @@ export default function GitKraken() {
                    <Typography variant='h4'>Style Guide</Typography>
                     <br />
                     <div style={figmaWrapper}>
-                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D39%253A444%26mode%3Ddesign%26t%3DBz7j5gErZZin80Gn-1" allowFullScreen={true}>
+                        <iframe onError={function () { /* silence */ }} aria-label="GitKraken Style Guide" style={iframeStyle} title="GitKraken Style Guide" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D39%253A444%26mode%3Ddesign%26t%3DBz7j5gErZZin80Gn-1" allowFullScreen={true}>
                         </iframe>
                     </div>
                     <br />
@@ -153,6 +153,22 @@ export default function GitKraken() {
                         src={site_map}
                         alt="GitKraken site map"
                     />
+                    <br />
+                    <br />
+                    <br />
+                    <Typography variant='h4'>GitKraken Client Figma Prototype</Typography>
+                    <br />
+                    <Typography variant='body1'>I created this prototype to showcase upcoming features with realistic animations for user testing. For the first version it took about a month of creating components for the design system in addition to my usual responsibilities. As GitKraken mostly uses instant animations, the prototype covers the vast majority of possible features with 100% accurate animation reproduction.
+                    </Typography>
+                    <br/>
+                    <Typography variant='body1'>For the best experience, use fullscreen mode.
+                    </Typography>
+                    <br/>
+                    <div style={figmaWrapper}>
+                        <iframe onError={function () { /* silence */ }} aria-label="GitKraken Figma prototype" style={iframeStyle} title="GitKraken Client Prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FofjJe696imMsxIk4VtK8CD%2FGitKraken-Client-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D5-11994%26viewport%3D569%252C398%252C0.11%26t%3DemXdB5KZtLRN8NRd-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D5%253A11994%26mode%3Ddesign" allowFullScreen={true}>
+                        </iframe>
+                    </div>
+                    <br />
                     <br />
                     <br />
                     <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>
