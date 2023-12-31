@@ -12,6 +12,7 @@ import Layout from "../../components/layout"
 import { Code } from '@mui/icons-material';
 import SwitchButton from "../../components/switchButton"
 import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_view.png"
+import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
 
 
 const videoWrapper = {
