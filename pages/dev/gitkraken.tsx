@@ -95,7 +95,7 @@ export default function GitKraken() {
                     <Typography variant='h4'>How do we equip the modern software development team to do their best work?
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. But merging doesn't always go smoothly, and you could be talking about dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with it's Git visualization graph. 
+                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. However, merging doesn't always go smoothly, and you could be dealing with dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with it's Git visualization graph. 
                     </Typography>
                     <br />
                     <Image
@@ -139,7 +139,7 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
-                    <Typography variant='h5'>This page is still under construction, please pardon any dust 🧹</Typography>
+                    <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>
                     <br />
                     <br />
                     <br />

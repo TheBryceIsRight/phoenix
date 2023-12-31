@@ -95,7 +95,7 @@ export default function GitKraken() {
                     <Typography variant='h4'>How do we equip the modern software development team to do their best work?
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. But merging doesn't always go smoothly, and you could be talking about dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with it's Git visualization graph. 
+                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. However, merging doesn't always go smoothly, and you could be dealing dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with it's Git visualization graph. 
                     </Typography>
                     <br />
                     <Image
@@ -125,13 +125,13 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h6'>Design System </Typography>
                     <br />
-                    <Typography variant='body1'>One of my first initiatives upon entering this role was to standardize all major UI components in a design system. This would eventually result in a prototype of the entire client in Figma, complete with interactive states throughout. 
+                    <Typography variant='body1'>One of my first initiatives upon entering this role was to standardize all major UI components in a design system. I would created a prototype of the entire client in Figma complete with interactive states throughout. This prototype allowed us to test new features quickly during user testing with high fidelity and without needing the time of a developer. 
                     </Typography>
                     <br />
                     <br />
                     <Typography variant='h6'>Accessibility is still key</Typography>
                     <br />
-                    <Typography variant='body1'>I helped to remediate a11y issues by scanning for them in Figma with Axe and Contrast Checkers, as well as fixing them in products with Axe Pro. 
+                    <Typography variant='body1'>I remediated a11y issues by scanning for them in Figma with Axe and Contrast Checkersand fixing them with Axe Pro. 
                     </Typography>
                     <br />
                     <br />
@@ -146,7 +146,7 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
-                    <Typography variant='h5'>This page is still under construction, please pardon any dust 🧹</Typography>
+                    <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>
                     <br />
                     <br />
                     <br />
