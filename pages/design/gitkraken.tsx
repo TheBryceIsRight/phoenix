@@ -12,6 +12,7 @@ import Layout from "../../components/layout"
 import { Code } from '@mui/icons-material';
 import SwitchButton from "../../components/switchButton"
 import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_view.png"
+import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
 
 
 const videoWrapper = {
@@ -140,10 +141,18 @@ export default function GitKraken() {
                    <Typography variant='h4'>Style Guide</Typography>
                     <br />
                     <div style={figmaWrapper}>
-                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D2%253A948%26mode%3Ddesign%26t%3D1w1R30P2iqbE2X0v-1" allowFullScreen={true}>
+                        <iframe onError={function () { /* silence */ }} aria-label="Messaging Templatges Figma prototype" style={iframeStyle} title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D39%253A444%26mode%3Ddesign%26t%3DBz7j5gErZZin80Gn-1" allowFullScreen={true}>
                         </iframe>
                     </div>
                     <br />
+                    <br />
+                    <br />
+                    <Typography variant='h4'>Information Architecture</Typography>
+                    <br />
+                    <Image
+                        src={site_map}
+                        alt="GitKraken site map"
+                    />
                     <br />
                     <br />
                     <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>

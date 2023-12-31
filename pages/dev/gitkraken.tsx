@@ -137,6 +137,13 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
+                    <Typography variant='h4'>Information Architecture</Typography>
+                    <br />
+                    <Image
+                        src={site_map}
+                        alt="GitKraken site map"
+                    />
+                    <br />
                     <br />
                     <br />
                     <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹</Typography>
