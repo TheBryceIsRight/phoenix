@@ -127,7 +127,7 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h6'>Design System </Typography>
                     <br />
-                    <Typography variant='body1'>One of my first initiatives upon entering this role was to standardize all major UI components in a design system. I would created a prototype of the entire client in Figma complete with interactive states throughout. This prototype allowed us to test new features quickly during user testing with high fidelity and without needing the time of a developer. 
+                    <Typography variant='body1'>One of my first initiatives upon entering this role was to standardize all major UI components in a design system. I also created a prototype of the  client in Figma with interactive states. This prototype allowed us to test new features quickly during user testing with high fidelity and without needing the time of a developer. 
                     </Typography>
                     <br />
                     <br />
