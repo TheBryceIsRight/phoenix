@@ -11,6 +11,7 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import Meta from '../components/meta';
 import { DevModeContext } from '../context/DevModeContext';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 declare module '@mui/material/styles' {
   interface Palette {
