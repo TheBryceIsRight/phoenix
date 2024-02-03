@@ -146,7 +146,6 @@ export default function App({ Component, pageProps }: AppProps) {
             `
       }}
     />
-    <SpeedInsights/>
     <DevModeContext.Provider value={{devMode, setDevMode}}>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
@@ -157,6 +156,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
           <Meta />
           <Analytics />
+          <SpeedInsights/>
         </ThemeProvider>
       </ColorModeContext.Provider>
     </DevModeContext.Provider>
