@@ -2,7 +2,7 @@ export const GKTime = "April 2023 - Present"
 
 export const GKTitle = "Product UX Designer"
 
-export const GKDesc = "• Create sketches, wireframes, medium and high fidelity mockups, and fully interactive prototypes in Figma. Help plan, coordinate, and run user testing within the company on upcoming features. Analyze and plan analytics to assist in design decisions. Contribute to projects directly by assisting with full stack development and QA. Remediate accessibility issues across the company. Created and maintain a design system in Figma based on GitKraken Client. Components in Figma are a 1:1 visual match with their implementation counterparts. Wrote all designer facing documentation for the design system. Co-design Focus View across 4 products within the company"
+export const GKDesc = "• Create sketches, wireframes, medium and high fidelity mockups, and fully interactive prototypes in Figma. Help plan, coordinate, and run user testing within the company on upcoming features. Analyze and plan analytics to assist in design decisions. Contribute to projects directly by assisting with full stack development and QA. Remediate accessibility issues across the company. Created and maintain a design system in Figma based on GitKraken Client. Components in Figma are a 1:1 visual match with their implementation counterparts. Wrote all designer facing documentation for the design system. Co-design Launchpad across 4 products within the company"
 
 export const GKLink = "https://www.gitkraken.com/"
 
