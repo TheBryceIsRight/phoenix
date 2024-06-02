@@ -167,43 +167,6 @@ export default function Index() {
             </div>
           </Grid>
           <br />
-          <Grid paddingX={XPaddingFreelance}>
-            <Typography variant='h3'>Freelance Work</Typography>
-            <br />
-            <br />
-            <Typography variant="h6">A graphic design & animation portfolio site I built for my friend, fully translated into English, Spanish, and Catalan</Typography>
-            <br />
-            <Link href="https://sandra-benito-art-and-design.vercel.app/" passHref target="_blank">
-              <PreviewButton>
-                <Container>
-                  <br />
-                  {theme.palette.mode === "light" ?
-                    <Image
-                      src={SandrasPortfolio}
-                      alt="Cover Image for Sandra's Graphic Design Portfolio"
-                      style={{ borderRadius: 8 }}
-                      placeholder='blur'
-                      loading="eager"
-                    />
-                    :
-                    <Image
-                      src={SandrasPortfolioDark}
-                      alt="Cover Image for Sandra's Graphic Design Portfolio"
-                      style={{ borderRadius: 8 }}
-                      placeholder='blur'
-                      loading="eager"
-                    />
-                  }
-                  <br />
-                  <br />
-                </Container>
-              </PreviewButton>
-            </Link>
-            <br />
-            <br />
-            <br />
-            <br />
-          </Grid>
         </Grid>
       </Layout>
     </>
