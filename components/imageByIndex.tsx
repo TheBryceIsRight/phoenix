@@ -66,6 +66,13 @@ import Fze4 from "../public/assets/fze-images/Debug_Editor.png"
 import Fze5 from "../public/assets/fze-images/CV_controls.png"
 import Fze6 from "../public/assets/fze-images/Extensions.png"
 import Fze7 from "../public/assets/fze-images/Users.png"
+// GitKraken Style Guide
+import gk_style_01 from "../public/assets/gitkraken/style_guide/background_colors_dark.svg"
+import gk_style_02 from "../public/assets/gitkraken/style_guide/background_colors_light.svg"
+import gk_style_03 from "../public/assets/gitkraken/style_guide/border_colors_dark.svg"
+import gk_style_04 from "../public/assets/gitkraken/style_guide/border_colors_light.svg"
+import gk_style_05 from "../public/assets/gitkraken/style_guide/text_colors_dark.svg"
+import gk_style_06 from "../public/assets/gitkraken/style_guide/text_colors_light.svg"
 
 export const dev_portal_lowfi: string[] = [LowFi1, LowFi2, LowFi3, LowFi4, LowFi5, LowFi6, LowFi7, LowFi8, LowFi9]
 
@@ -99,6 +106,10 @@ export const fze_hi_fi: string[] = [Fze1.src, Fze2.src, Fze3.src, Fze4.src, Fze5
 
 export const fze_hi_fi_alt: string[] = ["Landing Page High Fidelity Mockup", "Project Page High Fidelity Mockup", "Test Editing Page High Fidelity Mockup", "Debug Editor Page High Fidelity Mockup", "Visual Debug Editor Page High Fidelity Mockup", "Extensions Page High Fidelity Mockup", "Users Page High Fidelity Mockup"]
 
+export const gk_style_guide: string[] = [gk_style_01.src, gk_style_02.src, gk_style_03.src, gk_style_04.src, gk_style_05.src, gk_style_06.src]
+
+export const gk_style_guide_alt: string[] = ["GitKraken Background Colors Dark", "GitKraken Background Colors Light", "GitKraken Border Colors Dark", "GitKraken Border Colors Light", "GitKraken Text Colors Dark", "GitKraken Text Colors Light"]
+
 
 const imageByIndex = (index: number, type: string): string => {
     return type === "devportal_lowfi" ?
@@ -117,6 +128,8 @@ const imageByIndex = (index: number, type: string): string => {
                                 elavon_personas[index % elavon_personas.length]
                                 : type === "fze_hi_fi" ?
                                     fze_hi_fi[index % fze_hi_fi.length]
+                                    : type === "gk_style_guide" ?
+                                    gk_style_guide[index % gk_style_guide.length]
                                     :
                                     devportal_hifi_dark[index % devportal_hifi_dark.length]
 }
@@ -138,8 +151,10 @@ export const altByIndex = (index: number, type: string): string => {
                                 elavon_personas_alt[index % elavon_personas_alt.length]
                                 : type === "fze_hi_fi" ?
                                     fze_hi_fi_alt[index % fze_hi_fi.length]
-                                    :
-                                    fze_hi_fi_alt[index % fze_hi_fi_alt.length]
+                                        : type === "gk_style_guide" ?
+                                        gk_style_guide_alt[index % gk_style_guide_alt.length]
+                                        :
+                                        fze_hi_fi_alt[index % fze_hi_fi_alt.length]
 }
 
 

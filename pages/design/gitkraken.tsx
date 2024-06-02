@@ -13,6 +13,8 @@ import { Code } from '@mui/icons-material';
 import SwitchButton from "../../components/switchButton"
 import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_view.png"
 import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
+import EmblaCarousel from '../../components/emblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 
 const videoWrapper = {
@@ -53,6 +55,10 @@ export default function GitKraken() {
         borderRadius: 4,
         focusRipple: true
     }));
+
+    const OPTIONS: EmblaOptionsType = {}
+    const SLIDE_COUNT = 6
+    const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
     return <Layout>
         <MyContainer>
@@ -141,15 +147,7 @@ export default function GitKraken() {
                     <br />
                    <Typography variant='h4'>Style Guide</Typography>
                     <br />
-                    <div style={figmaWrapper}>
-                        <iframe 
-                            onError={function () { /* silence */ }} 
-                            aria-label="GitKraken Style Guide" 
-                            style={iframeStyle} title="GitKraken Style Guide" 
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGDDEmYlSX9yWiDG77e9Gxj%2FDesign-Library-Documentation%3Ftype%3Ddesign%26node-id%3D39%253A444%26mode%3Ddesign%26t%3DBz7j5gErZZin80Gn-1" 
-                            allowFullScreen={true}>
-                        </iframe>
-                    </div>
+                    <EmblaCarousel slides={SLIDES} options={OPTIONS} type="gk_style_guide" />
                     <br />
                     <br />
                     <br />

@@ -133,12 +133,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                             height={906}
                                             width={1200}
                                         />
-                                        :
-                                        <Image
-                                            // style={embla__slide__img}
-                                            src={imageByIndex(index, props.type)}
-                                            alt={altByIndex(index, props.type)}
-                                        />
+                                    : props.type === "gk_style_guide" ?
+                                    <Image
+                                        src={imageByIndex(index, props.type)}
+                                        alt={altByIndex(index, props.type)}
+                                        height={906}
+                                        width={1200}
+                                    />
+                                    :
+                                    <Image
+                                        // style={embla__slide__img}
+                                        src={imageByIndex(index, props.type)}
+                                        alt={altByIndex(index, props.type)}
+                                    />
                                 }
                             </div>
                         ))}
