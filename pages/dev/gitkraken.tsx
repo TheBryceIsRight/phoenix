@@ -15,6 +15,8 @@ import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_vie
 import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
 import programming_light from '../../public/assets/gitkraken/undraw/programming-light.svg'
 import programming_dark from '../../public/assets/gitkraken/undraw/programming-dark.svg'
+import site_map_dark from '../../public/assets/gitkraken/site_map/gitkraken_site_map_dark.svg'
+import site_map_light from '../../public/assets/gitkraken/site_map/gitkraken_site_map_light.svg'
 import { useTheme } from "@mui/material"
 
 
@@ -157,10 +159,21 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h4'>Information Architecture</Typography>
                     <br />
+                    {theme.palette.mode === "light" ?
                     <Image
-                        src={site_map}
-                        alt="GitKraken site map"
+                        src={site_map_light}
+                        alt="Hieracrhical diagram showing the page and navigation structure of GitKraken Desktop"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
                     />
+                    :
+                    <Image
+                        src={site_map_dark}
+                        alt="Hieracrhical diagram showing the page and navigation structure of GitKraken Desktop"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
+                    />
+                    }
                     <br />
                     <br />
                     <br />
