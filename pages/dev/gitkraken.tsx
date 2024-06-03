@@ -13,6 +13,10 @@ import { Code } from '@mui/icons-material';
 import SwitchButton from "../../components/switchButton"
 import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_view.png"
 import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
+import programming_light from '../../public/assets/gitkraken/undraw/programming-light.svg'
+import programming_dark from '../../public/assets/gitkraken/undraw/programming-dark.svg'
+import { useTheme } from "@mui/material"
+
 
 
 const videoWrapper = {
@@ -40,6 +44,8 @@ const iframeStyle = {
 
 
 export default function GitKraken() {
+
+    const theme = useTheme();
 
     const CustomButton = styled(Button)<ButtonProps>(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
@@ -78,11 +84,21 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
+                    {theme.palette.mode === "light" ?
                     <Image
-                        src={undraw_hero}
-                        alt="Hero image for GitKraken"
+                        src={programming_light}
+                        alt="Two people coding with a large window in the background"
+                        style={{ borderRadius: 6 }}
                         loading="eager"
                     />
+                    :
+                    <Image
+                        src={programming_dark}
+                        alt="Two people coding with a large window in the background"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
+                    />
+                }
                     <br />
                     <br />
                     <br />

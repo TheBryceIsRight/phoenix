@@ -4,6 +4,10 @@ import { ButtonBase, Container } from "@mui/material"
 import { Typography, styled, Button, ButtonProps, Stack, Chip } from "@mui/material"
 import Image from 'next/image'
 import undraw_hero from '../../public/assets/gitkraken/undraw_hero.svg'
+import discussion_light from '../../public/assets/gitkraken/undraw/discussion-light.svg'
+import discussion_dark from '../../public/assets/gitkraken/undraw/discussion-dark.svg'
+import programming_light from '../../public/assets/gitkraken/undraw/programming-light.svg'
+import programming_dark from '../../public/assets/gitkraken/undraw/programming-dark.svg'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import Link from "next/link"
@@ -15,6 +19,8 @@ import RepoViewScreenshot from "../../public/assets/gitkraken/GitKraken_repo_vie
 import site_map from '../../public/assets/gitkraken/gitkraken_site_map.svg'
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
+import { useTheme } from "@mui/material"
+
 
 
 const videoWrapper = {
@@ -42,6 +48,8 @@ const iframeStyle = {
 
 
 export default function GitKraken() {
+
+    const theme = useTheme();
 
     const CustomButton = styled(Button)<ButtonProps>(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
@@ -84,11 +92,21 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
+                {theme.palette.mode === "light" ?
                     <Image
-                        src={undraw_hero}
-                        alt="Hero image for GitKraken"
+                        src={discussion_light}
+                        alt="Three people leaning over laptops discussing code"
+                        style={{ borderRadius: 6 }}
                         loading="eager"
                     />
+                    :
+                    <Image
+                        src={discussion_dark}
+                        alt="Three people leaning over laptops discussing code"
+                        style={{ borderRadius: 6 }}
+                        loading="eager"
+                    />
+                }
                     <br />
                     <br />
                     <br />
@@ -137,7 +155,7 @@ export default function GitKraken() {
                     </Typography>
                     <br />
                     <br />
-                    <Typography variant='h6'>Accessibility is still key</Typography>
+                    <Typography variant='h6'>Accessibility is key</Typography>
                     <br />
                     <Typography variant='body1'>I remediated a11y issues by scanning for them in Figma with Axe and Contrast Checkers and fixing them with Axe Pro. 
                     </Typography>
