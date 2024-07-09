@@ -60,7 +60,7 @@ export default function Resume() {
                 <br />
                 <Grid container spacing={4} alignItems='center' alignContent='flex-start' maxWidth="lg" flexWrap="wrap" direction="row" >
                     <Grid>
-                        <Typography variant='body1' fontWeight={500}>U.S. Citizen · Atlanta, GA</Typography>
+                        <Typography variant='body1' fontWeight={500}>U.S. Citizen · Seattle, WA</Typography>
                     </Grid>
                     <Grid>
                         <Link href="mailto:brycewatson315@gmail.com" passHref>

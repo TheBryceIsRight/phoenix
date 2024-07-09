@@ -10,6 +10,6 @@ ogImage:
   url: '/assets/blog/aboutme/coffee.png'
 ---
 
-### I'm a UX Designer living in Atlanta, Georgia. I love helping create intuitive, efficient, accessible experiences in consumer software though UX Design and Full Stack development.
+### I'm a UX Designer living in Seattle, Washington. I love helping create intuitive, efficient, accessible experiences in consumer software though UX Design and Full Stack development.
 
 Photo Credit Georgia Tech Institute Communications

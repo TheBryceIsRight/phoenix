@@ -27,7 +27,7 @@ export default function Aboutme() {
             <Container maxWidth="md">
                 <Typography variant='h3'>About Me</Typography>
                 <br />
-                <Typography variant='h6'>Hey! I'm Bryce Watson, and I live in Atlanta, Georgia. I've worked in Fintech, QA automation, HR Tech, crowd fundraising, and now developer tools as a hybrid UX Designer and full stack developer.
+                <Typography variant='h6'>Hey! I'm Bryce Watson, and I live in Seattle, Washington. I've worked in Fintech, QA automation, HR Tech, crowd fundraising, and now developer tools as a hybrid UX Designer and full stack developer.
                 </Typography>
                 <br />
                 <Typography variant='h6'>As a UX Designer I'm particularly passionate about accessibility. I've diagnosed, documented, and fixed lots of these issues big and small across the different companies I've worked for.
