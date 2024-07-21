@@ -24,7 +24,7 @@ const Footer = () => {
         </Grid>
         <Grid>
           <Stack spacing={2} direction="row">
-            <Link href="https://github.com/TheBryceIsRight/phoenix" target="_blank" passHref>
+            <Link href="https://github.com/TheBryceIsRight/phoenix" target="_blank" passHref tabIndex={-1}>
               <Button
                 size="large"
                 color="secondary"
@@ -35,7 +35,7 @@ const Footer = () => {
                 View the code on GitHub
               </Button>
             </Link>
-            <Link href="/resume" passHref>
+            <Link href="/resume" passHref tabIndex={-1}>
               <Button color='secondary' size="large" startIcon={<InsertDriveFile />}>
                 Resume
               </Button>
@@ -45,12 +45,12 @@ const Footer = () => {
       </Grid>
       <br />
       <Stack direction="row" spacing={2} flexWrap="wrap" alignItems="stretch" justifyContent="center">
-            <Link href={`/${devMode}/gitkraken`} passHref><Button variant="text" color="secondary">GitKraken</Button></Link>
-            <Link href={`/${devMode}/allvoices`} passHref><Button variant="text" color="secondary">AllVoices</Button></Link>
-            <Link href={`/${devMode}/functionize`} passHref><Button variant="text" color="secondary">Functionize</Button></Link>
-            <Link href={`/${devMode}/elavon-status`} passHref><Button variant="text" color="secondary">System Status</Button></Link>
-            <Link href={`/${devMode}/elavon-dev`} passHref><Button variant="text" color="secondary">Developer Portal</Button></Link>
-            <Link href="/me" passHref><Button variant="text" color="secondary">About Me</Button></Link>
+            <Link href={`/${devMode}/gitkraken`} passHref tabIndex={-1}><Button variant="text" color="secondary">GitKraken</Button></Link>
+            <Link href={`/${devMode}/allvoices`} passHref tabIndex={-1}><Button variant="text" color="secondary">AllVoices</Button></Link>
+            <Link href={`/${devMode}/functionize`} passHref tabIndex={-1}><Button variant="text" color="secondary">Functionize</Button></Link>
+            <Link href={`/${devMode}/elavon-status`} passHref tabIndex={-1}><Button variant="text" color="secondary">System Status</Button></Link>
+            <Link href={`/${devMode}/elavon-dev`} passHref tabIndex={-1}><Button variant="text" color="secondary">Developer Portal</Button></Link>
+            <Link href="/me" passHref tabIndex={-1}><Button variant="text" color="secondary">About Me</Button></Link>
           </Stack>
       <br />
       <Box alignContent="center" textAlign="center" style={{ width: "100%" }}>

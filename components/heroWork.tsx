@@ -32,7 +32,7 @@ export default function HeroWork(props: PropType) {
     }));
 
     return (
-        <Link href={`/${devMode}/${props.link}`} passHref>
+        <Link href={`/${devMode}/${props.link}`} passHref tabIndex={-1}>
             <PreviewButton>
                 <div>
                     <div className="mb-5">

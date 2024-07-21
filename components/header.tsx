@@ -103,7 +103,7 @@ const Header = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
-          <Link aria-label='Home' href="/" passHref>
+          <Link aria-label='Home' href="/" passHref tabIndex={-1}>
             <Tooltip title="Home" arrow aria-label='Home'>
               <IconButton
                 size="large"
@@ -180,7 +180,7 @@ const Header = () => {
               'aria-labelledby': 'context-menu',
             }}
           >
-            <Link passHref href="/resume">
+            <Link passHref href="/resume" tabIndex={-1}>
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
                   <InsertDriveFile fontSize="medium" color="secondary" />
@@ -188,7 +188,7 @@ const Header = () => {
                 <ListItemText>Resume</ListItemText>
               </MenuItem>
             </Link>
-            <Link passHref href="/me">
+            <Link passHref href="/me" tabIndex={-1}>
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
                   <EmojiPeople fontSize="medium" color="secondary" />
@@ -196,7 +196,7 @@ const Header = () => {
                 <ListItemText>About Me</ListItemText>
               </MenuItem>
             </Link>
-            <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
+            <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank" tabIndex={-1}>
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon>
                   <LinkedInIcon fontSize="medium" color="secondary" />
@@ -204,7 +204,7 @@ const Header = () => {
                 <ListItemText>LinkedIn</ListItemText>
               </MenuItem>
             </Link>
-            <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
+            <Link passHref href="https://github.com/TheBryceIsRight" target="_blank" tabIndex={-1}>
               <MenuItem onClick={handleClose} component="a">
                 <ListItemIcon >
                   <GitHubIcon fontSize="medium" color="secondary" />

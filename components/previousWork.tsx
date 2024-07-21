@@ -32,7 +32,7 @@ export default function PreviousWork(props: PropType) {
     }));
     if (props.link !== "me" && props.link !== "resume") {
         return (
-            <Link href={`/${devMode}/${props.link}`} passHref>
+            <Link href={`/${devMode}/${props.link}`} passHref tabIndex={-1}>
                 <PreviewButton>
                     <div>
                         <div className="mb-5">
@@ -96,7 +96,7 @@ export default function PreviousWork(props: PropType) {
         )
     } else {
         return (
-            <Link href={`/${props.link}`} passHref>
+            <Link href={`/${props.link}`} passHref tabIndex={-1}>
                 <PreviewButton>
                     <div>
                         <div className="mb-5">
