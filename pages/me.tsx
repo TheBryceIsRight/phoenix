@@ -30,7 +30,7 @@ export default function Aboutme() {
                 <Typography variant='h6'>Hey! I'm Bryce Watson, and I live in Seattle, Washington. I've worked in Fintech, QA automation, HR Tech, crowd fundraising, and now developer tools as a hybrid UX Designer and full stack developer.
                 </Typography>
                 <br />
-                <Typography variant='h6'>As a UX Designer I'm particularly passionate about accessibility. I've diagnosed, documented, and fixed lots of these issues big and small across the different companies I've worked for.
+                <Typography variant='h6'>As a Product Designer I'm particularly passionate about accessibility. I've diagnosed, documented, and fixed lots of these issues big and small across the different companies I've worked for.
                 </Typography>
                 <br />
                 <Typography variant='h6'>As a Developer I've helped implement my designs in React (including Next.js, the framework I wrote this site in), Vue, HTML, and CSS. I also have experience as a backend developer at AllVoices, writing performant and robust GraphQL APIs as well as automated tests that continue to operate in production today. At GitKraken I diagnose and remediate accessibility issues, as well as help to implement my own designs.
