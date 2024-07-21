@@ -53,14 +53,16 @@ export default function Systemstatus() {
                 <br />
                 <br />
                 <br />
-                <SummaryCard
-                    role="UX Designer"
-                    company="Elavon, subsidiary of U.S. Bank"
-                    timeframe="Feb 2020 - August 2020"
-                    teamstyle="Solo Designer"
-                    tools="Figma, UserTesting.com, Salesforce Lightning Design System"
-                >
-                </SummaryCard>
+                <Container maxWidth="lg">
+                    <SummaryCard
+                        role="UX Designer"
+                        company="Elavon, subsidiary of U.S. Bank"
+                        timeframe="Feb 2020 - August 2020"
+                        teamstyle="Solo Designer"
+                        tools="Figma, UserTesting.com, Salesforce Lightning Design System"
+                    >
+                    </SummaryCard>
+                </Container>
                 <Container maxWidth="sm">
                     <br />
                     <br />

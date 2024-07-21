@@ -57,14 +57,16 @@ export default function Functionize() {
             <br />
             <br />
             <br />
-            <SummaryCard
-                role="Design Lead"
-                company="Functionize"
-                timeframe="July 2021 - May 2022"
-                teamstyle="Solo Designer"
-                tools="Figma, Vue, Vuetify"
-            >
-            </SummaryCard>
+            <Container maxWidth="lg">
+                <SummaryCard
+                    role="Design Lead"
+                    company="Functionize"
+                    timeframe="July 2021 - May 2022"
+                    teamstyle="Solo Designer"
+                    tools="Figma, Vue, Vuetify"
+                >
+                </SummaryCard>
+            </Container>
             <Container maxWidth="sm">
                 <br />
                 <br />

@@ -79,14 +79,16 @@ export default function GitKraken() {
                 <br />
                 <br />
                 <br />
-                <SummaryCard
-                    role="Product UX Designer"
-                    company="GitKraken"
-                    timeframe="April 2023 - Present"
-                    teamstyle="Mid-size Product Team"
-                    tools="Figma, VSCode, GitKraken"
-                >
-                </SummaryCard>
+                <Container maxWidth="lg">
+                    <SummaryCard
+                        role="Product UX Designer"
+                        company="GitKraken"
+                        timeframe="April 2023 - Present"
+                        teamstyle="Mid-size Product Team"
+                        tools="Figma, VSCode, GitKraken"
+                    >
+                    </SummaryCard>
+                </Container>
                 <Container maxWidth="sm">
                     <br />
                     <br />

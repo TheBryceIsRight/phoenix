@@ -74,6 +74,7 @@ export default function GitKraken() {
                 <br />
                 <br />
                 <br />
+                <Container maxWidth="lg">
                 <SummaryCard
                     role="Product UX Designer"
                     company="GitKraken"
@@ -82,6 +83,7 @@ export default function GitKraken() {
                     tools="Figma, VSCode, GitKraken"
                 >
                 </SummaryCard>
+                </Container>
                 <Container maxWidth="sm">
                     <br />
                     <br />

@@ -56,6 +56,7 @@ export default function Functionize() {
             <br />
             <br />
             <br />
+            <Container maxWidth="lg">
             <SummaryCard
                 role="Accessibility Specialist"
                 company="Functionize"
@@ -64,6 +65,7 @@ export default function Functionize() {
                 tools="Vue, Vueitfy, Axe Pro, Voiceover"
             >
             </SummaryCard>
+            </Container>
             <Container maxWidth="sm">
                 <br />
                 <br />

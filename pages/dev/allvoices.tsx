@@ -64,6 +64,7 @@ export default function AllVoices() {
                 <br />
                 <br />
                 <br />
+                <Container maxWidth="lg">
                 <SummaryCard
                     role="Full Stack Developer"
                     company="AllVoices"
@@ -72,6 +73,7 @@ export default function AllVoices() {
                     tools="Next.js, React, Typescript, Node.js, GraphQL, Mocha, Git, AWS"
                 >
                 </SummaryCard>
+                </Container>
                 <Container maxWidth="sm">
                     <br />
                     <br />

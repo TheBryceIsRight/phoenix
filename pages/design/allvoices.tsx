@@ -68,14 +68,16 @@ export default function AllVoices() {
                 <br />
                 <br />
                 <br />
-                <SummaryCard
-                    role="UX Lead"
-                    company="AllVoices"
-                    timeframe="May 2022 - Jan 2023"
-                    teamstyle="Solo Designer"
-                    tools="Figma, Adobe Illustrator, After Effects, Blender"
-                >
-                </SummaryCard>
+                <Container maxWidth="lg">
+                    <SummaryCard
+                        role="UX Lead"
+                        company="AllVoices"
+                        timeframe="May 2022 - Jan 2023"
+                        teamstyle="Solo Designer"
+                        tools="Figma, Adobe Illustrator, After Effects, Blender"
+                    >
+                    </SummaryCard>
+                </Container>
                 <Container maxWidth="sm">
                     <br />
                     <br />

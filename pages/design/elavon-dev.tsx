@@ -75,14 +75,16 @@ export default function Devportal() {
             <br />
             <br />
             <br />
-            <SummaryCard
-                role="UX Designer"
-                company="Elavon, subsidiary of U.S. Bank"
-                timeframe="Aug 2018 - Jan 2020"
-                teamstyle="Solo Designer"
-                tools="Sketch, Figma, UserTesting.com, Adobe Illustrator, After Effects"
-            >
-            </SummaryCard>
+            <Container maxWidth="lg">
+                <SummaryCard
+                    role="UX Designer"
+                    company="Elavon, subsidiary of U.S. Bank"
+                    timeframe="Aug 2018 - Jan 2020"
+                    teamstyle="Solo Designer"
+                    tools="Sketch, Figma, UserTesting.com, Adobe Illustrator, After Effects"
+                >
+                </SummaryCard>
+            </Container>
             <Container maxWidth="sm">
                 <br />
                 <br />
