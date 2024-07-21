@@ -50,7 +50,7 @@ const ExperienceEntryExtended: React.FC<PropType> = (props) => {
             <Grid>
                 <Grid container spacing={2} alignItems='flex-start' alignContent='flex-start' maxWidth="xl" flexWrap="wrap" direction="column" >
                     <Grid>
-                        <Link passHref href={props.link} target="_blank">
+                        <Link passHref href={props.link} target="_blank" tabIndex={-1}>
                             <LogoButton>
                                 {props.logo === "YOKE" && theme.palette.mode === "light" ?
                                     <Image

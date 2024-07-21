@@ -63,14 +63,14 @@ export default function Resume() {
                         <Typography variant='body1' fontWeight={500}>U.S. Citizen · Seattle, WA</Typography>
                     </Grid>
                     <Grid>
-                        <Link href="mailto:brycewatson315@gmail.com" passHref>
+                        <Link href="mailto:brycewatson315@gmail.com" passHref tabIndex={-1}>
                             <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                                 brycewatson315@gmail.com
                             </Button>
                         </Link>
                     </Grid>
                     <Toolbar disableGutters={true} variant="dense">
-                        <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
+                        <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank" tabIndex={-1}>
                             <Tooltip title="LinkedIn" arrow>
                                 <IconButton
                                     size="large"
@@ -82,7 +82,7 @@ export default function Resume() {
                                 </IconButton>
                             </Tooltip>
                         </Link>
-                        <Link passHref href="https://github.com/TheBryceIsRight" target="_blank">
+                        <Link passHref href="https://github.com/TheBryceIsRight" target="_blank" tabIndex={-1}>
                             <Tooltip title="GitHub" arrow>
                                 <IconButton
                                     size="large"
@@ -94,7 +94,7 @@ export default function Resume() {
                                 </IconButton>
                             </Tooltip>
                         </Link>
-                        <Link passHref href="https://drive.google.com/file/d/1IfeDgsPbhzMN7PU0KCVsFuJ6S6qsBJe0/view?usp=drive_link" target="_blank">
+                        <Link passHref href="https://drive.google.com/file/d/1IfeDgsPbhzMN7PU0KCVsFuJ6S6qsBJe0/view?usp=drive_link" target="_blank" tabIndex={-1}>
                             <Tooltip title="Download Resume" arrow>
                                 <Button
                                     size="large"
