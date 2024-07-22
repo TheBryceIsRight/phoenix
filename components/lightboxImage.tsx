@@ -26,8 +26,17 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+type Props = {
+    image: string,
+    imageName: string,
+    width: number,
+    height: number,
+    caption: string,
+    alt: string
+  }
 
-export default function LightboxImage(image: string, imageName: string, width: number, height: number, caption: string) {
+
+export default function LightboxImage(props: Props) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -42,7 +51,7 @@ export default function LightboxImage(image: string, imageName: string, width: n
     <React.Fragment>
       <Button variant="primary" 
       onClick={handleClickOpen} 
-      aria-label={image.alt}
+      aria-label={props.alt}
       style={{
         justifyContent: 'flex-start' , 
         alignContent: 'flex-start', 
@@ -54,14 +63,14 @@ export default function LightboxImage(image: string, imageName: string, width: n
         }}
     >
         <Image
-                src={image.image}
-                alt={image.alt}
+                src={props.image}
+                alt={props.alt}
                 style={{ borderRadius: 6 }}
                 loading="eager"
-                width={image.width}
-                height={image.height}
+                width={props.width}
+                height={props.height}
         />
-        <Typography variant='caption' style={{ width: '100%', display: 'flex', lineHeight: '130%', justifyContent: 'flex-start', alignContent:'flex-start'}}>{image.caption}</Typography>
+        <Typography variant='caption' style={{ width: '100%', display: 'flex', lineHeight: '130%', justifyContent: 'flex-start', alignContent:'flex-start'}}>{props.caption}</Typography>
       </Button>
       <Dialog
         fullScreen
@@ -81,19 +90,19 @@ export default function LightboxImage(image: string, imageName: string, width: n
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              {image.imageName}
+              {props.imageName}
             </Typography>
           </Toolbar>
         </AppBar>
         <Container maxWidth={'lg'}>
             <br/>
         <Image
-            src={image.image}
+            src={props.image}
             alt="Focus view initial launch"
             style={{ borderRadius: 6 }}
             loading="eager"
-            width={image.width}
-            height={image.height}
+            width={props.width}
+            height={props.height}
         />
         </Container>
       </Dialog>
