@@ -19,7 +19,7 @@ import site_map_light from '../../public/assets/gitkraken/site_map/gitkraken_sit
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import { useTheme } from "@mui/material"
-
+import LaunchpadTimeline from "../../components/launchpadTimeline"
 
 
 const videoWrapper = {
@@ -211,17 +211,20 @@ export default function GitKraken() {
                     <br />
                     <br />
                     <br />
+                    <br />
+                    <br />
+                    <br />
+                    <Typography variant='h3'>Case Study: Launchpad</Typography>
+                    <br/>
+                    <Typography variant='h5'>Designing a developer productivity tool</Typography>
+                    <br />
+                    <br />
+                    <LaunchpadTimeline/>
+                    <br/>
                     <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹💨</Typography>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <Typography variant='h3'>Thank you for reading!</Typography>
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
+                    <Typography variant='h3'>Thanks for reading!</Typography>
                 </Container>
                 <br />
                 <br />

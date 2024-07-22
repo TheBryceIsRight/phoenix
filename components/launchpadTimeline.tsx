@@ -24,6 +24,7 @@ import pr_categories_gk_dev from '../public/assets/gitkraken/launchpad/pr_catego
 import cli_launchpad from '../public/assets/gitkraken/launchpad/cli_launchpad.svg'
 import browser_extension from '../public/assets/gitkraken/launchpad/browser_extension.png'
 import quick_launchpad from '../public/assets/gitkraken/launchpad/quick_launchpad.svg'
+import LightboxImage from './lightboxImage';
 
 
 export default function LaunchpadTimeline() {
@@ -45,19 +46,24 @@ export default function LaunchpadTimeline() {
          <TimelineContent>
          <Typography variant='h5'>Focus view redesign begins</Typography>
          <br/>
-         <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (later named Launchpad), which was intended to be a kind of general dashboard for a developer using GitKraken. As part of the redesign effort, this feature would gain it's own dedicated backend service (a first for GitKraken) so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI.</Typography>
+         <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (which would later be named Launchpad), which was intended to be developer focused dashboard.</Typography>
+         <br/>
+         <Typography>As part of the redesign effort, Focus View would gain it's own dedicated backend service so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI. I worked on this project primarily with Justin Roberts, Senior Director of Product at GitKraken. </Typography>
          <br/>
          <Typography>At the time of writing, Launchpad supports integrations with GitHub, GitHub Enterprise, GitLab, GitLab Self-mananged, BitBucket, BitBucket Server, Jira Cloud, Jira Data Center, Trello, and Azure DevOps</Typography>
-         <br/>
-        <Image
-            src={old_focus_view}
-            alt="The original Focus View"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
-               <br/>
-               <Typography>Focus view started out as a combination of views that already existed in Workspaces - Pull Requests, Issues, and Work In Progress. Each table took a third of the screen, and user research found it was not particularly effective at organizing a developer's day to day interactions.</Typography>
-            </TimelineContent>
+          <br/>
+          <LightboxImage 
+          image={old_focus_view.src} 
+          imageName='Focus view first iteration' 
+          width={old_focus_view.width} 
+          height={old_focus_view.height} 
+          caption='The first version of the Focus View' 
+          alt='Focus view initial launch'
+          />
+          <Typography>Focus view started out as a home page for GitKraken Workspaces - there was a table for Pull Requests, Issues, and Work In Progress.</Typography>
+          <br/>
+          <Typography>User research suggested that while somewhat useful in this state, much would need to be done to try to make this a tool developers would want to use on daily basis.</Typography>
+      </TimelineContent>
        </TimelineItem>
       <br/>
        <TimelineItem>
@@ -71,21 +77,26 @@ export default function LaunchpadTimeline() {
          <TimelineContent>
          <Typography variant='h5'>Initial concepts</Typography>
          <br/>
-         <Image
-            src={focus_view_concept}
-            alt="Rough concept when pitching the feature"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+         <LightboxImage 
+                image={focus_view_concept.src} 
+                imageName='Focus view concept' 
+                width={focus_view_concept.width} 
+                height={focus_view_concept.height} 
+                caption="This design was mostly used as a conceptual tool to explain that Focus View needed capture more of the developer's flow then just git actions."
+                alt='Focus view concept'
+            />
+        <br/>
         <br/>
         <Typography variant='h6'>First attempt at fitting every content type into one table</Typography>
         <br/>
-        <Image
-            src={initial_sketches}
-            alt="Focus view concept"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+        <LightboxImage 
+              image={initial_sketches.src} 
+              imageName='Focus view concept' 
+              width={initial_sketches.width} 
+              height={initial_sketches.height} 
+              caption='Originally there were ideas about other item types Launchpad could have - here there is cloud patches in addition to to do items' 
+              alt='Focus view concept'
+          />
          </TimelineContent>
        </TimelineItem>
        <br/>
@@ -103,15 +114,16 @@ export default function LaunchpadTimeline() {
           </Typography>
           <br/>
           <br/>
-          <Image
-            src={original_focus_view}
-            alt="Focus view initial launch"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+        <LightboxImage 
+              image={original_focus_view.src} 
+              imageName='Focus view initial launch' 
+              width={original_focus_view.width} 
+              height={original_focus_view.height} 
+              caption='Version 1 of the new Focus View' 
+              alt='Focus view initial launch'
+          />
           <br/>
-          <Typography>• Places a greater emphasis on individual dev productivity as opposed to tables of information</Typography>
-          <Typography>• Combines Work in Progress, Pull Requests, and Issues into a standardized user itnerface for the first time</Typography>
+          <Typography>Combines Work in Progress, Pull Requests, and Issues into a standardized user itnerface for the first time</Typography>
           </TimelineContent>
        </TimelineItem>
        <br/>
@@ -127,37 +139,45 @@ export default function LaunchpadTimeline() {
         <Typography variant='h6'>2nd major redesign effort begins </Typography>
         <br/>
         <br/>
-        <Image
-            src={brainstorming_focus_view}
-            alt="Focus view 2nd redesign brainstorming"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+        <LightboxImage 
+              image={brainstorming_focus_view.src} 
+              imageName='Focus view 2nd redesign brainstorming' 
+              width={brainstorming_focus_view.width} 
+              height={brainstorming_focus_view.height} 
+              caption='Focus view 2nd redesign brainstorming' 
+              alt='Focus view 2nd redesign brainstorming'
+          />
         <br/>
-        <Image
-            src={todo_list}
-            alt="Focus view todo list concept"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+        <LightboxImage 
+              image={todo_list.src} 
+              imageName='Focus view todo list concept' 
+              width={todo_list.width} 
+              height={todo_list.height} 
+              caption='Focus view todo list concept' 
+              alt='Focus view todo list concept'
+          />
         <br/>
-         <Typography>• Focus shifts to Pull Requests. I explore possibilities of bringing Focus View to a smaller form factor, like the GitKraken Desktop command palette.</Typography>
+         <Typography>Focus shifts to Pull Requests. I explore possibilities of bringing Focus View to a smaller form factor, like the GitKraken Desktop command palette.</Typography>
          <br/>
-         <Image
-            src={command_explorations}
-            alt="Focus view in the command palette concept"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+         <LightboxImage 
+              image={command_explorations.src} 
+              imageName='Focus view in the command palette concept' 
+              width={command_explorations.width} 
+              height={command_explorations.height} 
+              caption='Focus view in the command palette concept' 
+              alt='Focus view in the command palette concept'
+          />
         <br/>
-        <Typography>• This inspires Eric Amodio to try to build Launchpad into the VS Code Quick Pick UI so that it can be called from anywhere.</Typography>
+        <Typography>This inspired Eric Amodio to try to build Launchpad into the VS Code Quick Pick UI so that it can be called from anywhere.</Typography>
         <br/>
-        <Image
-            src={erics_experiment_in_VS_Code}
-            alt="This inspired Eric Amodio to see if Launchpad could be built into the VS Code Quick Pick UI"
-            style={{ borderRadius: 6 }}
-            loading="eager"
-        />
+        <LightboxImage 
+              image={erics_experiment_in_VS_Code.src} 
+              imageName='Launchpad in VS Code' 
+              width={erics_experiment_in_VS_Code.width} 
+              height={erics_experiment_in_VS_Code.height} 
+              caption='' 
+              alt='This inspired Eric Amodio to see if Launchpad could be built into the VS Code Quick Pick UI'
+          />
          </TimelineContent>
        </TimelineItem>
        <br/>
@@ -170,66 +190,76 @@ export default function LaunchpadTimeline() {
          </TimelineSeparator>
          <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h5" component="span">
-            GitKraken 10.0 Release
+            GitKraken 10.0
           </Typography>
           <br/>
           <Typography component="span">
-            Largest coordinated release in the company's recent history
+            Launchpad was a major component of this release
           </Typography>
           <br/>
             <br/>
             <Typography variant='h6'>Release notes</Typography>
-            <Typography>• PRs categorization released, PRs are grouped based on actions a user needs to take in GitKraken Desktop, GitKraken.dev, and the GitKraken CLI</Typography>
+            <Typography>• Pull Request categorization - PRs are grouped based on actions a user needs to take in GitKraken Desktop, GitKraken.dev, and the GitKraken CLI</Typography>
             <Typography>• A condensed version of Launchpad arrives in the GitKraken Browser Extension</Typography>
             <Typography>• Launchpad in the CLI reaches parity with the other versions of the product</Typography>
             <Typography>• Condensed view of Launchpad within VS Code released. Can open a PR to see its details and take action</Typography>
             <br/>
             <Typography variant='h6'>GitKraken Desktop</Typography>
             <br/>
-            <Image
-                src={pr_categories}
-                alt="Focus View, now Launchpad, with categories Pull Requests"
-                style={{ borderRadius: 6 }}
-                loading="eager"
-            />
+            <LightboxImage 
+              image={pr_categories.src} 
+              imageName='Launchpad in GK Desktop' 
+              width={pr_categories.width} 
+              height={pr_categories.height} 
+              caption='Focus View, now Launchpad, with categorized Pull Requests' 
+              alt='Focus View, now Launchpad, with categorized Pull Requests'
+          />
             <br/>
             <Typography variant='h6'>GitKraken.dev</Typography>
             <br/>
-            <Image
-                src={pr_categories_gk_dev}
-                alt="Focus View, now Launchpad, with categories Pull Requests"
-                style={{ borderRadius: 6 }}
-                loading="eager"
-            />
+            <LightboxImage 
+              image={pr_categories_gk_dev.src} 
+              imageName='Launchpad in GK Dev' 
+              width={pr_categories_gk_dev.width} 
+              height={pr_categories_gk_dev.height} 
+              caption='' 
+              alt='Focus View, now Launchpad, with categorized Pull Requests'
+          />
             <br/>
             <Typography variant='h6'>GitKraken Command Line Interface</Typography>
             <br/>
-            <Image
-                src={cli_launchpad}
-                alt="Focus View, now Launchpad, with categories Pull Requests"
-                style={{ borderRadius: 6 }}
-                loading="eager"
-            />
+            <LightboxImage 
+              image={cli_launchpad.src} 
+              imageName='Launchpad in GK CLI' 
+              width={cli_launchpad.width} 
+              height={cli_launchpad.height} 
+              caption='' 
+              alt='Focus View, now Launchpad, with categorized Pull Requests'
+          />
             <br/>
             <br/>
             <Typography variant='h6'>GitKraken Browser Extension</Typography>
             <br/>
-            <Image
-                src={browser_extension}
-                alt="Focus View, now Launchpad, with categories Pull Requests"
-                style={{ borderRadius: 6 }}
-                loading="eager"
-            />
+            <LightboxImage 
+              image={browser_extension.src} 
+              imageName='Launchpad in GK Browser Extension' 
+              width={browser_extension.width} 
+              height={browser_extension.height} 
+              caption='' 
+              alt='Focus View, now Launchpad, with categorized Pull Requests'
+          />
             <br/>
             <br/>
             <Typography variant='h6'>GitLens in VS Code</Typography>
             <br/>
-            <Image
-                src={quick_launchpad}
-                alt="Focus View, now Launchpad, with categories Pull Requests"
-                style={{ borderRadius: 6 }}
-                loading="eager"
-            />
+            <LightboxImage 
+              image={quick_launchpad.src} 
+              imageName='Launchpad in VS Code with GitLens' 
+              width={quick_launchpad.width} 
+              height={quick_launchpad.height} 
+              caption='' 
+              alt='Focus View, now Launchpad, with categorized Pull Requests'
+          />
             <br/>
         </TimelineContent>
        </TimelineItem>
