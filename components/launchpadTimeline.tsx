@@ -168,7 +168,7 @@ export default function LaunchpadTimeline() {
               alt='Focus view in the command palette concept'
           />
         <br/>
-        <Typography>This inspired Eric Amodio to try to build Launchpad into the VS Code Quick Pick UI so that it can be called from anywhere.</Typography>
+        <Typography>This inspired Eric Amodio to start building Launchpad into the VS Code Quick Pick UI so that it can be called from anywhere.</Typography>
         <br/>
         <LightboxImage 
               image={erics_experiment_in_VS_Code.src} 
