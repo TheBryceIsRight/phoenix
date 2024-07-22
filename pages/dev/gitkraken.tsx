@@ -20,7 +20,6 @@ import site_map_light from '../../public/assets/gitkraken/site_map/gitkraken_sit
 import { useTheme } from "@mui/material"
 
 
-
 const videoWrapper = {
     paddingBottom: "56.25%",
     overflow: "hidden",

@@ -51,7 +51,7 @@ export default function Resume() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <main aria-label="Resume">
-            <Container maxWidth="lg">
+            <Container maxWidth="md">
                 <br />
                 <br />
                 <br />
