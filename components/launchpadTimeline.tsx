@@ -46,7 +46,7 @@ export default function LaunchpadTimeline() {
          <TimelineContent>
          <Typography variant='h5'>Focus view redesign begins</Typography>
          <br/>
-         <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (which would later be named Launchpad), which was intended to be developer focused dashboard.</Typography>
+         <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (later named Launchpad), which was intended to be developer focused dashboard.</Typography>
          <br/>
          <Typography>As part of the redesign effort, Focus View would gain its own dedicated backend service so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI. I worked on this project primarily with Justin Roberts, Senior Director of Product at GitKraken. </Typography>
          <br/>
