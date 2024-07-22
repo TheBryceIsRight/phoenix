@@ -73,9 +73,6 @@ export default function Index() {
               <Typography variant='h6'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
             </Grid>
             <Grid>
-              <Typography variant='body1'>I'm happily employed at GitKraken, so I'm not looking for full-time opportunities. I'm still open for part time freelance work though, so drop me a line at</Typography>
-            </Grid>
-            <Grid>
               <Link href="mailto:brycewatson315@gmail.com" passHref tabIndex={-1}>
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                   brycewatson315@gmail.com
