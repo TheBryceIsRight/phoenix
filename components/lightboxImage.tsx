@@ -49,7 +49,7 @@ export default function LightboxImage(props: Props) {
 
   return (
     <React.Fragment>
-      <Button variant="primary" 
+      <Button variant='text'
       onClick={handleClickOpen} 
       aria-label={props.alt}
       style={{
