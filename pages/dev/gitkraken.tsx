@@ -18,7 +18,7 @@ import programming_dark from '../../public/assets/gitkraken/undraw/programming-d
 import site_map_dark from '../../public/assets/gitkraken/site_map/gitkraken_site_map_dark.svg'
 import site_map_light from '../../public/assets/gitkraken/site_map/gitkraken_site_map_light.svg'
 import { useTheme } from "@mui/material"
-import Timeline from "../../components/timeline"
+import LaunchpadTimeline from "../../components/launchpadTimeline"
 
 
 const videoWrapper = {
@@ -190,7 +190,7 @@ export default function GitKraken() {
                     <Typography variant='h3'>Thank you for reading!</Typography>
                     <br />
                     <br />
-                    <Timeline/>
+                    <LaunchpadTimeline/>
                 </Container>
                 <br />
                 <br />

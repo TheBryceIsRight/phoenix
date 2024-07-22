@@ -26,7 +26,7 @@ import browser_extension from '../public/assets/gitkraken/launchpad/browser_exte
 import quick_launchpad from '../public/assets/gitkraken/launchpad/quick_launchpad.svg'
 
 
-export default function LeftAlignedTimeline() {
+export default function LaunchpadTimeline() {
   return ( <Timeline
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
@@ -45,15 +45,21 @@ export default function LeftAlignedTimeline() {
          <TimelineContent>
          <Typography variant='h5'>Focus view redesign begins</Typography>
          <br/>
+         <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (later named Launchpad), which was intended to be a kind of general dashboard for a developer using GitKraken. As part of the redesign effort, this feature would gain it's own dedicated backend service (a first for GitKraken) so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI.</Typography>
+         <br/>
+         <Typography>At the time of writing, Launchpad supports integrations with GitHub, GitHub Enterprise, GitLab, GitLab Self-mananged, BitBucket, BitBucket Server, Jira Cloud, Jira Data Center, Trello, and Azure DevOps</Typography>
+         <br/>
         <Image
             src={old_focus_view}
             alt="The original Focus View"
             style={{ borderRadius: 6 }}
             loading="eager"
         />
+               <br/>
+               <Typography>Focus view started out as a combination of views that already existed in Workspaces - Pull Requests, Issues, and Work In Progress. Each table took a third of the screen, and user research found it was not particularly effective at organizing a developer's day to day interactions.</Typography>
             </TimelineContent>
        </TimelineItem>
-       <br/>
+      <br/>
        <TimelineItem>
          <TimelineOppositeContent color="textSecondary">
            <Typography variant='h5'>May - Jun</Typography>
@@ -171,7 +177,12 @@ export default function LeftAlignedTimeline() {
             Largest coordinated release in the company's recent history
           </Typography>
           <br/>
-
+            <br/>
+            <Typography variant='h6'>Release notes</Typography>
+            <Typography>• PRs categorization released, PRs are grouped based on actions a user needs to take in GitKraken Desktop, GitKraken.dev, and the GitKraken CLI</Typography>
+            <Typography>• A condensed version of Launchpad arrives in the GitKraken Browser Extension</Typography>
+            <Typography>• Launchpad in the CLI reaches parity with the other versions of the product</Typography>
+            <Typography>• Condensed view of Launchpad within VS Code released. Can open a PR to see its details and take action</Typography>
             <br/>
             <Typography variant='h6'>GitKraken Desktop</Typography>
             <br/>
@@ -220,11 +231,6 @@ export default function LeftAlignedTimeline() {
                 loading="eager"
             />
             <br/>
-          <Typography variant='h6'>Release notes</Typography>
-          <Typography>• Condensed view of Launchpad within VS Code released. Can open a PR to see its details and take action</Typography>
-          <Typography>• PRs categorization released, PRs are grouped based on actions a user needs to take in GitKraken Desktop, GitKraken.dev, and the GitKraken CLI</Typography>
-          <Typography>• A condensed version of Launchpad arrives in the GitKraken Browser Extension</Typography>
-          <Typography>• Launchpad in the CLI reaches parity with the other versions of the product</Typography>
         </TimelineContent>
        </TimelineItem>
      </Timeline>
