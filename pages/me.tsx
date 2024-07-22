@@ -46,7 +46,7 @@ export default function Aboutme() {
             </Container>
             <br />
 
-            <Container maxWidth="xl">
+            <Container maxWidth="md">
                 <br />
                 <br />
                 <br />
@@ -66,7 +66,7 @@ export default function Aboutme() {
                     />
                 }
                 <br />
-                <Typography variant="body1">My hometown, drawn in Figma.
+                <Typography variant="body1">My hometown of Atlanta, drawn in Figma.
                 </Typography>
                 <Typography variant="caption">© {new Date().getFullYear()} · Bryce Watson · All Rights Reserved </Typography>
                 <br />
@@ -84,13 +84,6 @@ export default function Aboutme() {
                     <Typography variant="body1">Photo Credit Ksenia Bogolyubtseva - QA Analyst
                     </Typography>
                 </Link>
-                <br />
-                <br />
-            </Container>
-            <Container maxWidth="lg">
-
-                <br />
-                <br />
                 <br />
                 <br />
             </Container>
