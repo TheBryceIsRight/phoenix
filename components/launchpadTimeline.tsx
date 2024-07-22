@@ -48,7 +48,7 @@ export default function LaunchpadTimeline() {
          <br/>
          <Typography>When I joined GitKraken, there were several intitiatives in motion to make developers more productive in their work. I was assigned to Focus View (which would later be named Launchpad), which was intended to be developer focused dashboard.</Typography>
          <br/>
-         <Typography>As part of the redesign effort, Focus View would gain it's own dedicated backend service so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI. I worked on this project primarily with Justin Roberts, Senior Director of Product at GitKraken. </Typography>
+         <Typography>As part of the redesign effort, Focus View would gain its own dedicated backend service so that it could live in 4 different surfaces instead of just one - GitKraken Desktop, GitKraken.dev, VS Code via GitLens, and the GitKraken CLI. I worked on this project primarily with Justin Roberts, Senior Director of Product at GitKraken. </Typography>
          <br/>
          <Typography>At the time of writing, Launchpad supports integrations with GitHub, GitHub Enterprise, GitLab, GitLab Self-mananged, BitBucket, BitBucket Server, Jira Cloud, Jira Data Center, Trello, and Azure DevOps</Typography>
           <br/>

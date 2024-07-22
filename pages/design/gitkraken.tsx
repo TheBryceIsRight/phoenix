@@ -121,7 +121,7 @@ export default function GitKraken() {
                     <Typography variant='h4'>How do we equip the modern software development team to do their best work?
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. However, merging doesn't always go smoothly, and you could be dealing dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with it's Git visualization graph. 
+                    <Typography variant='body1'>Keeping track of code can be difficult for a number of reasons. Code can be split off into branches with their own sets of changes and then merged back in. However, merging doesn't always go smoothly, and you could be dealing dozens of branches. GitKraken helps to solve merge conflicts and prevent them from happening in the first place with its Git visualization graph. 
                     </Typography>
                     <br />
                     <Image
@@ -192,7 +192,7 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h4'>GitKraken Client Figma Prototype</Typography>
                     <br />
-                    <Typography variant='body1'>I created this prototype to showcase upcoming features with realistic animations for user testing. For the first version it took about a month of creating components for the design system in addition to my usual responsibilities. As GitKraken mostly uses instant animations, the prototype covers the vast majority of possible features with 100% accurate animation reproduction.
+                    <Typography variant='body1'>I created this prototype to showcase upcoming features with realistic animations for user testing. As GitKraken mostly uses instant animations, the prototype covers the vast majority of possible features with 100% accurate animation reproduction.
                     </Typography>
                     <br/>
                     <Typography variant='body1'>For the best experience, use fullscreen mode.
