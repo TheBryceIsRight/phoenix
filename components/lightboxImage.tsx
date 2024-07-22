@@ -85,7 +85,6 @@ export default function LightboxImage(props: Props) {
               color="inherit"
               onClick={handleClose}
               aria-label="close"
-              elevation={0}
             >
               <CloseIcon />
             </IconButton>
