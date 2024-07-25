@@ -204,7 +204,7 @@ export default function GitKraken() {
                             aria-label="GitKraken Figma prototype" 
                             style={iframeStyle} 
                             title="GitKraken Client Prototype" 
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiJeJG623kticK9UKSTSqem%2FGitKraken-Client-Prototype%3Fpage-id%3D0%253A1%26node-id%3D5-11994%26viewport%3D507%252C248%252C0.16%26t%3DKSqkX63RJqMkBcMw-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D5%253A11994" 
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiJeJG623kticK9UKSTSqem%2FGitKraken-Client-Prototype%3Fpage-id%3D0%253A1%26node-id%3D5-11994%26viewport%3D302%252C239%252C0.09%26t%3DSAofsyAI6MIyJJRj-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D5%253A11994" 
                             allowFullScreen={true}>
                         </iframe>
                     </div>
