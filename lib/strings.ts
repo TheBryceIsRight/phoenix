@@ -22,7 +22,7 @@ export const AllVoicesDesc = "• Product Design Lead and sole designer for the 
 
 export const AllVoicesTitle2 = "Full Stack Developer"
 
-export const AllVoicesDesc2 = "• Write clean, high-quality, high-performance, maintainable code. Take ownership of end to end feature development working closely with Product Management and Engineering Leads. Support test and deployment of new products and features. Participate in code reviews. Build dynamic, responsive, low latency APIs. Work in a team as well as independently to deliver on Product development schedules and goals."
+export const AllVoicesDesc2 = "• Wrote clean, high-quality, high-performance, maintainable code. Took ownership of end to end feature development working closely with Product Management and Engineering Leads. Supported testing and deployment of new products and features. Participated in code reviews. Built dynamic, responsive, low latency APIs. Worked in a team as well as independently to deliver on Product development schedules and goals."
 
 export const AllVoicesLink = "https://www.allvoices.co/"
 
