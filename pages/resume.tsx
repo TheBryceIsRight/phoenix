@@ -96,7 +96,7 @@ export default function Resume() {
                             </Tooltip>
                         </Link>
                         <Link passHref href="https://drive.google.com/file/d/1IfeDgsPbhzMN7PU0KCVsFuJ6S6qsBJe0/view?usp=drive_link" target="_blank" tabIndex={-1}>
-                            <Tooltip title="Download Resume" arrow>
+                            <Tooltip title="Opens in Google Drive" arrow>
                                 <Button
                                     size="large"
                                     color="secondary"
