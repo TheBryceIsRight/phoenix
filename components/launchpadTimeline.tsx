@@ -25,6 +25,8 @@ import cli_launchpad from '../public/assets/gitkraken/launchpad/cli_launchpad.sv
 import browser_extension from '../public/assets/gitkraken/launchpad/browser_extension.png'
 import quick_launchpad from '../public/assets/gitkraken/launchpad/quick_launchpad.svg'
 import LightboxImage from './lightboxImage';
+import launchpad_thumbnail from '../public/assets/gitkraken/launchpad_thumbnail.png'
+import Link from 'next/link';
 
 
 export default function LaunchpadTimeline() {
@@ -187,6 +189,7 @@ export default function LaunchpadTimeline() {
          </TimelineOppositeContent>
          <TimelineSeparator>
            <TimelineDot />
+           <TimelineConnector />    
          </TimelineSeparator>
          <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h5" component="span">
@@ -262,6 +265,32 @@ export default function LaunchpadTimeline() {
           />
             <br/>
         </TimelineContent>
+       </TimelineItem>
+       <TimelineItem>
+         <TimelineOppositeContent color="textSecondary">
+         <Typography variant='h5'>The Future</Typography>
+         </TimelineOppositeContent>
+         <TimelineSeparator>
+           <TimelineDot />
+         </TimelineSeparator>
+         <TimelineContent>          
+            <Typography variant="h5" component="span">
+            Cooking up something cool at GitKraken! 🐙
+          </Typography>
+          <br/>
+          <br/>
+          <Link href='https://www.gitkraken.com/solutions/launchpad' passHref target="_blank" tabIndex={-1}>
+            <button variant="text">
+              <Image
+                src={launchpad_thumbnail}
+                alt="External link to feature spotlight on GitKraken.com"
+                style={{ borderRadius: 6 }}
+              />
+            </button>
+          </Link>
+          <br/>
+          <Typography>Checkout the feature spotlight page on GitKraken.com</Typography>
+          </TimelineContent>
        </TimelineItem>
      </Timeline>
   );

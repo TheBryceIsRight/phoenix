@@ -221,7 +221,7 @@ export default function GitKraken() {
                     <br />
                     <LaunchpadTimeline/>
                     <br/>
-                    <Typography variant='h5'>This page is still under construction, please pardon my dust 🧹💨</Typography>
+                    <br/>
                     <br/>
                     <br/>
                     <Typography variant='h3'>Thanks for reading!</Typography>
