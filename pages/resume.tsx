@@ -40,6 +40,7 @@ import ExperienceEntryExtended from "../components/experienceEntryExtended"
 import AdobeXD from "../public/assets/aboutme/XD.svg"
 import { Download } from "@mui/icons-material"
 import Layout from "../components/layout"
+import { Tools, Design, ComputerLanguagesAndLibraries, Development} from '../lib/strings'
 
 
 export default function Resume() {
@@ -184,7 +185,7 @@ export default function Resume() {
                 <Typography variant='h2' fontWeight={300}>Skills</Typography>
                 <br />
                 <br />
-                <Typography variant='h4'>Computer Languages</Typography>
+                <Typography variant='h3'>Computer Languages</Typography>
                 <br />
                 <br />
                 <Grid container spacing={6}>
@@ -326,7 +327,7 @@ export default function Resume() {
                 </Grid>
                 <br />
                 <br />
-                <Typography variant='h4'>Design & Media</Typography>
+                <Typography variant='h3'>Design & Media</Typography>
                 <br />
                 <br />
                 <Grid container spacing={5}>
@@ -422,6 +423,31 @@ export default function Resume() {
                         <Typography variant='body1'>Blender</Typography>
                     </Grid>
                 </Grid>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <Typography variant='h4'>Skills Addendum</Typography>
+                <br/>
+                <br/>
+                <Typography variant='h5'>Tools</Typography>
+                <br/>
+                <Typography variant='body1'>{Tools}</Typography>
+                <br/>
+                <br/>
+                <Typography variant='h5'>Design</Typography>
+                <br/>
+                <Typography variant='body1'>{Design}</Typography>
+                <br/>
+                <br/>
+                <Typography variant='h5'>Computer Languages & Libraries</Typography>
+                <br/>
+                <Typography variant='body1'>{ComputerLanguagesAndLibraries}</Typography>
+                <br/>
+                <br/>
+                <Typography variant='h5'>Devlopment</Typography>
+                <br/>
+                <Typography variant='body1'>{Development}</Typography>
             </Container>
             <br />
             <br />

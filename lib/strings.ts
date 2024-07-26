@@ -59,3 +59,11 @@ export const GatechTitle = "B.S. of Computer Science"
 export const GatechDesc = "Threads in People and Media, specializing in computer graphics processing, video game design, UX/UI design, & psychological research with human subjects"
 
 export const ToHellWithGeorgia = "https://www.gatech.edu/"
+
+export const Tools = "Figma, Miro, Adobe XD, Invision, Sketch, Photoshop, Illustrator, Premiere, iMovie, After Effects, Premiere Rush, Webflow, Adobe Creative Cloud"
+
+export const Design = "UX Design, UI Design, Product Design, User Experience Design, Front end development, Public Speaking, Time Management, Software Design, User Interface Design, Quantitative Research, Human Computer Interaction, Responsive Web Design, Mobile Web Design, Web App Design, Information Architecture, Search Engine Optimization (SEO), Accessibility, Digital Marketing, Project Management, Blender, WCAG 2.1 AA & AAA, ADA, User centered design, User-centered design, Customer Experience, User Research"
+
+export const ComputerLanguagesAndLibraries = "JavaScript: Typescript, Next, Node, React, Vue, D3, Bootstrap, Material UI React, Vuetify, Java, Python, C, C#, HTML, CSS, SASS, R, MATLAB"
+
+export const Development = "SQL, PostgreSQL, mySQL, SQLite, Git, Github, Unified Modeling Language (UML), Representational State Transfer (REST), GraphQL, Unity, Cloud, Cloud Computing"

@@ -70,7 +70,7 @@ export default function Index() {
           <br />
           <Grid container spacing={2} alignItems='center' alignContent='center' maxWidth="lg" flexWrap="wrap" direction="column" >
             <Grid maxWidth="md">
-              <Typography variant='h6'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
+              <Typography variant='h5'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
             </Grid>
             <Grid>
               <Link href="mailto:brycewatson315@gmail.com" passHref tabIndex={-1}>
