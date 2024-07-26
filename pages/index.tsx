@@ -2,7 +2,7 @@ import Container from '../components/container'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Typography, Button, useTheme, styled, ButtonProps  } from '@mui/material'
+import { Typography, Button, useTheme, styled, ButtonProps, Tooltip, Toolbar, IconButton  } from '@mui/material'
 import MuiContainer from '@mui/material/Container'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
@@ -33,6 +33,9 @@ import LA from '../public/assets/aboutme/LANationalPark.jpg'
 import LA_reversed from '../public/assets/aboutme/LANationalParkMirrored.png'
 import PreviousWork from '../components/previousWork'
 import HeroWork from '../components/heroWork'
+import LinkedIn from '@mui/icons-material/LinkedIn'
+import GitHub from '@mui/icons-material/GitHub'
+import { InsertDriveFile } from '@mui/icons-material'
 
 export default function Index() {
   const theme = useTheme();
@@ -73,11 +76,45 @@ export default function Index() {
               <Typography variant='h5'>I graduated from the Georgia Institute of Technology with a B.S. in Computer Science. I use my CS background to bridge the gap between design and development.</Typography>
             </Grid>
             <Grid>
-              <Link href="mailto:brycewatson315@gmail.com" passHref tabIndex={-1}>
-                <Button color='secondary' variant='outlined' startIcon={<Mail />}>
-                  brycewatson315@gmail.com
-                </Button>
-              </Link>
+            <Toolbar disableGutters={true} variant="dense">
+                        <Link passHref href="/resume" tabIndex={-1}>
+                                <Button
+                                    size="large"
+                                    color="secondary"
+                                    aria-label="Download Resume"
+                                    startIcon={
+                                        <InsertDriveFile />
+                                    }
+                                    sx={{ mr: 2 }}
+                                >
+                                    Resume
+                                </Button>
+                        </Link>
+                        <Link passHref href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank" tabIndex={-1}>
+                            <Tooltip title="LinkedIn" arrow>
+                                <IconButton
+                                    size="large"
+                                    color="secondary"
+                                    aria-label="LinkedIn"
+                                    sx={{ mr: 2 }}
+                                >
+                                    <LinkedIn />
+                                </IconButton>
+                            </Tooltip>
+                        </Link>
+                        <Link passHref href="https://github.com/TheBryceIsRight" target="_blank" tabIndex={-1}>
+                            <Tooltip title="GitHub" arrow>
+                                <IconButton
+                                    size="large"
+                                    color="secondary"
+                                    aria-label="GitHub"
+                                    sx={{ mr: 2 }}
+                                >
+                                    <GitHub />
+                                </IconButton>
+                            </Tooltip>
+                        </Link>
+                    </Toolbar>
             </Grid>
           </Grid>
           <br />
