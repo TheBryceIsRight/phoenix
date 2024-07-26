@@ -88,7 +88,7 @@ export default function PreviousWork(props: PropType) {
                             {props.title}
                         </Typography>
                         <br />
-                        <Typography variant='h6'>{props.description}</Typography>
+                        <Typography variant='h5'>{props.description}</Typography>
                     </div>
                 </PreviewButton>
             </Link>
