@@ -222,7 +222,29 @@ export default function GitKraken() {
                     <LaunchpadTimeline/>
                     <br/>
                     <br/>
+                    <br />
+                    <br />
+                    <br />
+                    <Typography variant='h4'>Takeaways</Typography>
+                    <br />
+                    <br />
+                    <Typography variant='h6'>Do the research & measure the outcome</Typography>
+                    <br />
+                    <Typography variant='body1'>Doing user research & analytics when creating a new product for a techincal audience is crucial to understanding their pain points. In the second major redesign of Launchpad, we categorized pull requests based on the actions a user would need to take - an idea that came out of extensive user research & interviews. Once released we saw a marked increase in the number users using Launchpad that has held steady since then, validating our idea that users really needed an additional filter on top of what we were  presenting at the time.
+                    </Typography>
+                    <br />
+                    <br />
+                    <br />
+                    <Typography variant='h6'>Products work when Design + Development work together </Typography>
+                    <br />
+                    <Typography variant='body1'>I've merged lots of Pull Requests for Launchpad since I've started here, often to polish up designs someone else implemented, but occaisonally to implement features myself. Understanding the code that the developers are working with and it's limitations is incredibly helpful when designing the features that will be built on top of that code in the future. Design handoff should not be a one time exchange of information - it should a constant, ongoing conversatsion about constraints and possibilities, with development included early on the design process.
+                    </Typography>
                     <br/>
+                    <br/>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <br/>
                     <Typography variant='h3'>Thanks for reading!</Typography>
                 </Container>
