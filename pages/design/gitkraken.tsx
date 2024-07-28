@@ -237,7 +237,7 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h6'>Products work when Design + Development work together </Typography>
                     <br />
-                    <Typography variant='body1'>I've merged lots of Pull Requests for Launchpad since I've started here, often to polish up designs someone else implemented, but occaisonally to implement features myself. Understanding the code that the developers are working with and it's limitations is incredibly helpful when designing the features that will be built on top of that code in the future. Design handoff should not be a one time exchange of information - it should a constant, ongoing conversatsion about constraints and possibilities, with development included early on the design process.
+                    <Typography variant='body1'>I've authored lots of Pull Requests for Launchpad since I've started here, often to polish up designs someone else implemented, but occaisonally to implement features myself. Understanding the code that the developers are working with and it's limitations is incredibly helpful when designing the features that will be built on top of that code in the future. Design handoff should not be a one time exchange of information - it should a constant, ongoing conversatsion about constraints and possibilities, with development included early on the design process.
                     </Typography>
                     <br/>
                     <br/>
