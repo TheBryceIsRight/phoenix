@@ -230,7 +230,7 @@ export default function GitKraken() {
                     <br />
                     <Typography variant='h6'>Do the research & measure the outcome</Typography>
                     <br />
-                    <Typography variant='body1'>Doing user research & analytics when creating a new product for a techincal audience is crucial to understanding their pain points. In the second major redesign of Launchpad, we categorized pull requests based on the actions a user would need to take - an idea that came out of extensive user research & interviews. Once released we saw a marked increase in the number users using Launchpad that has held steady since then, validating our idea that users really needed an additional filter on top of what we were  presenting at the time.
+                    <Typography variant='body1'>Doing user research & analytics when creating a new product for a techincal audience is crucial to understanding their pain points. In the second major redesign of Launchpad, we categorized pull requests based on the actions a user would need to take - an idea that came out of extensive user research and interviews. Once released we saw a marked increase in the number users using Launchpad that has held steady since then, validating our idea that users really needed an additional filter on top of what we were  presenting at the time.
                     </Typography>
                     <br />
                     <br />
