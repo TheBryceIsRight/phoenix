@@ -27,7 +27,7 @@ import quick_launchpad from '../public/assets/gitkraken/launchpad/quick_launchpa
 import LightboxImage from './lightboxImage';
 import launchpad_thumbnail from '../public/assets/gitkraken/launchpad_thumbnail.png'
 import Link from 'next/link';
-
+import { Button } from '@mui/material';
 
 export default function LaunchpadTimeline() {
   return ( <Timeline
@@ -280,13 +280,24 @@ export default function LaunchpadTimeline() {
           <br/>
           <br/>
           <Link href='https://www.gitkraken.com/solutions/launchpad' passHref target="_blank" tabIndex={-1}>
-            <button variant="text">
+          <Button variant='text'
+            aria-label={'External link to the GitKraken.com page on'}
+            style={{
+              justifyContent: 'flex-start' , 
+              alignContent: 'flex-start', 
+              flexDirection: 'column', 
+              textTransform: 'none', 
+              gap: '8px',
+              paddingTop: '16px',
+              paddingBottom: '16px'
+              }}
+          >
               <Image
                 src={launchpad_thumbnail}
                 alt="External link to feature spotlight on GitKraken.com"
                 style={{ borderRadius: 6 }}
               />
-            </button>
+            </Button>
           </Link>
           <br/>
           <Typography>Checkout the feature spotlight page on GitKraken.com</Typography>
